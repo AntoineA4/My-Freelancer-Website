@@ -1,0 +1,60 @@
+header{
+    @include flex-between;
+    padding: 2% 4% 2% 4%;
+    height:60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+    border-bottom: 0.5px solid $color-border;
+    animation: fadeUp .4s ease both;
+
+
+    .logo-section {
+        @include flex-center;
+        gap:0.4rem;
+    };
+    .header-nav-bar {
+        ul{
+            display: flex;
+            gap: 1.75rem;
+            width:100%;
+            list-style: none;
+            a{
+                color: $color-text-muted; 
+                font-size: $font-size-lg;
+                font-family: $font-sans;
+                transition: color .2s;
+            };
+            a:hover {
+            color: $color-corail;
+        }
+        };
+    }
+    button{
+        font-family: $font-sans;;
+        font-size: $font-size-lg;
+        padding: 7px 16px;
+        border: 1.5px solid $color-corail;
+        border-radius: 8px;
+        background: transparent;
+        color: $color-corail;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background .2s, color .2s;
+    };
+    button:hover {
+        background-color: $color-corail;
+        color: $color-bg-creme;
+    };
+}
+p {
+    font-size: $font-size-2xl;
+    &.prenom {
+        color:$color-text-main;
+    }
+    &.nom {
+        color:$color-corail;
+        font-style: italic;
+    }
+}

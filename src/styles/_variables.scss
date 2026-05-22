@@ -1,0 +1,95 @@
+// ── Couleurs principales ──
+$color-corail:        #D85A30;
+$color-corail-fonce:  #993C1D;
+$color-bordeaux:      #712B13;
+$color-bordeaux-dark: #4A1B0C;
+
+// ── Fonds ──
+$color-bg-creme:      #FFF8F3;
+$color-bg-creme-alt:  #FAECE7;
+$color-bg-white:      #FFFFFF;
+
+// ── Bordures ──
+$color-border:        #F5C4B3;
+$color-border-mid:    #F0997B;
+
+// ── Textes ──
+$color-text-main:     #3A2020;
+$color-text-secondary:#993C1D;
+$color-text-muted:    #B4B2A9;
+
+//-----------------------------------\\
+
+// ── Typographie ──
+$font-sans:   'DM Sans', sans-serif;      // textes courants, boutons, labels
+$font-serif:  'Playfair Display', serif;  // titres, prix, logo, accroches
+
+// ── Tailles de base ──
+$font-size-xs:  10px;
+$font-size-sm:  12px;
+$font-size-md:  13px;
+$font-size-base: 14px;
+$font-size-lg:  16px;
+$font-size-xl:  20px;
+$font-size-2xl: 26px;
+$font-size-3xl: 34px;
+
+// ── Poids ──
+$font-light:   300;
+$font-regular: 400;
+$font-medium:  500;
+
+///////----------------------Mixins------------------\\\\\\\\
+
+
+// ── Layout ──
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// ── Responsive ──
+@mixin mobile {
+  @media (max-width: 680px) { @content; }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) { @content; }
+}
+
+// ── Composants réutilisables ──
+@mixin card {
+  background: $bg-white;
+  border: 0.5px solid $color-border;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@mixin pill($bg, $color, $border) {
+  background: $bg;
+  color: $color;
+  border: 0.5px solid $border;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 11px;
+}
+
+@mixin section-title {
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: $color-corail;
+  font-weight: 500;
+}
+
+// ── Animation ──
+@mixin fade-up($delay: 0s) {
+  animation: fadeUp .5s $delay ease both;
+}

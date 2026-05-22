@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $color-bg-creme;
+}
+
+body {
+  font-family: $font-sans;       
+  font-size: $font-size-base;
+  color: $color-text-main;
+  background-color: $color-bg-creme;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: $font-serif;
+  font-weight: $font-regular;
+}
+
+a {
+  color: $color-corail;
+  text-decoration: none;
+}
