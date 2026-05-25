@@ -8,6 +8,7 @@ $color-bordeaux-dark: #4A1B0C;
 $color-bg-creme:      #FFF8F3;
 $color-bg-creme-alt:  #FAECE7;
 $color-bg-white:      #FFFFFF;
+$color-btn-hv-creme:  #FAEEDA;
 
 // ── Bordures ──
 $color-border:        #F5C4B3;
@@ -25,21 +26,21 @@ $font-sans:   'DM Sans', sans-serif;      // textes courants, boutons, labels
 $font-serif:  'Playfair Display', serif;  // titres, prix, logo, accroches
 
 // ── Tailles de base ──
-$font-size-xs:  10px;
-$font-size-sm:  12px;
-$font-size-md:  13px;
-$font-size-base: 14px;
-$font-size-lg:  16px;
-$font-size-xl:  20px;
-$font-size-2xl: 26px;
-$font-size-3xl: 34px;
+$font-size-xs:  12px;
+$font-size-sm:  14px;
+$font-size-md:  15px;
+$font-size-base: 16px;
+$font-size-lg:  18px;
+$font-size-xl:  22px;
+$font-size-2xl: 28px;
+$font-size-3xl: 38px;
 
 // ── Poids ──
 $font-light:   300;
 $font-regular: 400;
 $font-medium:  500;
 
-///////----------------------Mixins------------------\\\\\\\\
+/////////----------------------Mixins------------------\\\\\\\\
 
 
 // ── Layout ──

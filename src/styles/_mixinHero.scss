@@ -1,0 +1,96 @@
+@mixin hero-section(
+  $bg,
+  $border-color:  $color-corail-fonce,
+  $title-color:   $color-bg-white,
+  $sub-color:     $color-border,
+  $em-color:      $color-bg-creme,
+  $tag-color:     $color-border,
+  $circle-color:  rgba(255, 255, 255, .06)
+) {
+  background: $bg;
+  padding: 6% 4% 2% 4%;
+  border-bottom: 0.5px solid $border-color;
+  position: relative;
+
+  // ── Cercle décoratif haut droite ──
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: $circle-color;
+    pointer-events: none;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  // ── Cercle décoratif bas gauche ──
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: -40px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: $circle-color;
+    pointer-events: none;
+    animation: floatReverse 5s ease-in-out infinite;
+  }
+
+  // ── Tag ──
+  .hero-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: $font-size-md;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: $tag-color;
+    margin-bottom: .875rem;
+    animation: slideIn .5s .1s ease both;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 1.5px;
+      background: $color-border-mid;
+      flex-shrink: 0;
+    }
+  }
+
+  // ── Titre ──
+  .hero-title {
+    @include fade-up(0.15s);
+    font-family: $font-serif;
+    font-size: $font-size-3xl;
+    color: $title-color;
+    line-height: 1.18;
+    margin-bottom: .875rem;
+
+    em {
+      font-style: italic;
+      color: $em-color;
+    }
+  }
+
+  // ── Sous-titre ──
+  .hero-sub {
+    @include fade-up(0.25s);
+    font-size: $font-size-lg;
+    color: $sub-color;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+
+  // ── Boutons ──
+  .hero-btns {
+    @include fade-up(0.35s);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}

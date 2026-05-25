@@ -1,9 +1,11 @@
-import Hero from "../components/Hero";
+import Hero from "../components/Hero-home";
+import DispoBand from "../components/Dispo-band";
 
 function Home() {
   return (
     <>
       <Hero />
+      <DispoBand />
     </>
   );
 }

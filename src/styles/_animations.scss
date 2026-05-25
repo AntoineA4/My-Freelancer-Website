@@ -10,10 +10,16 @@
   0%, 100% { opacity: 1; }
   50%       { opacity: .4; }
 }
-@keyframes barGrow {
-  from { width: 0; }
-  to   { width: var(--w); }
-}
- 
+
 .anim-fade { animation: fadeUp .5s ease both; }
 .anim-slide { animation: slideIn .5s ease both; }
+
+@keyframes float {
+  0%, 100% { transform: scale(1) translate(0, 0); }
+  50%       { transform: scale(1.12) translate(-8px, 8px); }
+}
+
+@keyframes floatReverse {
+  0%, 100% { transform: scale(1.2) translate(0, 0); }
+  50%       { transform: scale(1) translate(8px, -8px); }
+}
