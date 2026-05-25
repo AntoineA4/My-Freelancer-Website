@@ -1,0 +1,30 @@
+.sectionNumbers{
+    background-color: $color-bg-white;
+
+    .reassurance-flex {
+            @include flex-center;
+            
+            .reass-card {
+            background: $color-bg-creme-alt;
+            border: 0.5px solid $color-border;
+            border-radius: 10px;
+            padding: 1.25rem 1.5rem;
+            text-align: center;
+            transition: transform .2s, border-color .2s;
+            margin: 0% 2% 2% 2%;
+            }
+            .reass-card:hover { transform: translateY(-3px); border-color: $color-corail; }
+            .reass-val {
+                font-family: $font-serif;
+                font-size: $font-size-2xl;
+                color: $color-bordeaux;
+                margin-bottom: 4px;
+            }
+            .reass-label { 
+                font-size: $font-size-sm; 
+                color: $color-text-secondary; 
+                line-height: 1.4; 
+            }
+        }
+    
+}

@@ -16,6 +16,12 @@ h1, h2, h3 {
   font-family: $font-serif;
   font-weight: $font-regular;
 }
+h2 {
+  color: $color-corail;
+  font-size: $font-size-xl;
+  margin: 0% 4%;
+  padding-top: 1%;
+}
 
 a {
   color: $color-corail;

@@ -5,12 +5,13 @@
   $sub-color:     $color-border,
   $em-color:      $color-bg-creme,
   $tag-color:     $color-border,
-  $circle-color:  rgba(255, 255, 255, .06)
+  $circle-color:  rgba(255, 255, 255, 0.4)
 ) {
   background: $bg;
   padding: 6% 4% 2% 4%;
   border-bottom: 0.5px solid $border-color;
   position: relative;
+  overflow: hidden;
 
   // ── Cercle décoratif haut droite ──
   &::before {
@@ -18,8 +19,8 @@
     position: absolute;
     top: -50px;
     right: -50px;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background: $circle-color;
     pointer-events: none;
@@ -86,11 +87,4 @@
     margin-bottom: 1.25rem;
   }
 
-  // ── Boutons ──
-  .hero-btns {
-    @include fade-up(0.35s);
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
 }
