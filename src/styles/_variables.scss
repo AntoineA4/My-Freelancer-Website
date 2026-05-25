@@ -56,6 +56,14 @@ $font-medium:  500;
   justify-content: space-between;
 }
 
+@mixin section-title {
+  h2 {
+    margin: 0 4%; 
+    padding-top: 1%; 
+  }
+}
+
+
 // ── Responsive ──
 @mixin mobile {
   @media (max-width: 680px) { @content; }
@@ -80,14 +88,6 @@ $font-medium:  500;
   border-radius: 20px;
   padding: 4px 12px;
   font-size: 11px;
-}
-
-@mixin section-title {
-  font-size: 11px;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: $color-corail;
-  font-weight: 500;
 }
 
 // ── Animation ──

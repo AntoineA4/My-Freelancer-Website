@@ -4,7 +4,9 @@ function Numbers() {
     return(
         <section className='sectionNumbers'>
             <div className="container">
+                <div className="section-numbers">
                     <h2>En quelques chiffres</h2>
+                </div>
                 <div className="reassurance-flex">
                     <div className="reass-card">
                         <div className="reass-val">7j</div>

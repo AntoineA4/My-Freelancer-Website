@@ -19,10 +19,10 @@ h1, h2, h3 {
 h2 {
   color: $color-corail;
   font-size: $font-size-xl;
-  margin: 0% 4%;
-  padding-top: 1%;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .1em;
 }
-
 a {
   color: $color-corail;
   text-decoration: none;

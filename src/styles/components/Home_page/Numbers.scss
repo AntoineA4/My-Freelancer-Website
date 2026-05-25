@@ -1,6 +1,8 @@
 .sectionNumbers{
     background-color: $color-bg-white;
-
+    .section-numbers {
+        @include section-title;
+    }
     .reassurance-flex {
             @include flex-center;
             
