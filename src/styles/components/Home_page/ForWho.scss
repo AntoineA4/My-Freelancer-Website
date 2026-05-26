@@ -1,17 +1,21 @@
 section {
     background-color: $color-bg-creme;
 }
-.section-forWho {
+.title-forWho {
     @include section-title;
 
 }
-.pourqui-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.forWho-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
   gap: 10px;
+  margin: 1% 4% 2% 4%;
 }
 .pq-card {
   background: $color-bg-white;
+  flex: 1 1 calc(28% - 10px); // ← 3 cards par ligne, gap déduit
+  min-width: 180px;          
   border: 0.5px solid $color-border;
   border-radius: 10px;
   padding: 1rem 1.1rem;
@@ -32,7 +36,18 @@ section {
   justify-content: center;
   flex-shrink: 0;
 }
-.pq-icon svg { width: 18px; height: 18px; stroke: $color-corail; fill: none; }
-.pq-name { font-size: 12px; font-weight: 500; color: $color-bordeaux; margin-bottom: 3px; }
-.pq-desc { font-size: 11px; color: $color-text-secondary; line-height: 1.45; }
+.pq-icon svg {
+     width: 18px; 
+     height: 18px; 
+     stroke: $color-corail; 
+     fill: none; }
+.pq-name { 
+    font-size: $font-size-md; 
+    font-weight: 500; 
+    color: $color-bordeaux; 
+    margin-bottom: 3px; }
+.pq-desc { 
+    font-size: $font-size-sm; 
+    color: $color-text-secondary; 
+    line-height: 1.45; }
  

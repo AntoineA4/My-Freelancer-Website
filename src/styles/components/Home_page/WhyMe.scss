@@ -1,0 +1,38 @@
+.WhyMe-section {
+    background-color: $color-bg-white;
+
+    .Main-title-WhyMe {
+        @include section-title;
+    }
+
+    .whyMe-flex {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+    .whyMe-card {
+        background: $color-bg-white;
+        border: 0.5px solid $color-border;
+        border-radius: 10px;
+        padding: 1.1rem 1rem;
+        text-align: center;
+        .whyMe-icon { 
+            font-size: 22px; 
+            color: $color-corail; 
+            margin-bottom: 8px; 
+        }
+        .whyMe-title { 
+            font-size: 13px; 
+            font-weight: 500; 
+            color: $color-bordeaux; 
+            margin-bottom: 4px; 
+        }
+        .whyMe-desc { 
+            font-size: 11px; 
+            color: $color-text-secondary; 
+            line-height: 1.5; 
+        }
+
+    }
+    
+}

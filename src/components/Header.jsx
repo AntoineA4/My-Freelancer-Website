@@ -1,8 +1,18 @@
+import { useEffect, useState } from 'react'
 import '../styles/components/Header.scss'
 
 function Header() {
+    const [scrolled, setScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+        setScrolled(window.scrollY > 20)
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
     return (
-        <header>
+        <header className={scrolled ? 'scrolled' : ''}>
             <div className='logo-section'>
                 <p className="prenom">Antoine</p> 
                 <p className="nom">GADRAT</p>
