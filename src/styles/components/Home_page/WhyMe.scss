@@ -6,9 +6,9 @@
     }
 
     .whyMe-flex {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px;
+        @include flex-center;
+        margin: 1% 4% 2% 4%;
+        gap: 60px;
     }
     .whyMe-card {
         background: $color-bg-white;
@@ -16,19 +16,20 @@
         border-radius: 10px;
         padding: 1.1rem 1rem;
         text-align: center;
+        margin-bottom: 2%;
         .whyMe-icon { 
             font-size: 22px; 
             color: $color-corail; 
             margin-bottom: 8px; 
         }
         .whyMe-title { 
-            font-size: 13px; 
+            font-size: $font-size-md; 
             font-weight: 500; 
             color: $color-bordeaux; 
             margin-bottom: 4px; 
         }
         .whyMe-desc { 
-            font-size: 11px; 
+            font-size: $font-size-sm; 
             color: $color-text-secondary; 
             line-height: 1.5; 
         }

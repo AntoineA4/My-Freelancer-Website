@@ -1,0 +1,115 @@
+.Offres-section {
+    background-color: $color-bg-creme;
+    padding-bottom: 2%;
+
+    .offre-title {
+        @include section-title; 
+    }
+
+    .offre-card-container {
+        @include flex-center;
+        align-items: stretch;
+        gap:20px;
+
+        .Offre-card{
+            display: flex;           
+            flex-direction: column;
+            width: 22%;
+            border: 0.5px solid $color-border;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform .25s, box-shadow .25s;
+
+            .card-top-part {
+                padding: .875rem 1.1rem;
+            }
+
+            .card-bot-part {
+                background-color: $color-bg-white;
+                padding: 1rem 1.1rem;                
+                display: flex;           
+                flex-direction: column;
+                flex: 1; 
+                min-height: 320px;
+            }
+        }
+        .Offre-card:hover { 
+            transform: translateY(-4px); 
+            box-shadow: 0 8px 24px rgba(152, 60, 29, .12); }
+    }
+}
+
+h3 {
+    color: $color-bg-white;
+    font-size: $font-size-xl;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.title-sub {
+    color: $color-border;
+    font-size: $font-size-sm;
+     margin-bottom: .875rem;
+}
+.corrail-card {
+    background-color: $color-corail;
+}
+.corrail-fonce-card {
+    background-color: $color-corail-fonce;
+}
+.dark-card {
+    background-color: $color-bordeaux-dark;
+}
+.offre-price {
+    font-family: $font-serif;
+    font-size: $font-size-2xl;
+    color: $color-bordeaux;
+    margin-bottom: 2px;
+
+    span {
+        font-family: $font-sans;
+        font-size: $font-size-sm;
+        color: $color-corail;
+        font-weight: 400;
+
+    }
+}
+
+.offre-price-sub { 
+    font-size: $font-size-sm; 
+    color: $color-text-muted; 
+    margin-bottom: .875rem; }
+
+
+.offre-items {
+    list-style: none; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 6px; 
+}
+.offre-items li {
+  font-size: $font-size-md;
+  color: $color-bordeaux;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  line-height: 1.4;
+}
+
+.offre-items li svg { 
+    width: 14px; 
+    height: 14px; 
+    stroke: $color-corail; 
+    flex-shrink: 0; 
+    margin-top: 1px; 
+}
+
+.offre-badge {
+  font-size: 9px;
+  padding: 2px 8px;
+  background: $color-btn-hv-creme;
+  color: $color-bordeaux;
+  border-radius: 20px;
+  margin-top: auto; 
+  display: inline-block;
+  align-self: flex-start; 
+}
