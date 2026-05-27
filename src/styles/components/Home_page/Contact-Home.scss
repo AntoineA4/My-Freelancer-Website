@@ -1,0 +1,57 @@
+.Contact-Home-Section {
+    background-color: $color-bordeaux;
+}
+.Contact-Home-Title {
+    margin: 0% 4% 2% 4%;
+    padding-top: 2%;
+    font-family: $font-serif;
+    font-size: $font-size-3xl;
+    font-weight: $font-regular;
+    color: $color-bg-white;
+    line-height: 1.18;
+    margin-bottom: .375rem;
+    em { 
+        font-style: italic; 
+        color: $color-border; 
+    }
+
+}
+.Contact-Home-subTitle { 
+    font-size: $font-size-md; 
+    color: $color-border-mid; 
+    margin: 1% 4% 2% 4%; 
+}
+
+.Contact-Home-btn-flex { 
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    margin: 0% 4% 2% 4%;
+}
+
+.Contact-Home-btn {
+    font-family: $font-sans;
+    font-size: $font-size-lg;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 8px;
+    background: transparent;
+    color: $color-border;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    transition: background .2s, color .2s;
+    svg { 
+        width: 20px; 
+        height: 20px; 
+        stroke: currentColor; 
+        fill: none; 
+    }
+}
+.Contact-Home-btn:hover { 
+    background: rgba(255,255,255,.1); 
+    color: $color-bg-white; 
+}
+ 

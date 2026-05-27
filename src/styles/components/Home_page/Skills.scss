@@ -1,0 +1,31 @@
+.skills-section {
+    background-color: $color-bg-creme;
+}
+.skills-title{
+    @include section-title;
+}
+.skills-flex {
+  @include flex-center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 1% 4% 2% 4%;
+}
+.skill-pill {
+  font-size: $font-size-md;
+  padding: 6px 13px;
+  border-radius: 20px;
+ @include flex-center;
+  gap: 6px;
+  transition: transform .2s;
+  cursor: default;
+}
+.skill-pill:hover { transform: translateY(-2px); }
+.skill-pill svg { width: 20px; height: 20px; }
+.pill-corail { background: $color-bg-white; color: $color-bordeaux; border: 0.5px solid $color-border; }
+.pill-corail svg { stroke: $color-corail; fill: none; }
+.pill-purple { background: $purple-bg; color: $purple-text; border: 0.5px solid $purple-border; }
+.pill-purple svg { stroke: $purple-text; fill: none; }
+.pill-green  { background: $green-bg;  color: $green-text;  border: 0.5px solid $green-border; }
+.pill-green  svg { stroke: $green-text; fill: none; }
+.pill-amber  { background: $amber-bg;  color: $amber-text;  border: 0.5px solid $amber-border; }
+.pill-amber  svg { stroke: $amber-text; fill: none; }

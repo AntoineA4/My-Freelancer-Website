@@ -1,0 +1,56 @@
+
+.projects-section {
+    background-color: $color-bg-white;
+    padding-top: 1%;
+
+    .section-header {
+        @include flex-between;
+        margin: 0% 4% 1% 4%;
+
+    }
+}
+.Projects-title {
+    @include section-title;
+}
+.projects-flex {
+    @include flex-between;
+    margin: 1% 4% 2% 4%;
+    gap: 12px;
+}
+.project-card {
+    flex: 1;
+    min-height: 200px;
+    border: 0.5px solid $color-border;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color .25s, transform .25s;
+}
+.project-card:hover { border-color: $color-corail; transform: translateY(-3px); }
+
+.project-thumb {
+    height: 120px;
+    @include flex-center;
+}
+.project-thumb svg { width: 32px; height: 32px; }
+.pt-corail { background: $color-bg-creme-alt; }
+.pt-corail svg { stroke: $color-corail-fonce; fill: none; }
+.pt-purple { background: $purple-bg; }
+.pt-purple svg { stroke: $purple-text; fill: none; }
+.pt-green { background: $green-bg; }
+.pt-green svg { stroke: $green-text; fill: none; }
+.pt-amber { background: $amber-bg; }
+.pt-amber svg { stroke: $amber-text; fill: none; }
+.project-info { padding: 10px 12px; background: $color-bg-white; }
+.project-name { font-size: 13px; font-weight: 500; color: $color-bordeaux; margin-bottom: 6px; }
+.project-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+.tag {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+.tag-corail { background: $color-bg-creme-alt; color: $color-bordeaux; }
+.tag-purple { background: $purple-bg; color: $purple-text; }
+.tag-green  { background: $green-bg;  color: $green-text;  }
+.tag-amber  { background: $amber-bg;  color: $amber-text;  }
