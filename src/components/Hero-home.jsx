@@ -2,7 +2,7 @@ import '../styles/components/Hero.scss'
 
 function Hero() {
     return(
-        <section className="hero">
+        <section className="hero" id='home-hero'>
             <div>
                 <div className="hero-tag">Développeur web freelance</div>
                 <h1 className="hero-title anim-fade">
@@ -14,7 +14,7 @@ function Hero() {
                     Disponible à distance, partout dans le monde.
                 </p>
                 <div className="hero-btns anim-fade">
-                    <a href="#" class="btn-primary">Voir mes offres</a>
+                    <a href="#offres" class="btn-primary">Voir mes offres</a>
                     <a href="#" class="btn-secondary">Discutons ↗</a>
                 </div>
             </div>

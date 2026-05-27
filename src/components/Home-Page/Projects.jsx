@@ -2,7 +2,7 @@ import '../../styles/components/Home_page/Projects.scss'
 
 function Projects () {
     return (
-        <section className="projects-section">
+        <section className="projects-section" id='projets'>
             <div className="projects-container">
                 <div className="section-header">
                     <h2 className="Projects-title">Projets récents</h2>

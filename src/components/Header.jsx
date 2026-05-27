@@ -13,20 +13,20 @@ function Header() {
     }, [])
     return (
         <header className={scrolled ? 'scrolled' : ''}>
-            <div className='logo-section'>
+            <a href='#home-hero' className='logo-section'>
                 <p className="prenom">Antoine</p> 
                 <p className="nom">GADRAT</p>
-            </div>
+            </a>
             <nav className="header-nav-bar">
                 <ul>
                     <li className="nav-header-text">
-                        <a href="*">Offres</a>
+                        <a href="#offres">Offres</a>
                     </li>
                     <li className="nav-header-text">
-                        <a href="*">Projets</a>
+                        <a href="#projets">Projets</a>
                     </li>
                     <li className="nav-header-text">
-                        <a href="*">Compétences</a>
+                        <a href="#compétences">Compétences</a>
                     </li>
                     <li className="nav-header-text"> 
                         <a href="*">Contact</a>
