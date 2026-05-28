@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import '../styles/components/Header.scss'
 
 function Header() {
+    const location = useLocation()
+    const isHome = location.pathname === '/'
     const [scrolled, setScrolled] = useState(false)
 
     useEffect(() => {
@@ -13,11 +16,12 @@ function Header() {
     }, [])
     return (
         <header className={scrolled ? 'scrolled' : ''}>
-            <a href='#home-hero' className='logo-section'>
+            <Link to="/" className='logo-section'>
                 <p className="prenom">Antoine</p> 
                 <p className="nom">GADRAT</p>
-            </a>
-            <nav className="header-nav-bar">
+            </Link>
+            {isHome ? (
+                <nav className="header-nav-bar">
                 <ul>
                     <li className="nav-header-text">
                         <a href="#offres">Offres</a>
@@ -33,7 +37,12 @@ function Header() {
                     </li>
                 </ul>
             </nav>
-            <button>Me contacter</button>
+            ) : (
+                <Link to="/" className="nav-back">
+                    ← Retour à l'accueil
+                </Link>
+            )}
+            <Link to="/Contact" className='contactBtn'>Me contacter</Link>
         </header>
     )
 

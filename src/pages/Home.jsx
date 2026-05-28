@@ -11,7 +11,18 @@ import ContactHomePage from "../components/Home-Page/Contact-Home-Page";
 function Home() {
   return (
     <>
-      <Hero />
+      <Hero 
+      tag="Développeur web freelance"
+      title="Je crée des sites Web"
+      highlight="qui convertissent"
+      subtitle={<>
+        Sites vitrine, landing pages et intégrations sur-mesure.
+        <br />
+        Disponible à distance, partout dans le monde.
+        </>}
+        showBtn={true}
+        primaryBtn="Voir mes offres"
+        secondaryBtn="Discutons ↗"/>
       <DispoBand />
       <Reassurance />
       <ForWho />

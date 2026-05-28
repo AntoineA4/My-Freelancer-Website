@@ -37,7 +37,7 @@ header{
         }
         };
     }
-    button{
+    .contactBtn{
         font-family: $font-sans;;
         font-size: $font-size-lg;
         padding: 7px 16px;
@@ -48,11 +48,12 @@ header{
         cursor: pointer;
         text-decoration: none;
         transition: background .2s, color .2s;
+        &:hover {
+            background-color: $color-corail;
+            color: $color-bg-creme;
+        };
     };
-    button:hover {
-        background-color: $color-corail;
-        color: $color-bg-creme;
-    };
+    
 }
 p {
     font-size: $font-size-2xl;
