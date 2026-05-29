@@ -1,0 +1,27 @@
+.infos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.dispo-band {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: .625rem .875rem;
+  margin-bottom: 1rem;
+  background: $color-bg-creme-alt;
+  border: 0.5px solid $color-border;
+  border-radius: 8px;
+  width: 60%;
+}
+.dispo-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: $color-corail;
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+}
+.dispo-text { font-size: 12px; color: $color-text-secondary; }

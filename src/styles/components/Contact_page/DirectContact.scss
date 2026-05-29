@@ -1,0 +1,36 @@
+.infos-inner {
+    @include infos-block;
+}
+
+/* ── Liens de contact ── */
+.contact-link {
+    @include flex-center;
+    gap: 15px;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 0.5px solid $color-border;
+    border-radius: 8px;
+    background: $color-bg-creme;
+    transition: border-color .2s, background .2s;
+}
+.contact-link:hover { border-color: $color-corail; background: $color-bg-creme-alt; }
+.contact-link-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    background: $color-bg-creme-alt;
+    @include flex-center;
+    flex-shrink: 0;
+}
+.contact-link-icon svg { width: 16px; height: 16px; stroke: $color-corail; fill: none; }
+.contact-link-label { font-size: 10px; color: $color-text-muted; margin-bottom: 1px; }
+.contact-link-val { font-size: 12px; font-weight: 500; color: $color-bordeaux; }
+.contact-link-arrow { margin-left: auto; }
+.contact-link-arrow svg { width: 14px; height: 14px; stroke: $color-border-mid; fill: none; }
+
+
+
+
+
+
