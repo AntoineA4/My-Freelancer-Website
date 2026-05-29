@@ -1,0 +1,24 @@
+.localisationBar{
+  background: $color-bg-creme-alt;
+  border-top: 0.5px solid $color-border ;
+  border-bottom: 0.5px solid $color-border;
+  padding: .45rem 0;
+}
+.localisationBar-inner {
+  margin: 0% 4%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+}
+.localisationBar Link {
+  color: $color-corail;
+  text-decoration: none;
+}
+
+.localBar-text {
+    color: $color-bordeaux;
+}
+.localisationBar a:hover { text-decoration: underline; }
+.bc-sep { color: $color-border; }
