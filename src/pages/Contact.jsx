@@ -16,7 +16,12 @@ function Contact() {
                 avec un devis gratuit et sans engagement.
                 </>}>
         </Hero>
-        <ContactForm />
+        <>
+                <main>
+                    <ContactForm />
+                </main>
+        </>
+        
         
 
       </>  

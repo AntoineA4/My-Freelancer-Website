@@ -1,0 +1,121 @@
+.form-section {}
+
+.form-title {
+  @include section-title;
+}
+ 
+.form-group { margin-bottom: 1rem; }
+.form-label {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: $font-medium;
+}
+.required { color: $color-corail; }
+ 
+.form-input {
+  width: 100%;
+  padding: 9px 13px;
+  border: 0.5px solid $color-border;
+  border-radius: 8px;
+  font-family: $font-sans;
+  font-size: $font-size-md;
+  color: $color-text-main;
+  background: $color-bg-creme;
+  outline: none;
+  transition: border-color .2s, background .2s, box-shadow .2s;
+  appearance: none;
+}
+.form-input:focus {
+  border-color: $color-corail;
+  background: $color-bg-white;
+  box-shadow: 0 0 0 3px rgba(216, 90, 48, .08);
+}
+.form-input::placeholder { color: $color-text-muted; }
+ 
+textarea.form-input {
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.6;
+}
+ 
+select.form-input {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23B4B2A9' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+ 
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+ 
+/* ── Budget options ── */
+.budget-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 5px;
+}
+.budget-option {
+  padding: 8px 10px;
+  border: 0.5px solid $color-border;
+  border-radius: 7px;
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s;
+  background: $color-bg-creme;
+  user-select: none;
+}
+.budget-option:hover { background: $color-bg-creme-alt; border-color: $color-corail; }
+.budget-option.selected {
+  background: $color-bg-creme-alt;
+  border-color: $color-border;
+  color: $color-bordeaux;
+  font-weight: $font-medium;
+}
+ 
+/* ── Bouton submit ── */
+.submit-btn {
+  width: 100%;
+  padding: 11px;
+  background: $color-corail;
+  color: $color-bg-white;
+  border: none;
+  border-radius: 8px;
+  font-family: $font-sans;
+  font-size: $font-size-sm;
+  font-weight: $font-medium;
+  cursor: pointer;
+  transition: background .2s, transform .15s;
+  margin-top: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.submit-btn:hover { background: $color-corail-fonce; transform: translateY(-1px); }
+.submit-btn:active { transform: translateY(0); }
+.submit-btn svg { width: 16px; height: 16px; stroke: $color-bg-white; fill: none; }
+ 
+.form-note {
+  font-size: $font-size-sm;
+  color: $color-text-muted;
+  text-align: center;
+  margin-top: .625rem;
+  @include flex-center;
+  gap: 6px;
+}
+.form-note::before, .form-note::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 0.5px;
+  background: $color-border;
+}

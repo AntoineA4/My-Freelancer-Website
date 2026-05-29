@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import '../../styles/components/Contact_page/contactForm.scss'
 
 // ──── Utilitaire ──── \\
 const budgetOptions = [
