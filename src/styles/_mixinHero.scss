@@ -1,15 +1,12 @@
 @mixin hero-section(
-  $bg,
-  $border-color:  $color-corail-fonce,
+  
   $title-color:   $color-bg-white,
   $sub-color:     $color-border,
   $em-color:      $color-bg-creme,
   $tag-color:     $color-border,
   $circle-color:  rgba(255, 255, 255, 0.4)
 ) {
-  background: $bg;
   padding: 6% 4% 2% 4%;
-  border-bottom: 0.5px solid $border-color;
   position: relative;
   overflow: hidden;
 

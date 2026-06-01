@@ -11,6 +11,7 @@ function Contact() {
                 tag="Parlons de votre projet"
                 title="Un projet en tête ?"
                 highlight="Contactez moi"
+                showBreak={true}
                 subtitle={<>
                     Remplissez le formulaire ci-dessous — je vous réponds sous 24h
                     <br />

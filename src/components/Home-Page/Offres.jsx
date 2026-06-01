@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../../styles/components/Home_page/Offres-section.scss'
 
 function Offres() {
@@ -7,7 +8,7 @@ function Offres() {
                 <h2>Mes Offres</h2>
             </div>
             <div className="offre-card-container">
-                <a href='*' className="Offre-card">
+                <Link to='/op-offre' className="Offre-card">
                     <div className="card-top-part corrail-card">
                         <h3>Site une page</h3>
                         <p className="title-sub">L'essentiel, bien fait</p>
@@ -25,7 +26,7 @@ function Offres() {
                         </ul>
                         <div className="offre-badge">Idéal pour débuter</div>
                     </div>
-                </a>
+                </Link>
                 <a href='*' className="Offre-card">
                     <div className="card-top-part corrail-fonce-card">
                         <h3>Site vitrine</h3>

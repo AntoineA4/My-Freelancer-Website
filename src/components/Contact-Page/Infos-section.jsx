@@ -7,7 +7,7 @@ function InfosSection () {
 
     return (
         <section className="infos-section" aria-label="Informations de contact">
-            <div class="dispo-band">
+            <div class="dispo-band-infos">
                 <span class="dispo-dot"></span>
                 <span class="dispo-text">Disponible pour de nouvelles missions</span>
             </div>

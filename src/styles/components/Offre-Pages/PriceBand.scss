@@ -1,0 +1,36 @@
+.price-band{
+    padding:1.25rem 2.5rem;
+    @include flex-between;
+    flex-wrap:wrap;
+    gap:8px;}
+.price-main{
+    display:flex;
+    align-items:baseline;
+    gap:8px;}
+.price-amount{
+    font-family:'Playfair Display',serif;
+    font-size:36px;
+    color:$color-bg-white;}
+.price-range{
+    font-size:14px;
+    color:$color-border;}
+.price-note{
+    font-size:11px;
+    color:$color-border-mid;}
+.price-badges{
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;}
+.pbadge{
+    font-size:10px;
+    padding:3px 10px;
+    border-radius:20px;
+    background:rgba(255,255,255,.1);
+    color:$color-border;}
+
+.pb-bordeaux {
+    background-color: $color-bordeaux;
+}
+.pb-bordeaux-dark {
+    background-color: $color-bordeaux-dark;
+}

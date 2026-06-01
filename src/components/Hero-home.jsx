@@ -5,18 +5,21 @@ function Hero({
     title,
     highlight,
     subtitle,
+    showBreak = false,
     showBtn = false, 
     primaryBtn,
     secondaryBtn,
+    heroClass = 'hero-corail',
 
 
 }) {
     return(
-        <section className="hero" id='home-hero'>
+        <section className={`hero ${heroClass}`} id='home-hero'>
             <div>
                 <div className="hero-tag">{tag}</div>
                 <h1 className="hero-title anim-fade">
-                    {title} <br />
+                    {title} 
+                    {showBreak && <br />}
                     <em>{highlight}</em>
                 </h1>
                 <p className="hero-sub anim-fade">

@@ -15,6 +15,7 @@ function Home() {
       tag="Développeur web freelance"
       title="Je crée des sites Web"
       highlight="qui convertissent"
+      showBreak = {true}
       subtitle={<>
         Sites vitrine, landing pages et intégrations sur-mesure.
         <br />
