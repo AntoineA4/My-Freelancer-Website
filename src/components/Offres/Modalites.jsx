@@ -1,16 +1,15 @@
-function NonInclude ({items = []}) {
+function Modalites ({items = []}) {
 
-    return (
-        <div className="offre-infos-box nonInclude-box">
+    return(
+        <div className="offre-infos-box modalites-box">
             <div className="infos-offre-head">
-                <span className="ih-icon">✗</span>
-                <div className="infos-title">Non inclus</div>
+                <span className="ih-icon">ℹ</span>
+                <div className="infos-title">Modalités</div>
             </div>
             <div className="infos-body">
                 <ul className="offre-items">
                 {items.map((item, index) =>(
                     <li key = {index}>
-                        <span className="ico">✗</span>
                         <div>
                             <strong>{item.main}</strong>
                             {item.text && <span> — {item.text}</span>}
@@ -24,4 +23,4 @@ function NonInclude ({items = []}) {
 
 };
 
-export default NonInclude;
+export default Modalites; 

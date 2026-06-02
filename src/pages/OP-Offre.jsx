@@ -2,6 +2,10 @@ import Hero from "../components/Hero-home";
 import PriceBand from "../components/Offres/Price-range";
 import WhatsIncluded from "../components/Offres/Whats-included";
 import NonInclude from "../components/Offres/Non-include";
+import Modalites from "../components/Offres/Modalites";
+import InfoTips from "../components/Offres/Info-tips";
+import Extras from "../components/Offres/Extra";
+import '../styles/pages/OP-Offre.scss'
 
 function OPOffre () {
 
@@ -43,7 +47,24 @@ function OPOffre () {
                     {main: 'Boutique en ligne'},
 
                 ]}/>
+                <Modalites items = {[
+                    {main: 'Acompte', text: "50% à la commande"},
+                    {main: 'Solde', text: "50% à la livraison"},
+                    {main: 'Délai', text: "7 jours ouvrés"},
+                    {main: 'Corrections', text: "2 allers-retours"},
+                    {main: 'Livrable', text: "Fichiers sources"},
+                    {main: 'Paiement', text: "Virement bancaire"},
+                ]}/>
             </section>
+            <InfoTips />
+            <Extras items ={[
+                {main: 'Page supplémentaire', text: "à partir de 150€"},
+                {main: 'Animations avancées', text: "à partir de 100€"},
+                {main: 'Site Multi-langue', text: "à partir de 50€"},
+                {main: 'Intégration Google Maps', text: "à partir de 50€"},
+                {main: 'Hébergement + domaine', text: "20€/mois"},
+                {main: 'Maintenance mensuelle', text: "45€/mois"},
+            ]}/>
         </>
     );
 };

@@ -1,0 +1,25 @@
+.tips{
+    background:$color-btn-hv-creme;
+    border:0.5px solid $amber-border;
+    border-radius:10px;
+    padding:1rem 1.25rem;
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin: 0% 4%;
+}
+.tips-icon{
+    font-size:$font-size-md;
+    color:#BA7517;
+    flex-shrink:0;
+    margin-top:1px;
+}
+.tips-text{
+    font-size:$font-size-sm;
+    color:$amber-text;
+    line-height:1.65;
+}
+.tips-text strong{
+    font-weight:$font-medium;
+    color:$color-bordeaux-dark;
+}
