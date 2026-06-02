@@ -1,5 +1,7 @@
 import Hero from "../components/Hero-home";
-import PriceBand from "../components/Site-une-page/Price-range";
+import PriceBand from "../components/Offres/Price-range";
+import WhatsIncluded from "../components/Offres/Whats-included";
+import NonInclude from "../components/Offres/Non-include";
 
 function OPOffre () {
 
@@ -22,6 +24,26 @@ function OPOffre () {
                 TVABadge = 'TVA non applicable — art. 293B CGI'
                 SecondBadge = 'Livraison en 7 jours'
             />
+            <WhatsIncluded items={[
+                { main: 'Design sur-mesure', text: "pas de template générique, le site est pensé pour vous et votre activité" },
+                { main: 'Responsive mobile', text: "le site s'adapte parfaitement à tous les écrans (mobile, tablette, desktop)" },
+                { main: 'Formulaire de contact', text: "formulaire fonctionnel avec réception des messages par email" },
+                { main: 'SEO de base', text: "balises title, meta description, structure HTML propre pour Google" },
+                { main: 'Animations subtiles', text: "apparition des sections au scroll, effets de survol sur les boutons" }, 
+                { main: 'Livraison des fichiers sources' , text: "vous reçevez tous les fichiers HTML/CSS/JS, vous êtes propriétaire à 100%"},
+                { main: '2 allers-retours de corrections', text: "inclus après la première livraison" },
+            ]} />
+            <section className="nonInclude-and-moda">
+                <NonInclude items = {[
+                    {main: 'Pages supplémentaires'},
+                    {main: 'Hébergement & domaine'},
+                    {main: 'Rédaction des textes'},
+                    {main: 'Création de photos ou logo'},
+                    {main: 'Maintenance mensuelle'},
+                    {main: 'Boutique en ligne'},
+
+                ]}/>
+            </section>
         </>
     );
 };

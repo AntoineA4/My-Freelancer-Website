@@ -1,28 +1,40 @@
 .price-band{
-    padding:1.25rem 2.5rem;
+    padding:1.25rem 0rem;
     @include flex-between;
     flex-wrap:wrap;
-    gap:8px;}
+}
+.price-right-part{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+}
 .price-main{
     display:flex;
     align-items:baseline;
-    gap:8px;}
+    gap:10px;
+    margin-bottom: 1rem;
+}
 .price-amount{
     font-family:'Playfair Display',serif;
-    font-size:36px;
-    color:$color-bg-white;}
+    font-size:$font-size-3xl;
+    color:$color-bg-white;
+}
 .price-range{
-    font-size:14px;
-    color:$color-border;}
+    font-size:$font-size-lg;
+    color:$color-border;
+}
 .price-note{
-    font-size:11px;
-    color:$color-border-mid;}
+    font-size:$font-size-sm;
+    color:$color-border-mid;
+}
 .price-badges{
     display:flex;
-    gap:6px;
-    flex-wrap:wrap;}
+    gap:15px;
+    flex-wrap:wrap;
+    margin-right: 4%;
+}
 .pbadge{
-    font-size:10px;
+    font-size:$font-size-xs;
     padding:3px 10px;
     border-radius:20px;
     background:rgba(255,255,255,.1);

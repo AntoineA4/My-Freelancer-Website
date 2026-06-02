@@ -11,17 +11,17 @@ function PriceBand ({
 }){
     return (
         <section className={`price-band ${PbClass}`}>
-            <div>
+            <div className='price-right-part'>
                 <div className="price-main"> 
-                   <div className="price-amount">{MainPrice}</div>
+                    <div className="price-amount">{MainPrice}</div>
                     <div className="price-range">{SecondPrice}</div>
                 </div>
                 <div className="price-note">{Note}</div>
-                <div className="price-badges">
+            </div>
+             <div className="price-badges">
                     <div className="pbadge">{TVABadge}</div>
                     <div className="pbadge">{SecondBadge}</div>
                 </div>
-            </div>
         </section>
     );
 };
