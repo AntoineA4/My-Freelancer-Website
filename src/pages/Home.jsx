@@ -1,4 +1,4 @@
-import Hero from "../components/Hero-home";
+import Hero from "../components/Hero";
 import DispoBand from "../components/Dispo-band";
 import Reassurance from "../components/Home-Page/Reassurance";
 import ForWho from "../components/Home-Page/ForWhoSection";

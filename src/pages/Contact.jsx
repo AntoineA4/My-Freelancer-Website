@@ -1,4 +1,4 @@
-import Hero from "../components/Hero-home"
+import Hero from "../components/Hero"
 import LocalisationBar from "../components/Contact-Page/LocalisationBar";
 import ContactForm from "../components/Contact-Page/Form";
 import InfosSection from "../components/Contact-Page/Infos-section";

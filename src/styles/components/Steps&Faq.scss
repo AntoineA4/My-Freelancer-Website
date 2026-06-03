@@ -1,0 +1,90 @@
+// ── Structure commune ──
+.infos-inner {
+  @include infos-block-base;
+}
+
+.infos-head {
+  @include infos-block-head;
+}
+
+.ih-icon {
+  color: $color-corail;
+}
+
+// ── Variantes de taille ──
+.contact-page-box {
+  width: 60%;
+}
+
+.offre-page-box {
+  width: 100%;
+  margin: 1% 4%;
+}
+
+// ── Steps ──
+.steps {
+  display: flex;
+  gap: 15px;
+  padding: 8px 0;
+  border-bottom: 0.5px solid $color-bg-creme-alt;
+
+  &:last-child { border-bottom: none; }
+}
+
+.step-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: $color-corail;
+  color: $color-bg-white;
+  font-size: $font-size-md;
+  font-weight: $font-medium;
+  @include flex-center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.step-title {
+  font-size: $font-size-md;
+  font-weight: $font-medium;
+  color: $color-bordeaux;
+  margin-bottom: 2px;
+}
+
+.step-desc {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  line-height: 1.5;
+}
+
+.step-calendar {
+  font-size: $font-size-xs;
+  color: $color-corail;
+  margin-top: 3px;
+}
+
+// ── FAQ ──
+.faq {
+  padding: 8px 0;
+  border-bottom: 0.5px solid $color-bg-creme-alt;
+
+  &:last-child { border-bottom: none; }
+}
+
+.faq-question {
+  font-size: $font-size-md;
+  font-weight: $font-medium;
+  color: $color-bordeaux;
+  margin-bottom: 3px;
+}
+
+.faq-answer {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  line-height: 1.55;
+}

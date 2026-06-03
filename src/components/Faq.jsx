@@ -1,13 +1,13 @@
-import '../../styles/components/Contact_page/ContactFaq.scss'
+import '../styles/components/Steps&Faq.scss'
 
-function Faq({ steps = [], title, titleTag = 'div', icon }) {
+function Faq({ steps = [], title, titleTag = 'div', icon, classBox = 'offre-page-box' }) {
     const TitleTag = titleTag;
 
     return (
-        <div className="infos-inner">
+        <div className={`infos-inner ${classBox}`}>
             <div className="infos-head">
                 {icon && <span className="ih-icon">{icon}</span>}
-                <TitleTag>{title}</TitleTag>
+                <TitleTag className="infos-title">{title}</TitleTag>
             </div>
             <div className="infos-body">
                 {steps.map((step, index) => (
