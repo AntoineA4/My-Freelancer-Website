@@ -4,7 +4,7 @@ function Extras ({items = []}) {
 
     return (
         <section className="offre-infos-box">
-            <div className="infos-offre-head">
+            <div className="infos-block-head">
                 <span className="ih-icon">+</span>
                 <div className="infos-title">Options à la carte</div>
             </div>

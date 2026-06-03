@@ -5,7 +5,7 @@ import NonInclude from "../components/Offres/Non-include";
 import Modalites from "../components/Offres/Modalites";
 import InfoTips from "../components/Offres/Info-tips";
 import Extras from "../components/Offres/Extra";
-import '../styles/pages/OP-Offre.scss'
+import '../styles/components/Offre-Pages/NonInc-Moda.scss'
 
 function OPOffre () {
 

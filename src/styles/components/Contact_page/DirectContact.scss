@@ -1,5 +1,9 @@
 .infos-inner {
-    @include infos-block;
+    @include infos-block-base;
+    width: 60%;
+}
+.infos-head {
+    @include infos-block-head; 
 }
 
 /* ── Liens de contact ── */

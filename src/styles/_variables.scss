@@ -57,102 +57,88 @@ $font-medium:  500;
 
 // ── Layout ──
 @mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @mixin flex-between {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @mixin section-title {
-  h2 {
-    margin: 0% 4% 1% 4%; 
-    padding-top: 1%; 
-  }
+    h2 {
+        margin: 0% 4% 1% 4%; 
+        padding-top: 1%; 
+    }
 }
 
 
 // ── Responsive ──
 @mixin mobile {
-  @media (max-width: 680px) { @content; }
+    @media (max-width: 680px) { @content; }
 }
 
 @mixin tablet {
-  @media (max-width: 1024px) { @content; }
+    @media (max-width: 1024px) { @content; }
 }
 
 // ── Composants réutilisables ──
 @mixin card {
-  background: $bg-white;
-  border: 0.5px solid $color-border;
-  border-radius: 10px;
-  overflow: hidden;
+    background: $bg-white;
+    border: 0.5px solid $color-border;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 @mixin pill($bg, $color, $border) {
-  background: $bg;
-  color: $color;
-  border: 0.5px solid $border;
-  border-radius: 20px;
-  padding: 4px 12px;
-  font-size: 11px;
+    background: $bg;
+    color: $color;
+    border: 0.5px solid $border;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
 }
 
-@mixin infos-block {
+@mixin infos-block-base {
     background: $color-bg-white;
     border: 0.5px solid $color-border;
     border-radius: 10px;
     overflow: hidden;
-    width: 60%;
-    margin-bottom: 1rem;;
-    .infos-head {
-        background: $color-bg-creme-alt;
-        padding: .55rem 1rem;
-        border-bottom: 0.5px solid $color-border;
-        h3 {
-            font-size: $font-size-sm;
-            font-weight: $font-medium;
-            text-transform: uppercase;
-            letter-spacing: .08em;
-            color: $color-text-secondary;
-            }
-        }
-    .infos-body { 
-        padding: .875rem 1rem; 
+    margin-bottom: 1rem;
+
+    .infos-body {
+        padding: .875rem 1rem;
     }
 }
 
-@mixin infos-offre {
-    background: $color-bg-white;
-    border: 0.5px solid $color-border;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 1rem;;
-    .infos-offre-head {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        background: $color-bg-creme-alt;
-        padding: .55rem 1rem;
-        border-bottom: 0.5px solid $color-border;
-        .infos-title {
-            font-size: $font-size-md;
-            font-weight: $font-medium;
-            text-transform: uppercase;
-            letter-spacing: .08em;
-            color: $color-text-secondary;
-            }
-        }
-    .infos-body { 
-        padding: .875rem 1rem; 
+@mixin infos-block-head {
+    background: $color-bg-creme-alt;
+    padding: .55rem 1rem;
+    border-bottom: 0.5px solid $color-border;
+    display: flex;         
+    align-items: center; 
+    gap:10px;
+    .ih-icon {
+        font-size: $font-size-lg;
+        font-weight: $font-medium;
+        flex-shrink: 0;
+    }
+
+    h3, .infos-title {
+        font-size: $font-size-sm;
+        font-weight: $font-medium;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: $color-text-secondary;
     }
 }
+
+
 
 // ── Animation ──
 @mixin fade-up($delay: 0s) {
-  animation: fadeUp .5s $delay ease both;
+    animation: fadeUp .5s $delay ease both;
 }

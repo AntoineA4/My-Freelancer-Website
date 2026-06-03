@@ -2,7 +2,7 @@ function NonInclude ({items = []}) {
 
     return (
         <div className="offre-infos-box nonInclude-box">
-            <div className="infos-offre-head">
+            <div className="infos-block-head">
                 <span className="ih-icon">✗</span>
                 <div className="infos-title">Non inclus</div>
             </div>

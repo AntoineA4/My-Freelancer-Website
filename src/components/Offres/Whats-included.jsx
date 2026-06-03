@@ -3,7 +3,7 @@ import '../../styles/components/Offre-Pages/WhatsIncluded.scss'
 function WhatsIncluded ({items = []}) {
     return(
         <section className="offre-infos-box">
-            <div className="infos-offre-head">
+            <div className="infos-block-head">
                 <span className="ih-icon">✓</span>
                 <div className="infos-title">Ce qui est inclus</div>
             </div>
@@ -11,7 +11,7 @@ function WhatsIncluded ({items = []}) {
                 <ul className="offre-items">
                 {items.map((item, index) =>(
                     <li key = {index}>
-                        <span class="ico">✓</span>
+                        <span className="ico">✓</span>
                         <div>
                             <strong>{item.main}</strong>
                             {item.text && <span> — {item.text}</span>}

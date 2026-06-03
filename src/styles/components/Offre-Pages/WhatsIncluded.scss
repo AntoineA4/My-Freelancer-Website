@@ -1,4 +1,37 @@
 .offre-infos-box {
-    @include infos-offre;
-    margin: 1% 4%;
+  @include infos-block-base;
+  margin: 1% 4%;
+
+  .infos-block-head {
+    @include infos-block-head;
+    .ih-icon { 
+        color: $color-corail; 
+    }
+  }
+}
+
+.offre-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  li {
+    font-size: $font-size-md;
+    color: $color-bordeaux;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+
+    .ico {
+      color: $color-corail;
+      font-weight: $font-medium;
+      flex-shrink: 0;
+    }
+
+    strong { font-weight: $font-medium; }
+
+    span { color: $color-text-secondary; }
+  }
 }

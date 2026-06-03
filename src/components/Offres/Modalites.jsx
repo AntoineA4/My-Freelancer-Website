@@ -2,7 +2,7 @@ function Modalites ({items = []}) {
 
     return(
         <div className="offre-infos-box modalites-box">
-            <div className="infos-offre-head">
+            <div className="infos-block-head">
                 <span className="ih-icon">ℹ</span>
                 <div className="infos-title">Modalités</div>
             </div>

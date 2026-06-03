@@ -1,5 +1,9 @@
-.inner-infos {
-    @include infos-block;
+.infos-inner {
+    @include infos-block-base;
+    width: 60%;
+}
+.infos-head {
+    @include infos-block-head; 
 }
 
 .faq {

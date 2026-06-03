@@ -1,0 +1,71 @@
+
+
+.nonInclude-and-moda {
+  display: flex;
+  gap: 10px;
+  margin: 0 4% 1%;
+  border-bottom: none;
+
+  .nonInclude-box,
+  .modalites-box {
+    flex: 1;
+    @include infos-block-base;
+    margin-bottom: 0; 
+
+    .infos-block-head {
+      @include infos-block-head;
+      
+    }
+  }
+}
+
+// Items sans icône (modalités) — style tableau
+.modalites-box {
+    .infos-block-head {
+        .ih-icon { color: $color-bordeaux; }
+    }
+    .offre-items li {
+        font-size: $font-size-md;
+        color: $color-bordeaux;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 5px 0;
+        border-bottom: 0.5px solid $color-bg-creme-alt;
+        gap: 8px;
+
+        &:last-child { border-bottom: none; }
+
+        strong {
+        font-weight: $font-medium;
+        color: $color-text-secondary;
+        }
+
+        span {
+        font-weight: $font-medium;
+        color: $color-bordeaux;
+        text-align: right;
+        }
+    }
+}
+
+// Items avec icône ✗ (non inclus)
+.nonInclude-box {
+    .infos-block-head {
+        .ih-icon { color: $color-border-mid; }
+    }
+    .offre-items li {
+        font-size: $font-size-md;
+        color: $color-text-muted;
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        line-height: 1.5;
+        padding: 4px 0;
+
+        .ico {
+        color: $color-border-mid;
+        flex-shrink: 0;
+        }
+    }
+}
