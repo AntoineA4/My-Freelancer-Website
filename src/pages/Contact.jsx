@@ -1,12 +1,15 @@
 import Hero from "../components/Hero"
-import LocalisationBar from "../components/Contact-Page/LocalisationBar";
+import LocalisationBar from "../components/LocalisationBar";
 import ContactForm from "../components/Contact-Page/Form";
 import InfosSection from "../components/Contact-Page/Infos-section";
 import '../styles/pages/Contact.scss'
 function Contact() {
     return (
         <>
-            <LocalisationBar />
+            <LocalisationBar
+                page="Contact"
+            />
+
             <Hero
                 tag="Parlons de votre projet"
                 title="Un projet en tête ?"

@@ -8,7 +8,7 @@ function Offres() {
                 <h2>Mes Offres</h2>
             </div>
             <div className="offre-card-container">
-                <Link to='/op-offre' className="Offre-card">
+                <Link to='/offres/site-une-page' className="Offre-card">
                     <div className="card-top-part corrail-card">
                         <h3>Site une page</h3>
                         <p className="title-sub">L'essentiel, bien fait</p>
@@ -27,7 +27,7 @@ function Offres() {
                         <div className="offre-badge">Idéal pour débuter</div>
                     </div>
                 </Link>
-                <a href='*' className="Offre-card">
+                <Link to='/offres/site-vitrine' className="Offre-card">
                     <div className="card-top-part corrail-fonce-card">
                         <h3>Site vitrine</h3>
                         <p className="title-sub">3 à 5 pages professionnelles</p>
@@ -44,8 +44,8 @@ function Offres() {
                             <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>3 allers-retours inclus</li>
                         </ul>
                     </div>
-                </a>
-                <a href='*' className="Offre-card">
+                </Link>
+                <Link to='/offres/hebergement' className="Offre-card">
                     <div className="card-top-part dark-card">
                         <h3>Pack Hébergement + maintenance</h3>
                         <p className="title-sub">L'essentiel en toute sérénité</p>
@@ -63,7 +63,7 @@ function Offres() {
                         </ul>
                         <div className="offre-badge">Sans engagement</div>
                     </div>
-                </a>
+                </Link>
 
             </div>
         </section>

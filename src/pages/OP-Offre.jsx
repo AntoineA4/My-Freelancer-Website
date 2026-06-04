@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import LocalisationBar from "../components/LocalisationBar";
 import PriceBand from "../components/Offres/Price-range";
 import WhatsIncluded from "../components/Offres/Whats-included";
 import NonInclude from "../components/Offres/Non-include";
@@ -7,12 +8,17 @@ import InfoTips from "../components/Offres/Info-tips";
 import Extras from "../components/Offres/Extra";
 import Steps from "../components/Steps";
 import Faq from "../components/Faq";
+import CtaNavOffres from "../components/Offres/Cta-nav-Offre";
 import '../styles/components/Offre-Pages/NonInc-Moda.scss'
 
 function OPOffre () {
 
     return (
         <>
+            <LocalisationBar
+                section={{ label: 'Offres', href: '/#offres' }}
+                page="Site une page"
+            />
             <Hero
             tag="Offre — Développement web"
             title="Site"
@@ -105,6 +111,9 @@ function OPOffre () {
                     { title: "Je n'ai pas de textes ni de logo, c'est un problème ?", desc: "Non, mais ça rallonge les délais. Je peux vous guider pour structurer vos textes. Pour le logo, je peux en créer un simple (typographique) pour 80€ supplémentaires." },
                     { title: "Puis-je modifier le site moi-même après livraison ?", desc: "Le site est en HTML/CSS pur. Sans connaissances techniques c'est difficile. Je recommande mon forfait maintenance pour les mises à jour (1h incluse par mois)." },
                 ]}
+            />
+            <CtaNavOffres 
+                ctaSlug="site-une-page"
             />
         </>
     );

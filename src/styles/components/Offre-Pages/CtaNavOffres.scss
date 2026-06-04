@@ -1,0 +1,136 @@
+.cta-nav-combo {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 0.5px solid $color-border;
+    margin: 1% 0% 2%;
+}
+
+// ── Bande CTA ──
+.cta-band {
+    background: $color-bordeaux;
+    padding: 1.5rem 2rem;
+    @include flex-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-title {
+    font-family: $font-serif;
+    font-size: $font-size-xl;
+    color: $color-bg-white;
+    font-weight: $font-regular;
+    margin-bottom: .25rem;
+
+    em {
+        font-style: italic;
+        color: #FAEEDA;
+    }
+}
+
+.cta-sub {
+    font-size: $font-size-sm;
+    color: $color-border;
+}
+
+.cta-btn {
+    font-family: $font-sans;
+    font-size: $font-size-base;
+    padding: 10px 22px;
+    background: $color-bg-creme;
+    color: $color-bordeaux;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: $font-medium;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background .2s, color .2s;
+    display: inline-block;
+
+    &:hover {
+        background: $color-border;
+        color: $color-bordeaux-dark;
+    }
+}
+
+// ── Navigation entre offres ──
+.nav-offres {
+    background: $color-bg-white;
+    border-top: 0.5px solid $color-border;
+}
+
+.nav-offres-header {
+    padding: .5rem 1.5rem;
+    background: $color-bg-creme-alt;
+    border-bottom: 0.5px solid $color-border;
+}
+
+.nav-offres-label {
+    font-size: $font-size-sm;
+    font-weight: $font-medium;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: $color-text-secondary;
+}
+
+.nav-offres-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.nav-offre-item {
+    padding: .875rem 1.25rem;
+    border-right: 0.5px solid $color-border;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background .2s;
+    display: block;
+
+    &:last-child { border-right: none; }
+
+    &:hover:not(.active) { background: $color-bg-creme; }
+
+    &.active {
+        background: $color-bg-creme-alt;
+        border-bottom: 2px solid $color-corail;
+    }
+}
+
+.nav-offre-top {
+    @include flex-between;
+    margin-bottom: 2px;
+}
+
+.nav-offre-name {
+    font-size: $font-size-sm;
+    font-weight: $font-medium;
+    color: $color-bordeaux;
+
+    .active & { color: $color-corail; }
+}
+
+.nav-offre-price {
+    font-size: $font-size-xs;
+    color: $color-text-muted;
+
+    .active & { color: $color-text-secondary; }
+}
+
+.nav-offre-badge {
+    font-size: 9px;
+    padding: 2px 7px;
+    background: $color-corail;
+    color: $color-bg-white;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.active-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $color-corail;
+    flex-shrink: 0;
+}
