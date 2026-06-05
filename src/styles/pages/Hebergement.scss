@@ -1,0 +1,284 @@
+.hebergement-infos-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  border-top: 0.5px solid $color-border;
+
+  .left-part {
+    flex: 1;                           
+    border-right: 0.5px solid $color-border;
+    padding: 1% 3% 1% 4%;
+
+  }
+
+  .right-part {
+    width: 40%;                        
+    flex-shrink: 0;
+    padding: 1% 4%;
+    gap: 1rem;
+    
+                     
+  }
+}
+
+
+
+// ── Plans ──
+.plans-section {
+  @include infos-block-base;
+  margin: 1% 4%;
+
+  .plans-header {
+    @include infos-block-head;
+  }
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 1rem;
+}
+
+.plan-card {
+  border: 0.5px solid $color-border;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s;
+  display: flex;
+  flex-direction: column;
+
+  &:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(152,60,29,.1); }
+  &.plan-featured { border: 2px solid $color-corail; }
+}
+
+.plan-head { padding: .875rem 1rem; }
+.plan-head-essentiel { background: $color-bg-creme-alt; }
+.plan-head-serenite   { background: $color-corail; }
+.plan-head-premium    { background: $color-bordeaux; }
+
+.plan-badge {
+  font-size: $font-size-xs;
+  padding: 2px 8px;
+  background: rgba(255,255,255,.2);
+  color: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.plan-name {
+  font-family: $font-serif;
+  font-size: $font-size-lg;
+  font-weight: $font-regular;
+  margin-bottom: 2px;
+}
+
+.plan-head-essentiel .plan-name { color: $color-bordeaux; }
+.plan-head-serenite .plan-name,
+.plan-head-premium .plan-name   { color: $color-bg-white; }
+
+.plan-desc { font-size: $font-size-xs; }
+.plan-head-essentiel .plan-desc { color: $color-text-secondary; }
+.plan-head-serenite .plan-desc,
+.plan-head-premium .plan-desc   { color: $color-border; }
+
+.plan-body {
+  padding: .875rem 1rem;
+  background: $color-bg-white;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.plan-price {
+  font-family: $font-serif;
+  font-size: $font-size-2xl;
+  color: $color-bordeaux;
+  margin-bottom: 1px;
+
+  span {
+    font-family: $font-sans;
+    font-size: $font-size-xs;
+    color: $color-corail;
+    font-weight: $font-regular;
+  }
+}
+
+.plan-price-sub { font-size: $font-size-xs; color: $color-text-muted; margin-bottom: .875rem; }
+
+.plan-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: .875rem;
+  flex: 1;
+
+  li {
+    font-size: $font-size-sm;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    line-height: 1.4;
+  }
+
+  .item-ico { flex-shrink: 0; font-weight: $font-medium; }
+  .item-included { color: $color-bordeaux; .item-ico { color: $color-corail; } }
+  .item-excluded { color: $color-text-muted; .item-ico { color: $color-border; } }
+}
+
+.plan-btn {
+  font-family: $font-sans;
+  font-size: $font-size-sm;
+  padding: 7px;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  margin-top: auto;
+}
+
+.plan-btn-outline {
+  background: transparent;
+  color: $color-corail;
+  border: 1.5px solid $color-corail;
+  &:hover { background: $color-corail; color: $color-bg-white; }
+}
+.plan-btn-fill {
+  background: $color-corail;
+  color: $color-bg-white;
+  border: none;
+  &:hover { background: $color-corail-fonce; }
+}
+.plan-btn-dark {
+  background: $color-bordeaux;
+  color: $color-bg-white;
+  border: none;
+  &:hover { background: $color-bordeaux-dark; }
+}
+
+// ── Comparatif ──
+.comparatif-section {
+  @include infos-block-base;
+  margin: 1% 4%;
+
+  .infos-block-head { 
+    @include infos-block-head; 
+}
+}
+
+.comparatif-body { padding: 0; }
+
+.comparatif-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: $font-size-sm;
+
+  th {
+    background: $color-bg-creme-alt;
+    padding: 7px 10px;
+    text-align: left;
+    color: $color-text-secondary;
+    font-weight: $font-medium;
+    border-bottom: 0.5px solid $color-border;
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+
+    &:not(:first-child) { text-align: center; }
+  }
+
+  td {
+    padding: 7px 10px;
+    border-bottom: 0.5px solid $color-bg-creme-alt;
+    color: $color-bordeaux;
+
+    &:not(:first-child) { text-align: center; }
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  .row-label { color: $color-text-secondary; }
+  .col-featured { background: $color-bg-creme; font-weight: $font-medium; }
+  .cell-check { color: $color-corail; font-weight: $font-medium; }
+  .cell-dash  { color: $color-text-muted; }
+  .row-price td { font-weight: $font-medium; background: $color-bg-creme-alt; }
+}
+
+// ── Pourquoi moi ──
+.pourquoi-section {
+  @include infos-block-base;
+  margin: 1% 4%;
+
+  .infos-block-head { 
+    @include infos-block-head; 
+}
+}
+
+.pourquoi-body { 
+    padding: .875rem 1rem; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.raison-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 0.5px solid $color-bg-creme-alt;
+
+  &:last-child { border-bottom: none; }
+}
+
+.raison-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: $color-bg-creme-alt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: $font-size-base;
+}
+
+.raison-title { 
+    font-size: $font-size-md; 
+    font-weight: $font-medium; 
+    color: $color-bordeaux; 
+    margin-bottom: 3px; 
+}
+.raison-desc  { 
+    font-size: $font-size-sm; 
+    color: $color-text-secondary; 
+    line-height: 1.5; 
+}
+
+// ── Modalités communes ──
+.modalites-communes-section {
+  @include infos-block-base;
+  margin: 1% 4%;
+
+  .infos-block-head {
+     @include infos-block-head; 
+    }
+}
+
+.modalites-communes-body { padding: .875rem 1rem; }
+
+.modalite-row {
+  @include flex-between;
+  padding: 6px 0;
+  border-bottom: 0.5px solid $color-bg-creme-alt;
+  font-size: $font-size-sm;
+
+  &:last-child { border-bottom: none; }
+}
+
+.modalite-label { color: $color-text-secondary; }
+.modalite-value { font-weight: $font-medium; color: $color-bordeaux; }
+

@@ -65,38 +65,40 @@ function SiteVitrineOffre () {
                     {main: 'Paiement', text: "Virement bancaire"},
                 ]}/>
             </section>
-            <Steps 
-                title="Comment ça se passe"
-                titleTag="div" 
-                icon="→"     
-                steps={[
-                    {
-                        title: 'Brief & devis', 
-                        desc: "On échange par email ou visio pour comprendre votre projet, votre activité et vos goûts. Je vous prépare un devis fixe sous 24h.", 
-                        calendar: 'Jour 0'
-                     },
-                    {
-                        title: 'Acompte & démarrage', 
-                        desc: "Une fois le devis signé et l'acompte reçu (50%), je vous demande vos textes, photos et éléments de marque (logo, couleurs). Puis je commence le design du site",
-                        calendar: "Jour 1-2"
-                    },
-                    { 
-                        title: 'Design & développement', 
-                        desc: "Je conçois et développe le site. Je vous tiens informé de l'avancement si besoin.",
-                        calendar: "Jour 3 à 10"
-                    },
-                    { 
-                        title: 'Livraison & corrections',
-                        desc: "Vous reçevez le site en prévisualisation. On fait jusqu'à 3 allers-retours pour affiner.",
-                        calendar: "Jour 11 à 14"
-                    },
-                    { 
-                        title: 'Validation & remise des fichiers',
-                        desc: "Solde réglé, fichiers sources remis, formation rapide à la prise en main si besoin (notament pour les portfolios). Le site est à vous.",
-                        calendar: "Jour 14"
-                    },
-                ]}
-            />
+            <section style={{margin: '0 4%', borderBottom: 'none'}}>
+                <Steps 
+                    title="Comment ça se passe"
+                    titleTag="div" 
+                    icon="→"     
+                    steps={[
+                        {
+                            title: 'Brief & devis', 
+                            desc: "On échange par email ou visio pour comprendre votre projet, votre activité et vos goûts. Je vous prépare un devis fixe sous 24h.", 
+                            calendar: 'Jour 0'
+                        },
+                        {
+                            title: 'Acompte & démarrage', 
+                            desc: "Une fois le devis signé et l'acompte reçu (50%), je vous demande vos textes, photos et éléments de marque (logo, couleurs). Puis je commence le design du site",
+                            calendar: "Jour 1-2"
+                        },
+                        { 
+                            title: 'Design & développement', 
+                            desc: "Je conçois et développe le site. Je vous tiens informé de l'avancement si besoin.",
+                            calendar: "Jour 3 à 10"
+                        },
+                        { 
+                            title: 'Livraison & corrections',
+                            desc: "Vous reçevez le site en prévisualisation. On fait jusqu'à 3 allers-retours pour affiner.",
+                            calendar: "Jour 11 à 14"
+                        },
+                        { 
+                            title: 'Validation & remise des fichiers',
+                            desc: "Solde réglé, fichiers sources remis, formation rapide à la prise en main si besoin (notament pour les portfolios). Le site est à vous.",
+                            calendar: "Jour 14"
+                        },
+                    ]}
+                />
+            </section>
             <InfoTips />
             <Extras items ={[
                 {main: 'Page supplémentaire (6e+)', text: "à partir de 150€"},
@@ -107,17 +109,19 @@ function SiteVitrineOffre () {
                 {main: 'Maintenance mensuelle', text: "à partir de 45€/mois"},
                 ]}
             />
-            <Faq 
-                title="Questions fréquentes"
-                titleTag="div"  
-                icon="?"     
-                steps={[
-                    { title: "Quelle est la différence avec le site une page ?", desc: "Le site vitrine comprend plusieurs pages avec navigation (Accueil, Services, À propos, Contact…). Cela permet un meilleur référencement naturel, plus de contenu et une présentation plus complète de votre activité." },
-                    { title: "Puis-je modifier le contenu moi-même ?", desc: "Le site est développé en HTML/CSS pur ou Javascript avec React. Les modifications de textes ou images nécessitent des bases techniques. C'est pourquoi je propose des forfaits maintenance avec 30min à 1h30 de modifications incluses par mois." },
-                    { title: "Et si j'ai besoin de plus de 5 pages ?", desc: "Chaque page supplémentaire est facturée 150€. Je peux aussi vous faire un devis global si votre projet est plus ambitieux." },
-                    { title: "Le site sera-t-il bien référencé sur Google ?", desc: "J'optimise les bases techniques du SEO (structure, vitesse, balises). Le référencement naturel complet prend du temps et dépend aussi de votre contenu. Je recommande de publier régulièrement du contenu de qualité." },
-                ]}
-            />
+            <section style={{margin: '0 4%', borderBottom: 'none'}}>
+                <Faq 
+                    title="Questions fréquentes"
+                    titleTag="div"  
+                    icon="?"     
+                    steps={[
+                        { title: "Quelle est la différence avec le site une page ?", desc: "Le site vitrine comprend plusieurs pages avec navigation (Accueil, Services, À propos, Contact…). Cela permet un meilleur référencement naturel, plus de contenu et une présentation plus complète de votre activité." },
+                        { title: "Puis-je modifier le contenu moi-même ?", desc: "Le site est développé en HTML/CSS pur ou Javascript avec React. Les modifications de textes ou images nécessitent des bases techniques. C'est pourquoi je propose des forfaits maintenance avec 30min à 1h30 de modifications incluses par mois." },
+                        { title: "Et si j'ai besoin de plus de 5 pages ?", desc: "Chaque page supplémentaire est facturée 150€. Je peux aussi vous faire un devis global si votre projet est plus ambitieux." },
+                        { title: "Le site sera-t-il bien référencé sur Google ?", desc: "J'optimise les bases techniques du SEO (structure, vitesse, balises). Le référencement naturel complet prend du temps et dépend aussi de votre contenu. Je recommande de publier régulièrement du contenu de qualité." },
+                    ]}
+                />
+            </section>
             <CtaNavOffres 
                 ctaSlug="site-vitrine"
             />

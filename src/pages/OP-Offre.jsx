@@ -64,33 +64,35 @@ function OPOffre () {
                     {main: 'Paiement', text: "Virement bancaire"},
                 ]}/>
             </section>
-            <Steps 
-                title="Comment ça se passe"
-                titleTag="div" 
-                icon="→"     
-                steps={[
-                    {
-                        title: 'Brief & devis', 
-                        desc: "On échange par email ou visio pour comprendre votre projet, votre activité et vos goûts. Je vous prépare un devis fixe sous 24h.", 
-                        calendar: 'Jour 0'
-                     },
-                    {
-                        title: 'Acompte & démarrage', 
-                        desc: "Une fois le devis signé et l'acompte reçu (50%), je commence le design et le développement.",
-                        calendar: "Jour 1"
-                    },
-                    { 
-                        title: 'Première livraison', 
-                        desc: "Vous reçevez le site en ligne sur un lien de prévisualisation. Vous pouvez me faire tes retours directement.",
-                        calendar: "Jour 4 à 6"
-                    },
-                    { 
-                        title: 'Corrections & validation',
-                        desc: "J'applique vos retours (2 allers-retours inclus). Une fois validé, vous règlez le solde et je vous remets tous les fichiers.",
-                        calendar: "Jour 6 à 7"
-                    },
-                ]}
-            />
+            <section style={{margin: '0 4%', borderBottom: 'none'}}>
+                <Steps 
+                    title="Comment ça se passe"
+                    titleTag="div" 
+                    icon="→"     
+                    steps={[
+                        {
+                            title: 'Brief & devis', 
+                            desc: "On échange par email ou visio pour comprendre votre projet, votre activité et vos goûts. Je vous prépare un devis fixe sous 24h.", 
+                            calendar: 'Jour 0'
+                        },
+                        {
+                            title: 'Acompte & démarrage', 
+                            desc: "Une fois le devis signé et l'acompte reçu (50%), je commence le design et le développement.",
+                            calendar: "Jour 1"
+                        },
+                        { 
+                            title: 'Première livraison', 
+                            desc: "Vous reçevez le site en ligne sur un lien de prévisualisation. Vous pouvez me faire tes retours directement.",
+                            calendar: "Jour 4 à 6"
+                        },
+                        { 
+                            title: 'Corrections & validation',
+                            desc: "J'applique vos retours (2 allers-retours inclus). Une fois validé, vous règlez le solde et je vous remets tous les fichiers.",
+                            calendar: "Jour 6 à 7"
+                        },
+                    ]}
+                />
+            </section>
             <InfoTips />
             <Extras items ={[
                 {main: 'Page supplémentaire', text: "à partir de 150€"},
@@ -101,17 +103,19 @@ function OPOffre () {
                 {main: 'Maintenance mensuelle', text: "45€/mois"},
                 ]}
             />
-            <Faq 
-                title="Questions fréquentes"
-                titleTag="div"  
-                icon="?"     
-                steps={[
-                    { title: "Est-ce que je garde la propriété du site ?", desc: "Oui, à 100%. Vous reçevez tous les fichiers sources à la livraison finale. Le site vous appartient complètement, indépendamment de tout abonnement." },
-                    { title: "Et si je veux ajouter une page plus tard ?", desc: "Tout à fait possible. Chaque page supplémentaire est facturée à partir de 150€ selon la complexité. Vous pouvez aussi passer sur l'offre site vitrine dès le départ." },
-                    { title: "Je n'ai pas de textes ni de logo, c'est un problème ?", desc: "Non, mais ça rallonge les délais. Je peux vous guider pour structurer vos textes. Pour le logo, je peux en créer un simple (typographique) pour 80€ supplémentaires." },
-                    { title: "Puis-je modifier le site moi-même après livraison ?", desc: "Le site est en HTML/CSS pur. Sans connaissances techniques c'est difficile. Je recommande mon forfait maintenance pour les mises à jour (1h incluse par mois)." },
-                ]}
-            />
+            <section style={{margin: '0 4%', borderBottom: 'none'} }>
+                <Faq 
+                    title="Questions fréquentes"
+                    titleTag="div"  
+                    icon="?"     
+                    steps={[
+                        { title: "Est-ce que je garde la propriété du site ?", desc: "Oui, à 100%. Vous reçevez tous les fichiers sources à la livraison finale. Le site vous appartient complètement, indépendamment de tout abonnement." },
+                        { title: "Et si je veux ajouter une page plus tard ?", desc: "Tout à fait possible. Chaque page supplémentaire est facturée à partir de 150€ selon la complexité. Vous pouvez aussi passer sur l'offre site vitrine dès le départ." },
+                        { title: "Je n'ai pas de textes ni de logo, c'est un problème ?", desc: "Non, mais ça rallonge les délais. Je peux vous guider pour structurer vos textes. Pour le logo, je peux en créer un simple (typographique) pour 80€ supplémentaires." },
+                        { title: "Puis-je modifier le site moi-même après livraison ?", desc: "Le site est en HTML/CSS pur. Sans connaissances techniques c'est difficile. Je recommande mon forfait maintenance pour les mises à jour (1h incluse par mois)." },
+                    ]}
+                />
+            </section>
             <CtaNavOffres 
                 ctaSlug="site-une-page"
             />
