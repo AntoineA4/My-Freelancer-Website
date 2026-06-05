@@ -3,7 +3,7 @@ import '../../styles/components/Home_page/Contact-Home.scss'
 function ContactHomePage () {
 
     return(
-        <section className="Contact-Home-Section">
+        <section className="Contact-Home-Section" id="Contact-Home-Section"> 
             <div className="Contact-Home-Title"> Un projet <em>en tête ?</em></div>
             <p className="Contact-Home-subTitle">Votre devis gratuit, réponse sous 24h.</p>
             <div className="Contact-Home-btn-flex">

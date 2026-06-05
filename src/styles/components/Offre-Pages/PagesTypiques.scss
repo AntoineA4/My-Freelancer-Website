@@ -1,0 +1,46 @@
+.pages-typiques-section {
+  @include infos-block-base;
+  margin: 1% 4%;
+
+  .infos-block-head {
+    @include infos-block-head;
+  }
+}
+
+.pages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.page-card {
+  background: $color-bg-creme-alt;
+  border: 0.5px solid $color-border;
+  border-radius: 10px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: border-color .2s, transform .2s;
+
+  &:hover {
+    border-color: $color-corail;
+    transform: translateY(-2px);
+  }
+}
+
+.page-card-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.page-card-name {
+  font-size: $font-size-md;
+  font-weight: $font-medium;
+  color: $color-bordeaux;
+  margin-bottom: 5px;
+}
+
+.page-card-desc {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  line-height: 1.45;
+}

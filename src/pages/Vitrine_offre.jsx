@@ -8,6 +8,8 @@ import InfoTips from "../components/Offres/Info-tips";
 import Extras from "../components/Offres/Extra";
 import Steps from "../components/Steps";
 import Faq from "../components/Faq";
+import Comparatif from "../components/Offres/Comparatif";
+import PagesTypiques from "../components/Offres/Page-typique";
 import CtaNavOffres from "../components/Offres/Cta-nav-Offre";
 import '../styles/components/Offre-Pages/NonInc-Moda.scss'
 
@@ -23,6 +25,7 @@ function SiteVitrineOffre () {
             tag="Offre — Développement web"
             title="Site"
             highlight=" vitrine"
+            heroClass="hero-corail-fonce"
             subtitle={<>
                 Un site complet, professionnel et sur-mesure pour présenter votre activité,
                 <br />
@@ -36,6 +39,7 @@ function SiteVitrineOffre () {
                 TVABadge = 'TVA non applicable — art. 293B CGI'
                 SecondBadge = 'Livraison en 14 jours'
             />
+            <PagesTypiques />
             <WhatsIncluded items={[
                 { main: 'Design sur-mesure', text: "identité visuelle cohérente, palette de couleurs et typographie adaptées à votre activité" },
                 { main: "Jusqu'à 5 pages", text: "structure claire et logique pensée pour la conversion" },
@@ -64,6 +68,25 @@ function SiteVitrineOffre () {
                     {main: 'Livrable', text: "Fichiers sources"},
                     {main: 'Paiement', text: "Virement bancaire"},
                 ]}/>
+            </section>
+            <section style={{margin: '0 4%', borderBottom: 'none'}}>
+                <Comparatif 
+                    title="Comparatif des offres"
+                    headers={[
+                        { label: 'Site une page', key: 'unePage' },
+                        { label: 'Site vitrine',  key: 'vitrine', featured: true },
+                    ]}
+                    rows={[
+                        { label: 'Nombre de pages',  unePage: '1 page',    vitrine: "Jusqu'à 5" },
+                        { label: 'Design sur-mesure',unePage: '✓',         vitrine: '✓' },
+                        { label: 'Responsive mobile',unePage: '✓',         vitrine: '✓' },
+                        { label: 'SEO optimisé',     unePage: 'Basique',   vitrine: 'Complet' },
+                        { label: 'Allers-retours',   unePage: '2',         vitrine: '3' },
+                        { label: 'Formation incluse',unePage: '—',         vitrine: '✓' },
+                        { label: 'Délai de livraison',unePage: '7 jours',  vitrine: '14 jours' },
+                        { label: 'Prix',             unePage: '300–500€',  vitrine: '800–1 200€', isPrice: true },
+                    ]}
+                />
             </section>
             <section style={{margin: '0 4%', borderBottom: 'none'}}>
                 <Steps 

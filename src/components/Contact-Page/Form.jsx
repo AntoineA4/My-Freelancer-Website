@@ -13,7 +13,9 @@ const projetOptions = [
     { value: '', label: 'Choisissez une option', disabled: true },
     { value: 'site-une-page', label: 'Site une page (300€ – 500€)' },
     { value: 'site-vitrine', label: 'Site vitrine 3–5 pages (800€ – 1 200€)' },
-    { value: 'pack-serenite', label: 'Pack hébergement + maintenance (60€/mois)' },
+    { value: 'pack-essentiel', label: 'Hébergement uniquement (20€/mois)' },
+    { value: 'pack-serenite', label: 'Pack hébergement + maintenance (45€/mois)' },
+    { value: 'pack-premium', label: 'Service complet & prioritaire (70€/mois)' },
     { value: 'autre', label: 'Autre / Je ne sais pas encore' },
 ];
 

@@ -13,26 +13,27 @@
 .extras-flex {
   display: flex;
   flex-wrap: wrap; 
-  gap: 8px;
+  row-gap: 12px;
+  column-gap: 8px;
 }
 
 .extra {
   background: $color-bg-creme-alt;
   border: 0.5px solid $color-border;
   border-radius: 8px;
-  padding: .625rem 1rem;
+  padding: .9rem 1rem;
   @include flex-between;
   flex: 1 1 calc(50% - 8px); // ← 2 par ligne
   min-width: 0;
 }
 
 .extra-name {
-  font-size: $font-size-xs;
+  font-size: $font-size-sm;
   color: $color-bordeaux;
 }
 
 .extra-price {
-  font-size: $font-size-xs;
+  font-size: $font-size-sm;
   font-weight: $font-medium;
   color: $color-corail;
 }

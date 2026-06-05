@@ -47,21 +47,21 @@ function Offres() {
                 </Link>
                 <Link to='/offres/hebergement' className="Offre-card">
                     <div className="card-top-part dark-card">
-                        <h3>Pack Hébergement + maintenance</h3>
+                        <h3>Hébergement & maintenance</h3>
                         <p className="title-sub">L'essentiel en toute sérénité</p>
                     </div>
                     <div className="card-bot-part">
-                        <div className="offre-price">50€ <span>/mois</span></div>
-                        <p className="offre-price-sub">Sans engagement — préavis 30j</p>
+                        <div className="offre-price">
+                        À partir de <span>20€/mois</span>
+                        </div>
+                        <p className="offre-price-sub">Sans engagement — 3 formules disponibles</p>
                         <ul className="offre-items">
-                            <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>Tout l'hébergement inclus</li>
-                            <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>Nom de domaine inclus</li>
-                            <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>Surveillance 24h/24</li>
-                            <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>Sauvegarde mensuelle</li>
-                            <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>Rapport mensuel</li>
-                            <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>1h de modifications/mois</li>
+                        <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>Hébergement inclus</li>
+                        <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>Nom de domaine inclus</li>
+                        <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>SSL/HTTPS</li>
+                        <li><svg viewBox="0 0 24 24" strokeWidth="2"><polyline points="20 6 9 17 4 12"/></svg>Email pro inclus</li>
                         </ul>
-                        <div className="offre-badge">Sans engagement</div>
+                        <div className="offre-badge">Voir les 3 formules →</div>
                     </div>
                 </Link>
 

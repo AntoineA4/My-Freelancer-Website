@@ -66,7 +66,6 @@ function PlansPicker() {
   return (
     <section className="plans-section">
       <div className="plans-header">
-        <span className="ih-icon">☰</span>
         <div className="infos-title">Choisissez votre formule</div>
       </div>
       <div className="plans-grid">

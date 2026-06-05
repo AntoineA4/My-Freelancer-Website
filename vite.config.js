@@ -12,6 +12,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
+        silenceDeprecations: ['import', 'global-builtin'],
         additionalData: `
           @import "${toSassPath(resolve(__dirname, 'src/styles/_variables.scss'))}";
           @import "${toSassPath(resolve(__dirname, 'src/styles/_animations.scss'))}";

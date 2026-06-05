@@ -18,7 +18,6 @@
 
 .offre-page-box {
   width: 100%;
-  margin: 1% 4%;
 }
 
 // ── Steps ──
@@ -70,7 +69,7 @@
 
 // ── FAQ ──
 .faq {
-  padding: 8px 0;
+  padding: 10px 0;
   border-bottom: 0.5px solid $color-bg-creme-alt;
 
   &:last-child { border-bottom: none; }

@@ -1,0 +1,50 @@
+// ── Comparatif ──
+.comparatif-section {
+  @include infos-block-base;
+
+  .infos-block-head { 
+    @include infos-block-head; 
+}
+}
+
+.hebergement-table {
+    margin: 3% 5% 5% 0;
+}
+
+.comparatif-body { padding: 0; }
+
+.comparatif-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: $font-size-sm;
+
+  th {
+    background: $color-bg-creme-alt;
+    padding: 12px 15px;
+    text-align: left;
+    color: $color-text-secondary;
+    font-weight: $font-medium;
+    border-bottom: 0.5px solid $color-border;
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+
+    &:not(:first-child) { text-align: center; }
+  }
+
+  td {
+    padding: 12px 15px;
+    border-bottom: 0.5px solid $color-bg-creme-alt;
+    color: $color-bordeaux;
+
+    &:not(:first-child) { text-align: center; }
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  .row-label { color: $color-text-secondary; }
+  .col-featured { background: $color-bg-creme; font-weight: $font-medium; }
+  .cell-check { color: $color-corail; font-weight: $font-medium; }
+  .cell-dash  { color: $color-text-muted; }
+  .row-price td { font-weight: $font-medium; background: $color-bg-creme-alt; }
+}

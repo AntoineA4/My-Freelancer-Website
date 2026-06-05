@@ -33,7 +33,7 @@ function Header() {
                         <a href="#compétences">Compétences</a>
                     </li>
                     <li className="nav-header-text"> 
-                        <a href="*">Contact</a>
+                        <a href="#Contact-Home-Section">Contact</a>
                     </li>
                 </ul>
             </nav>
