@@ -2,9 +2,9 @@ import '../../styles/components/Offre-Pages/PagesTypiques.scss'
 
 const pages = [
   { icon: '🏠', name: 'Accueil',      desc: "Présentation, accroche et appel à l'action" },
-  { icon: '👤', name: 'À propos',     desc: 'Qui tu es, ton parcours, ta philosophie' },
-  { icon: '🛠', name: 'Services',     desc: 'Tes offres détaillées avec tarifs si souhaité' },
-  { icon: '🖼', name: 'Portfolio',    desc: 'Galerie de tes réalisations (optionnel)' },
+  { icon: '👤', name: 'À propos',     desc: 'Qui vous êtes, votre parcours, votre philosophie' },
+  { icon: '🛠', name: 'Services',     desc: 'Vos offres détaillées avec tarifs si souhaité' },
+  { icon: '🖼', name: 'Portfolio',    desc: 'Galerie de vos réalisations (optionnel)' },
   { icon: '⭐', name: 'Avis clients', desc: 'Témoignages pour rassurer (optionnel)' },
   { icon: '✉️', name: 'Contact',      desc: 'Formulaire, carte Google Maps, coordonnées' },
 ]

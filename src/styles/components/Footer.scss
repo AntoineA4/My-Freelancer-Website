@@ -9,12 +9,12 @@ footer {
 }
 
 .footer-copy { 
-    font-size: 11px; 
-    color: $color-text-muted; 
+    font-size: $font-size-xs; 
+    color: $color-corail; 
     @include flex-center;
     gap: 6px; 
     .footer-dot {
-        width: 6px; height: 6px;
+        width: 10px; height: 10px;
         border-radius: 50%;
         background: $color-corail;
         animation: pulse 2s infinite;
@@ -33,9 +33,35 @@ footer {
 .footer-socials a:hover { 
     color: $color-corail; 
 }
-.footer-socials svg { 
-    width: 18px; 
-    height: 18px; 
-    stroke: currentColor; 
-    fill: none; }
- 
+
+.footer-text {
+    display: flex;
+    align-items: center;
+     gap:8px;
+
+    p{
+        color: $color-corail;
+        font-size: $font-size-md;
+        
+        
+    }
+
+    .pFooterSecond {
+        display: flex;
+        align-items: center;
+        gap:8px;
+        font-style: italic;
+
+        &::before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 1px;
+        background: $color-corail;
+        flex-shrink: 0;
+       
+        }
+    }
+}
+
+    

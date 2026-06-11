@@ -42,7 +42,7 @@ function Header() {
                     ← Retour à l'accueil
                 </Link>
             )}
-            <Link to="/Contact" className='contactBtn'>Me contacter</Link>
+            <Link to="/contact" className='contactBtn'>Me contacter</Link>
         </header>
     )
 

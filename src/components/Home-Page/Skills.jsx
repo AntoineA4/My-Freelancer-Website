@@ -12,7 +12,7 @@ function Skills () {
                     <svg viewBox="0 0 24 24" strokeWidth="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                     HTML / CSS
                 </div>
-                <div className="skill-pill pill-corail">
+                <div className="skill-pill pill-amber">
                     <svg viewBox="0 0 24 24" strokeWidth="1.5"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
                     JavaScript
                 </div>
@@ -34,20 +34,52 @@ function Skills () {
                     Responsive design
                 </div>
                 <div className="skill-pill pill-corail">
-                    <svg viewBox="0 0 24 24" strokeWidth="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-                    Montage vidéo
-                </div>
-                <div className="skill-pill pill-amber">
-                    <svg viewBox="0 0 24 24" strokeWidth="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-                    Sound design
-                </div>
-                <div className="skill-pill pill-green">
                     <svg viewBox="0 0 24 24" strokeWidth="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                     SEO
                 </div>
                 <div className="skill-pill pill-purple">
                     <svg viewBox="0 0 24 24" strokeWidth="1.5"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
                     Figma
+                </div>
+                <div className="skill-pill pill-corail">
+                    <svg viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" width="15" height="15">
+                        <polyline points="16 18 22 12 16 6"/>
+                        <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                    FrontEnd
+                </div>
+                <div className="skill-pill pill-purple">
+                    <svg viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" width="15" height="15">
+                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                        <line x1="6" y1="6" x2="6.01" y2="6"/>
+                        <line x1="6" y1="18" x2="6.01" y2="18"/>
+                    </svg>
+                    BackEnd
+                </div>
+                <div className="skill-pill pill-green">
+                    <svg viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" width="15" height="15">
+                        <polyline points="7 8 3 12 7 16"/>
+                        <polyline points="17 8 21 12 17 16"/>
+                        <line x1="14" y1="6" x2="10" y2="18"/>
+                    </svg>
+                    PHP
+                </div>
+                <div className="skill-pill pill-amber">
+                    <svg viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" width="15" height="15">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                    </svg>
+                   SQL
+                </div>
+                <div className="skill-pill pill-corail">
+                    <svg viewBox="0 0 24 24" strokeWidth="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    Montage vidéo
+                </div>
+                <div className="skill-pill pill-amber">
+                    <svg viewBox="0 0 24 24" strokeWidth="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    Sound design
                 </div>
             </div>
         </section>

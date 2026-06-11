@@ -43,12 +43,6 @@
     align-items: center;
     gap: 7px;
     transition: background .2s, color .2s;
-    svg { 
-        width: 20px; 
-        height: 20px; 
-        stroke: currentColor; 
-        fill: none; 
-    }
 }
 .Contact-Home-btn:hover { 
     background: rgba(255,255,255,.1); 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/components/Hero.scss'
 
 function Hero({
@@ -28,7 +29,7 @@ function Hero({
                {showBtn && (
                  <div className="hero-btns anim-fade">
                     <a href="#offres" class="btn-primary">{primaryBtn}</a>
-                    <a href="#" class="btn-secondary">{secondaryBtn}</a>
+                    <Link to='/contact' class="btn-secondary">{secondaryBtn}</Link>
                 </div>
                )}
             </div>

@@ -1,6 +1,6 @@
-.extras-section {
+.offre-infos-box {
   @include infos-block-base;
-  margin: 0 4% 1%;
+  margin: 1% 4% 1%;
 
   .infos-block-head {
     @include infos-block-head;
@@ -8,6 +8,9 @@
         color: $color-corail; 
     }
   }
+}
+.hebergementExtras {
+    margin: 0% 4% 2% 0%;
 }
 
 .extras-flex {
