@@ -19,14 +19,29 @@
   animation: pulse 2s infinite;
   flex-shrink: 0;
 }
-.dispo-text { font-size: $font-size-xs; color: $color-text-secondary; }
+.dispo-text { 
+    font-size: $font-size-xs; 
+    color: $color-text-secondary; }
 
 .dispo-badge {
   margin-left: auto;
-  font-size: 10px;
+  font-size: $font-size-xs;
   padding: 2px 10px;
   background: $color-border;
   color: $color-bordeaux;
   border-radius: 20px;
   white-space: nowrap;
+}
+
+@include mobile {
+    .dispo-inner {
+        margin: 0;
+        gap:10px;
+    }
+    .dispo-text {
+        font-size: 10px;
+    }
+    .dispo-badge {
+        font-size: 10px;
+    }
 }

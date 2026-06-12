@@ -84,4 +84,29 @@
     margin-bottom: 1.25rem;
   }
 
+  @include mobile {
+    &::before {
+        width: 180px;
+        height: 180px;
+    }
+    &::after {
+        width: 130px;
+        height: 130px;
+    }
+    .hero-tag {
+        font-size: $font-size-sm;
+
+        &:before {
+            width: 15px;
+        }
+    }
+    .hero-title {
+        font-size: $font-size-2xl;
+    }
+    .hero-sub {
+        font-size: $font-size-md;
+    }
 }
+
+}
+

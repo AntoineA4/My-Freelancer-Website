@@ -30,3 +30,20 @@
         }
     
 }
+
+@include mobile {
+    .reassurance-section {
+        .reassurance-flex {
+            flex-wrap: wrap;
+            .reass-card {
+                padding: 0.8rem 1rem;
+            }
+            .reass-val{
+                font-size: $font-size-lg;
+            }
+            .reass-label {
+                font-size: $font-size-xs;
+            }
+        }
+    }
+}

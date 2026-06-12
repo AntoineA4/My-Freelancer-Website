@@ -21,6 +21,10 @@ header{
         gap:0.4rem;
     };
     .header-nav-bar {
+        .menuBurger {
+            display: none;
+            color: $color-corail;
+        }
         ul{
             display: flex;
             gap: 1.75rem;
@@ -36,6 +40,7 @@ header{
             color: $color-corail;
         }
         };
+
     }
     .contactBtn{
         font-family: $font-sans;;
@@ -63,5 +68,30 @@ p {
     &.nom {
         color:$color-corail;
         font-style: italic;
+    }
+}
+
+@include mobile {
+     header {
+
+        .header-nav-bar {
+
+            .menuBurger {
+                display: block;
+            }
+
+            ul {
+                display: none;
+            }
+
+        }
+         .contactBtn {
+            font-size: $font-size-sm;
+            padding: 3px 8px;
+         }
+
+    }
+    p {
+        font-size: $font-size-lg;
     }
 }

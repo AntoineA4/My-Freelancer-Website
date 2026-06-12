@@ -73,6 +73,11 @@ $font-medium:  500;
         margin: 0% 4% 1% 4%; 
         padding-top: 1%; 
     }
+    @include mobile {
+        h2 {
+            margin: 0% 4% 2% 4%;
+        }
+    }
 }
 
 

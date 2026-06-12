@@ -113,3 +113,40 @@ h3 {
   display: inline-block;
   align-self: flex-start; 
 }
+
+@include mobile {
+    .Offres-section {
+        .offre-card-container{
+            flex-direction: column;
+            align-items: center;
+            .Offre-card{
+                width:92%
+            }
+        }
+    }
+
+    h3 {
+        font-size: $font-size-lg;
+    }
+    .offre-price {
+        font-size: $font-size-xl;
+        span{
+            font-size: $font-size-xs;
+        }
+    }
+    .offre-price-sub {
+        font-size: $font-size-xs;
+        margin-bottom: 0.4rem;
+    }
+    .offre-items {
+        gap:0;
+    }
+    .offre-items li {
+        font-size: $font-size-sm;
+        svg {
+            width: 12px; 
+            height: 12px; 
+        }
+    }
+
+}

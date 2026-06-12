@@ -37,10 +37,10 @@ section {
   flex-shrink: 0;
 }
 .pq-icon svg {
-     width: 18px; 
-     height: 18px; 
-     stroke: $color-corail; 
-     fill: none; }
+    width: 18px; 
+    height: 18px; 
+    stroke: $color-corail; 
+    fill: none; }
 .pq-name { 
     font-size: $font-size-md; 
     font-weight: 500; 
@@ -51,3 +51,24 @@ section {
     color: $color-text-secondary; 
     line-height: 1.45; }
  
+@include mobile {
+    .forWho-flex {
+        
+        gap:10px;
+    }
+    .pq-card {
+        min-width: 120px;
+        padding: 0.8rem 0.9rem;
+        flex: 1 1 calc(50% - 10px);
+    }
+    .pq-icon svg {
+        width: 14px; 
+        height: 14px;
+    }
+    .pq-name{
+        font-size: $font-size-sm;
+    }
+    .pq-desc {
+        font-size: $font-size-xs;
+    }
+}

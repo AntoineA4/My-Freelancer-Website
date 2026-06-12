@@ -59,3 +59,18 @@
     background-color: $color-corail-fonce;
     border-bottom: 0.5px solid darken($color-bordeaux-dark, 5%);
 }
+
+@include mobile {
+    .hero {
+        .hero-btns {
+            .btn-primary {
+                font-size: $font-size-sm;
+                padding: 8px 15px;
+            }
+            .btn-secondary {
+                font-size: $font-size-sm;
+                padding: 8px 15px;
+            }
+        }
+    }
+}

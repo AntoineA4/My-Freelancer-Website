@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { HiMenu } from "react-icons/hi";
 import '../styles/components/Header.scss'
 
 function Header() {
@@ -22,21 +23,24 @@ function Header() {
             </Link>
             {isHome ? (
                 <nav className="header-nav-bar">
-                <ul>
-                    <li className="nav-header-text">
-                        <a href="#offres">Offres</a>
-                    </li>
-                    <li className="nav-header-text">
-                        <a href="#projets">Projets</a>
-                    </li>
-                    <li className="nav-header-text">
-                        <a href="#compétences">Compétences</a>
-                    </li>
-                    <li className="nav-header-text"> 
-                        <a href="#Contact-Home-Section">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+                    <div className='menuBurger'>
+                        <HiMenu size={30}/>
+                    </div>
+                    <ul>
+                        <li className="nav-header-text">
+                            <a href="#offres">Offres</a>
+                        </li>
+                        <li className="nav-header-text">
+                            <a href="#projets">Projets</a>
+                        </li>
+                        <li className="nav-header-text">
+                            <a href="#compétences">Compétences</a>
+                        </li>
+                        <li className="nav-header-text"> 
+                            <a href="#Contact-Home-Section">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             ) : (
                 <Link to="/" className="nav-back">
                     ← Retour à l'accueil

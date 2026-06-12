@@ -38,3 +38,27 @@
     }
     
 }
+@include mobile {
+    .WhyMe-section {
+        .whyMe-flex {
+            gap:10px;
+            align-items: stretch;
+        }
+        .whyMe-card {
+            padding: 0.5rem 0.6rem;
+            width: 30%;
+
+            .whyMe-icon {
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            .whyMe-title {
+                font-size: $font-size-sm;
+                margin-bottom: 0;
+            }
+            .whyMe-desc {
+                font-size: $font-size-xs;
+            }
+        }
+    }
+}
