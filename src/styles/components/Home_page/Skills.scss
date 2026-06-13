@@ -29,3 +29,14 @@
 .pill-green  svg { stroke: $green-text; fill: none; }
 .pill-amber  { background: $amber-bg;  color: $amber-text;  border: 0.5px solid $amber-border; }
 .pill-amber  svg { stroke: $amber-text; fill: none; }
+
+@include mobile {
+    .skills-flex {
+        gap: 12px;
+        margin: 4% 4% 2% 4%
+    }
+    .skill-pill{
+        font-size: $font-size-sm;
+        padding: 5px 10px;
+    }
+}

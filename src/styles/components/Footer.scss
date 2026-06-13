@@ -14,7 +14,8 @@ footer {
     @include flex-center;
     gap: 6px; 
     .footer-dot {
-        width: 10px; height: 10px;
+        width: 10px; 
+        height: 10px;
         border-radius: 50%;
         background: $color-corail;
         animation: pulse 2s infinite;
@@ -64,4 +65,26 @@ footer {
     }
 }
 
-    
+ @include mobile {
+    .footer-copy {
+        font-size: 10px;
+        .footer-dot {
+            width: 8px; 
+            height: 8px;
+        }
+    }
+    .footer-text {
+        p {
+            font-size: $font-size-sm;
+        }
+    }
+    .footer-socials {
+        width: 100%;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .footer-socials a {
+        height: 25px;
+        width: 25px;
+    }
+ }   

@@ -48,4 +48,28 @@
     background: rgba(255,255,255,.1); 
     color: $color-bg-white; 
 }
- 
+@include mobile {
+    .Contact-Home-Title{
+        padding-top: 4%;
+        font-size: $font-size-2xl;
+    }
+    .Contact-Home-subTitle{
+        font-size: $font-size-sm;
+    }
+    .Contact-Home-btn-flex {
+        gap: 8px; 
+        justify-content: center;
+    }
+    .Contact-Home-btn {
+        font-size: $font-size-md;
+        padding: 4px 12px;
+    }
+    .si {
+        height: 43px;
+        width: 43px;
+    }
+    .fa {
+        height: 20px;
+        width: 20px;
+    }
+}

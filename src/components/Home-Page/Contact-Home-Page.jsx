@@ -10,19 +10,19 @@ function ContactHomePage () {
             <p className="Contact-Home-subTitle">Votre devis gratuit, réponse sous 24h.</p>
             <div className="Contact-Home-btn-flex">
                 <a href="mailto:contact@tonnom.fr" className="Contact-Home-btn">
-                    <FaEnvelope size={20} />
+                    <FaEnvelope size={20} className='fa'/>
                     contact@tonnom.fr
                 </a>
                 <a href="https://linkedin.com/in/tonnom" target="_blank" rel="noopener" className="Contact-Home-btn">
-                   <FaLinkedin size={20} />
+                   <FaLinkedin size={20} className='fa'/>
                     LinkedIn
                 </a>
                 <a href="https://www.malt.fr/profile/tonnom" target="_blank" rel="noopener" className="Contact-Home-btn">
-                    <SiMalt size={55} />
+                    <SiMalt size={55} className='si' />
                      ↗
                 </a>
                 <a href="https://www.malt.fr/profile/tonnom" target="_blank" rel="noopener" className="Contact-Home-btn">
-                    <SiFiverr size={55} />
+                    <SiFiverr size={55} className='si' />
                      ↗
                 </a>
             </div>
