@@ -8,6 +8,7 @@ import Error from './pages/Error';
 import SiteVitrineOffre from './pages/Vitrine_offre';
 import Hebergement from './pages/Hebergement';
 import Footer from "./components/Footer";
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   const location = useLocation();
 
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       {!isErrorPage && <Header />}
 
       <Routes>

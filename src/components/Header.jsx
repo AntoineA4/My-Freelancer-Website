@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { HiMenu, HiHome, HiExternalLink, HiChevronRight } from "react-icons/hi";
+import { HiMenu, HiHome, HiExternalLink, HiChevronRight, HiMail } from "react-icons/hi";
 import Modals from './Modals';
 import '../styles/components/Header.scss'
 
@@ -9,6 +9,8 @@ function Header() {
     const isHome = location.pathname === '/'
     const [scrolled, setScrolled] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
+    const isActive = (path) => location.pathname === path
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -90,6 +92,13 @@ function Header() {
                                 </li>
                             </ul>
                         </div>
+                        <div className='drawer-section'>
+                            <p className='drawer-section-title'>Contact</p>
+                            <Link to='/contact' className='drawer-link'onClick={()=>setMenuOpen(false)}>
+                                <span>Demande de devis</span>
+                                <HiMail />
+                            </Link>
+                        </div>
                     </div>
                 ) : (
                     <div className='drawer-body'>
@@ -104,24 +113,31 @@ function Header() {
                             <p className='drawer-section-title'>Offres</p>
                             <ul>
                                 <li>
-                                    <Link to='/offres/site-une-page' className='drawer-link'onClick={()=>setMenuOpen(false)}>
+                                    <Link to='/offres/site-une-page' className={`drawer-link ${isActive('/offres/site-une-page') ? 'active' : ''}`} onClick={()=>setMenuOpen(false)}>
                                         <span>Site une page</span>
                                         <HiExternalLink />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to='/offres/site-vitrine' className='drawer-link'onClick={()=>setMenuOpen(false)}>
+                                    <Link to='/offres/site-vitrine' className={`drawer-link ${isActive('/offres/site-vitrine') ? 'active' : ''}`} onClick={()=>setMenuOpen(false)}>
                                         <span>Site vitrine</span>
                                         <HiExternalLink />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to='/offres/hebergement' className='drawer-link'onClick={()=>setMenuOpen(false)}>
+                                    <Link to='/offres/hebergement' className={`drawer-link ${isActive('/offres/hebergement') ? 'active' : ''}`} onClick={()=>setMenuOpen(false)}>
                                         <span>Offres hébergement</span>
                                         <HiExternalLink />
                                     </Link>
                                 </li>
                             </ul>
+                        </div>
+                        <div className='drawer-section'>
+                            <p className='drawer-section-title'>Contact</p>
+                            <Link to='/contact' className='drawer-link'onClick={()=>setMenuOpen(false)}>
+                                <span>Demande de devis</span>
+                                <HiMail />
+                            </Link>
                         </div>
                     </div>
                 )}

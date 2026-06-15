@@ -242,3 +242,42 @@
     width: 100%;
     margin: 3% 0% 5%;
 }
+
+@include mobile {
+    .hebergement-infos-section{
+        flex-direction: column;
+        .right-part{
+            width:100%;
+            margin: 0 4%;
+        }
+        .left-part{
+            border-right: none;
+            width: 100%;
+        }
+    }
+    .plans-section {
+        width: 100%;
+        margin: 2% 0;
+        border-radius: 0;
+    }
+    .plans-grid {
+        margin: 0 4% 0 4%; 
+        gap: 16px;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;           // ← scroll horizontal
+        scroll-snap-type: x mandatory; // ← snap sur chaque carte
+        -webkit-overflow-scrolling: touch; // ← scroll fluide sur iOS
+        scrollbar-width: none;      // ← cache la scrollbar sur Firefox
+
+        &::-webkit-scrollbar {
+            display: none;            // ← cache la scrollbar sur Chrome/Safari
+        }
+    }
+    .plan-card {
+        flex-shrink: 0;             // ← empêche les cartes de rétrécir
+        scroll-snap-align: start;   // ← aligne au snap point
+        width: 80vw;
+    }
+    
+}

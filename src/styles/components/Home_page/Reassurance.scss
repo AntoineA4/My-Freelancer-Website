@@ -35,8 +35,11 @@
     .reassurance-section {
         .reassurance-flex {
             flex-wrap: wrap;
+            align-items: stretch;
             .reass-card {
                 padding: 0.8rem 1rem;
+                flex: 1 1 calc(50% - 4%); 
+                box-sizing: border-box;
             }
             .reass-val{
                 font-size: $font-size-lg;

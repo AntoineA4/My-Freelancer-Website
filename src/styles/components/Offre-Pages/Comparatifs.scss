@@ -48,3 +48,13 @@
   .cell-dash  { color: $color-text-muted; }
   .row-price td { font-weight: $font-medium; background: $color-bg-creme-alt; }
 }
+
+@include mobile {
+    .comparatif-body {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .comparatif-table {
+        min-width: 600px;
+    }
+}
