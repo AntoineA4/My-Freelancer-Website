@@ -21,10 +21,6 @@ header{
         gap:0.4rem;
     };
     .header-nav-bar {
-        .menuBurger {
-            display: none;
-            color: $color-corail;
-        }
         ul{
             display: flex;
             gap: 1.75rem;
@@ -42,6 +38,7 @@ header{
         };
 
     }
+    
     .contactBtn{
         font-family: $font-sans;;
         font-size: $font-size-lg;
@@ -58,6 +55,10 @@ header{
             color: $color-bg-creme;
         };
     };
+    .menuBurger {
+            display: none;
+            color: $color-corail;
+        }
     
 }
 p {
@@ -71,27 +72,144 @@ p {
     }
 }
 
+
+.modal-overlay {
+  @include modal-overlay;
+}
+.modal-content {
+  position: fixed;
+  top: 0; right: -100%;  // ← caché hors écran par défaut
+  width: 78%;
+  max-width: 320px;
+  z-index: 151;
+  transition: right .3s ease;
+  background: $color-bg-creme; 
+  display: flex;               
+  flex-direction: column;      
+  border-left: 0.5px solid $color-border; 
+
+
+  &.open {
+    right: 0; // ← visible
+  }
+}
+
+.modal-header-top {
+    @include flex-between;
+    padding: 1rem;
+    border-bottom: 0.5px solid $color-border;
+
+    .logo-modal {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        p {
+        font-size: $font-size-xl; 
+        }
+    }
+}
+.close-modal-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: $color-text-muted;
+    line-height: 1;
+    padding: 2px 6px;
+    transition: color .2s;
+
+    &:hover {
+        color: $color-corail;
+    }
+}
+
+// ── Corps du drawer ──
+.drawer-body {
+    padding: 1rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.drawer-section {
+    margin-bottom: 1.25rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.drawer-section-title {
+    font-size: $font-size-xs;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: $color-text-muted;
+    margin-bottom: .5rem;
+    padding-bottom: .375rem;
+    border-bottom: 0.5px solid $color-border;
+}
+
+.drawer-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+// ── Liens du drawer ──
+.drawer-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .625rem .5rem;
+    border-radius: 7px;
+    text-decoration: none;
+    color: $color-bordeaux;
+    font-size: $font-size-md;
+    transition: background .2s;
+    cursor: pointer;
+
+    svg {
+        font-size: 16px;
+        color: $color-text-muted;
+        flex-shrink: 0;
+    }
+
+    &:hover {
+        background: $color-bg-creme-alt;
+    }
+
+    &.active {
+        background: $color-bg-creme-alt;
+        color: $color-corail;
+        font-weight: $font-medium;
+
+        svg { color: $color-corail; }
+    }
+}
+
 @include mobile {
      header {
 
         .header-nav-bar {
-
-            .menuBurger {
-                display: block;
-            }
-
             ul {
                 display: none;
             }
 
         }
          .contactBtn {
-            font-size: $font-size-sm;
-            padding: 3px 8px;
+            display: none;
          }
+
+        .menuBurger {
+            display: block;
+        }
 
     }
     p {
         font-size: $font-size-lg;
     }
+    .nav-back {
+        display: none;
+    }
+    
 }

@@ -46,3 +46,28 @@
 .pb-bordeaux-dark {
     background-color: $color-bordeaux-dark;
 }
+@include mobile {
+    .price-band {
+        padding: 0.8rem 0rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .price-main {
+        margin-bottom: 0.1rem;
+    }
+    .price-amount {
+        font-size: $font-size-2xl;
+    }
+    .price-range {
+        font-size: $font-size-base;
+    }
+    .price-note {
+        font-size: $font-size-xs;
+    }
+    .pbadge {
+        font-size: 10px;
+    }
+    .price-badges {
+        margin: 2% 0% 0% 4%;
+    }
+}

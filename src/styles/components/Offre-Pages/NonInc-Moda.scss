@@ -1,5 +1,3 @@
-
-
 .nonInclude-and-moda {
   display: flex;
   gap: 10px;
@@ -67,5 +65,12 @@
         color: $color-border-mid;
         flex-shrink: 0;
         }
+    }
+}
+
+@include mobile {
+    .nonInclude-and-moda {
+        flex-direction: column;
+        margin: 1% 0 3% 0;
     }
 }

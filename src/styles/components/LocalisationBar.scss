@@ -22,3 +22,9 @@
 }
 .localisationBar a:hover { text-decoration: underline; }
 .bc-sep { color: $color-border; }
+
+@include mobile {
+  .localisationBar {
+    display: none;
+  }
+}
