@@ -1,0 +1,111 @@
+[
+	{
+		"id": "b9126394",
+		"title": "Portfolio Sophie Bluel",
+        "image": "/images/Sophie-Bluel.png",
+		"description": {
+			"en": "This portfolio of a professional spatial designer, created with JavaScript, showcases her various projects. The site owner can log in using a security token to dynamically add, modify, and delete projects.",
+            "fr": "Portfolio d’une designer d’espace professionnelle créé à partir de JavaScript, ce site permet de mettre en lumière ses différents travaux. Il permet au propriétaire du site de se connecter via un token de sécurité pour ajouter, modifier et supprimer des travaux de façon dynamique."
+        },
+		"difficulties": {
+			"en":"The biggest challenge in this project was creating a modal that manages the dynamic addition of tasks. This allowed me to work on building complex functions and using elements such as fetch.",
+			"fr":"La plus grosse difficulté sur ce projet était la création d’un modale qui permet de gérer l’ajout de travaux de façon dynamique.  Cela m’a permis de travailler la création de fonctions complexes et l’utilisation d’éléments tel que le fetch."
+		},
+		"tags": [
+            "FrontEnd",
+			"JavaScript",
+			"Html5",
+            "CSS3"
+		],
+        "tagColor": "tag-corail",
+        "featured": true,
+		"link": "https://github.com/AntoineA4/portfolio-Sophie-Bluel-P3"
+	},
+    {
+		"id": "8ct676a4",
+		"title": "Nina Carducci web site",
+        "image": "/images/Nina-Carducci.png",
+		"description": {
+			"en": "A professional photographer's website, where I had the opportunity to debug and optimize the site, as well as improve its SEO to enhance its search engine ranking.",
+            "fr": "Site web d’une photographe professionnelle où j’ai eu l’occasion de faire de la correction de bug et de l’optimisation du site ainsi que du SEO afin d’améliorer son référencement."
+        },
+		"difficulties": {
+			"en":"Since the site was very slow, the challenge was to find the best way to optimize it. The most effective solution was to reduce the size of the photos, which were too large for their intended purpose.",
+			"fr":"Le site étant très lent, la difficulté était de trouver la meilleure façon de l’optimiser. La solution la plus efficace a été de réduire la taille des photos qui étaient trop volumineuses par rapport à leurs utilités."
+		},
+		"tags": [
+			"JavaScript",
+			"SEO",
+            "Optimized website",
+            "Resolved bugs"
+		],
+        "tagColor": "tag-purple",
+        "featured": true,
+		"link": "https://github.com/AntoineA4/Nina-Carducci-Project4-Openclassroom"
+	},
+    {
+		"id": "y45l62uu",
+		"title": "Kasa",
+        "image": "/images/Kasa.png",
+		"description": {
+			"en": "A mockup of a short-term rental site that I coded from scratch using React and SASS. It allows users to navigate through various rental listings and view details about the offered services via a photo carousel, descriptions, and the average client rating.",
+            "fr": "Maquette pour un site de location immobilière en courte durée que j’ai codé de A à Z avec React et SASS. Il permet de naviguer entre les différentes annonces de logements et de voir en détails les services proposés dans ces derniers via un Carrousel de photos, des descriptions et la note moyenne attribuée par les clients"
+        },
+		"difficulties": {
+			"en":"The complexity of this project lay in optimizing the reuse of various elements as components as much as possible. I had to be particularly inventive, using booleans and parent-child properties to assist in this effort.",
+			"fr":"La complexité de ce projet était de penser à optimiser le plus possible la réutilisation des différents éléments en components. Il m'a fallu redoubler d’ingéniosités pour cela et d’utiliser des booléens et les propriétés parents enfants pour m’aider."
+		},
+		"tags": [
+            "FrontEnd",
+			"JavaScript",
+			"React",
+            "Sass"
+		],
+        "tagColor": "tag-green",
+        "featured": true,
+		"link": "https://github.com/AntoineA4/Kasa-OpenClassroom-Project-5"
+	},
+    {
+		"id": "7op85j55",
+		"title": "Mon vieux Grimoire",
+        "image": "/images/Mon-Vieux-Grimoire.png",
+		"description": {
+			"en": "A backend project developed with Node.js, using Express and Mongoose, that allows users to create an account, add books to the database, rate, modify, and delete them. MongoDB is used for data storage, with security measures ensured by JWT and Bcrypt. This project helped me strengthen my skills in building secure RESTful APIs.",
+            "fr": "Projet backend développé avec Node.js, utilisant Express et Mongoose, qui permet aux utilisateurs de créer un compte, d'ajouter des livres à la base de données, de les noter, de les modifier et de les supprimer. MongoDB est utilisé pour le stockage des données, avec des mesures de sécurité assurées par JWT et Bcrypt. Cette expérience m’a permis de renforcer mes compétences en création d’API REST sécurisées."
+        },
+		"difficulties": {
+			"en":"The most challenging part of this project was creating middleware to format uploaded images. I had to use Multer and Sharp to accomplish this.",
+			"fr":"La partie la plus compliquée de ce projet fut la création de middleware pour formater les images uploadés. J’ai du utiliser Multer et Sharp pour mener cela à bien."
+		},
+		"tags": [
+			"BackEnd",
+			"Node.js",
+            "Express",
+            "Mongoose",
+            "MongoDB"
+		],
+        "tagColor": "tag-amber",
+        "featured": true,
+		"link": "https://github.com/AntoineA4/Mon-Vieux-Grimoire-P7-OC"
+	}, 
+    {
+		"id": "d69ab4a4",
+		"title": "Booki",
+        "image": "/images/Booki.png",
+		"description": {
+			"en": "This site, coded in HTML, is a mockup of an online accommodation website, allowing users to filter their searches based on various criteria.",
+            "fr": "Ce site coder sous Html est une maquette d’un site d’hébergements en ligne, permettant aux usagers de filtrer leurs recherches en fonction de plusieurs critères."
+        },
+		"difficulties": {
+			"en":"The biggest challenges of this project were arranging the elements together and making the display responsive. I was able to put my CSS skills and use of Flexbox to the test.",
+			"fr":"Les plus grosses difficultés de ce projet étaient l’agencement des éléments entre eux et de rendre l’affichage responsive. J’ai pu mettre à l ‘épreuve mes compétences en CSS et utilisation de Flex box."
+		},
+		"tags": [
+            "FrontEnd",
+			"Html5",
+			"CSS3"
+		],
+        "featured": false,
+		"link": "https://github.com/AntoineA4/Booki-accueil-Projet1"
+	}
+]

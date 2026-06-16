@@ -12,7 +12,9 @@
     @include section-title;
 }
 .projects-flex {
-    @include flex-between;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
     margin: 1% 4% 2% 4%;
     gap: 12px;
 }
@@ -29,23 +31,26 @@
 .project-card:hover { border-color: $color-corail; transform: translateY(-3px); }
 
 .project-thumb {
-    height: 120px;
-    @include flex-center;
+    height: 140px;
+    overflow: hidden;
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: top; 
+  }
+    
 }
-.project-thumb svg { width: 32px; height: 32px; }
-.pt-corail { background: $color-bg-creme-alt; }
-.pt-corail svg { stroke: $color-corail-fonce; fill: none; }
-.pt-purple { background: $purple-bg; }
-.pt-purple svg { stroke: $purple-text; fill: none; }
-.pt-green { background: $green-bg; }
-.pt-green svg { stroke: $green-text; fill: none; }
-.pt-amber { background: $amber-bg; }
-.pt-amber svg { stroke: $amber-text; fill: none; }
+
 .project-info { padding: 10px 12px; background: $color-bg-white; }
-.project-name { font-size: 13px; font-weight: 500; color: $color-bordeaux; margin-bottom: 6px; }
-.project-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+.project-name { font-size: $font-size-base;
+     font-weight: 500;
+      color: $color-bordeaux;
+       margin: 4% 0 4% 0; 
+    }
+.project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
 .tag {
-    font-size: 10px;
+    font-size: $font-size-sm;
     padding: 2px 8px;
     border-radius: 20px;
 }
