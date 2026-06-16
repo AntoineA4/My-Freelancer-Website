@@ -53,7 +53,7 @@ function Header() {
                     <HiMenu size={30}/>
                 </div>
             </header>
-            <Modals isOpen={menuOpen} onClose={()=>setMenuOpen(false)}>
+            <Modals isOpen={menuOpen} onClose={()=>setMenuOpen(false)} position="right">
                 <div className='modal-header-top'>
                     <div className='logo-modal'>
                     <p className="prenom">Antoine</p> 

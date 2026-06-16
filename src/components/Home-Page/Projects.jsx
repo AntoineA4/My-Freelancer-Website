@@ -62,6 +62,12 @@ function Projects () {
                                 <h3>Difficultés</h3>
                                 <p>{selectedProject.difficulties.fr}</p>
                             </div>
+                            <a href={selectedProject.link}
+                                target="_blank" // ouvre sur un nouvel onglet
+                                rel="noopener noreferrer" // sécurité 
+                                className="project-modal-link"
+                                >Voir sur GitHub →
+                                </a>
                         </div>
                     </div>
                     )}

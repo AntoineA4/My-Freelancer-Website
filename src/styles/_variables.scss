@@ -156,6 +156,49 @@ $font-medium:  500;
     }
 }
 
+@mixin modal-content {
+    
+    position: fixed;
+    z-index: 151;
+  
+
+    // ── Drawer (header burger) ──
+    &.modal-right {
+        top: 0; right: -100%;
+        width: 78%;
+        max-width: 320px;
+        background: $color-bg-creme;
+        border-left: 0.5px solid $color-border;
+        display: flex;
+        flex-direction: column;
+        transition: right .3s ease;
+
+        &.open { right: 0; }
+    }
+
+    // ── Modale centrée (projets) ──
+    &.modal-center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        width: 80%;
+        max-width: 600px;
+        max-height: 85vh;
+        background: $color-bg-white;
+        border-radius: 12px;
+        border: 0.5px solid $color-border;
+        overflow-y: auto;
+        opacity: 0;
+        transition: all .3s ease;
+
+        &.open {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        }
+    }
+}
+
+
 
 
 // ── Animation ──
