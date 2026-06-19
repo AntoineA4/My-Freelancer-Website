@@ -1,28 +1,21 @@
+import { useTranslation } from 'react-i18next';
 import '../../styles/components/Home_page/Reassurance.scss'
 
 function Reassurance() {
+    const { t } = useTranslation()
+    const items = t('home.reassurance.items', { returnObjects: true })
     return(
         <section className='reassurance-section'>
             <div className="title-reassurance">
-                <h2>En quelques chiffres</h2>
+                <h2>{t('home.reassurance.title')}</h2>
             </div>
             <div className="reassurance-flex">
-                <div className="reass-card">
-                    <div className="reass-val">7j</div>
-                    <div className="reass-label">Délai livraison site une page</div>
+                {items.map((item, index) => (
+                <div key={index} className="reass-card">
+                    <div className="reass-val">{item.val}</div>
+                    <div className="reass-label">{item.label}</div>
                 </div>
-                <div className="reass-card">
-                    <div className="reass-val">24h</div>
-                    <div className="reass-label">Délai de réponse garanti</div>
-                </div>
-                <div className="reass-card">
-                    <div className="reass-val">100%</div>
-                    <div className="reass-label">Des fichiers remis au client</div>
-                </div>
-                <div className="reass-card">
-                    <div className="reass-val">0€</div>
-                    <div className="reass-label">Pour un devis détaillé</div>
-                </div>
+                ))}
             </div>
 </section>
 

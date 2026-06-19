@@ -16,7 +16,7 @@ function Hero({
 }) {
     return(
         <section className={`hero ${heroClass}`} id='home-hero'>
-            <div>
+            <div className='hero-text-cointainer'>
                 <div className="hero-tag">{tag}</div>
                 <h1 className="hero-title anim-fade">
                     {title} 

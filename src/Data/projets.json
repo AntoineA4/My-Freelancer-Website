@@ -3,6 +3,8 @@
 		"id": "b9126394",
 		"title": "Portfolio Sophie Bluel",
         "image": "/images/Sophie-Bluel.png",
+		"type": "une-page",
+  		"year": 2024,
 		"description": {
 			"en": "This portfolio of a professional spatial designer, created with JavaScript, showcases her various projects. The site owner can log in using a security token to dynamically add, modify, and delete projects.",
             "fr": "Portfolio d’une designer d’espace professionnelle créé à partir de JavaScript, ce site permet de mettre en lumière ses différents travaux. Il permet au propriétaire du site de se connecter via un token de sécurité pour ajouter, modifier et supprimer des travaux de façon dynamique."
@@ -25,6 +27,8 @@
 		"id": "8ct676a4",
 		"title": "Nina Carducci web site",
         "image": "/images/Nina-Carducci.png",
+		"type": "SEO",
+  		"year": 2024,
 		"description": {
 			"en": "A professional photographer's website, where I had the opportunity to debug and optimize the site, as well as improve its SEO to enhance its search engine ranking.",
             "fr": "Site web d’une photographe professionnelle où j’ai eu l’occasion de faire de la correction de bug et de l’optimisation du site ainsi que du SEO afin d’améliorer son référencement."
@@ -47,6 +51,8 @@
 		"id": "y45l62uu",
 		"title": "Kasa",
         "image": "/images/Kasa.png",
+		"type": "vitrine",
+  		"year": 2024,
 		"description": {
 			"en": "A mockup of a short-term rental site that I coded from scratch using React and SASS. It allows users to navigate through various rental listings and view details about the offered services via a photo carousel, descriptions, and the average client rating.",
             "fr": "Maquette pour un site de location immobilière en courte durée que j’ai codé de A à Z avec React et SASS. Il permet de naviguer entre les différentes annonces de logements et de voir en détails les services proposés dans ces derniers via un Carrousel de photos, des descriptions et la note moyenne attribuée par les clients"
@@ -69,6 +75,8 @@
 		"id": "7op85j55",
 		"title": "Mon vieux Grimoire",
         "image": "/images/Mon-Vieux-Grimoire.png",
+		"type": "BackEnd",
+  		"year": 2024,
 		"description": {
 			"en": "A backend project developed with Node.js, using Express and Mongoose, that allows users to create an account, add books to the database, rate, modify, and delete them. MongoDB is used for data storage, with security measures ensured by JWT and Bcrypt. This project helped me strengthen my skills in building secure RESTful APIs.",
             "fr": "Projet backend développé avec Node.js, utilisant Express et Mongoose, qui permet aux utilisateurs de créer un compte, d'ajouter des livres à la base de données, de les noter, de les modifier et de les supprimer. MongoDB est utilisé pour le stockage des données, avec des mesures de sécurité assurées par JWT et Bcrypt. Cette expérience m’a permis de renforcer mes compétences en création d’API REST sécurisées."
@@ -92,6 +100,8 @@
 		"id": "d69ab4a4",
 		"title": "Booki",
         "image": "/images/Booki.png",
+		"type": "une-page",
+  		"year": 2024,
 		"description": {
 			"en": "This site, coded in HTML, is a mockup of an online accommodation website, allowing users to filter their searches based on various criteria.",
             "fr": "Ce site coder sous Html est une maquette d’un site d’hébergements en ligne, permettant aux usagers de filtrer leurs recherches en fonction de plusieurs critères."
@@ -105,6 +115,7 @@
 			"Html5",
 			"CSS3"
 		],
+		"tagColor": "tag-corail",
         "featured": false,
 		"link": "https://github.com/AntoineA4/Booki-accueil-Projet1"
 	}

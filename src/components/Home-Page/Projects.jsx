@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 import projects from '../../Data/projets.json'
 import Modals from '../Modals';
 import '../../styles/components/Home_page/Projects.scss'
 
 function Projects () {
-
+    const {t} = useTranslation()
     const [selectedProject, setSelectedProject] = useState(null)
     const displayedProjects = projects.filter(p => p.featured)
 
@@ -12,8 +14,8 @@ function Projects () {
         <section className="projects-section" id='projets'>
             <div className="projects-container">
                 <div className="section-header">
-                    <h2 className="Projects-title">Projets récents</h2>
-                    <a href="#" className="section-link">Tous les projets →</a>
+                    <h2 className="Projects-title">{t('home.projets.title')}</h2>
+                    <Link to='/projects-page' className="section-link">{t('home.projets.link')}</Link>
                 </div>
                 <div className="projects-flex">
                     {displayedProjects.map((project)=>(

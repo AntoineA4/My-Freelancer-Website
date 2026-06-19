@@ -7,6 +7,7 @@ import OPOffre from './pages/OP-Offre';
 import Error from './pages/Error';
 import SiteVitrineOffre from './pages/Vitrine_offre';
 import Hebergement from './pages/Hebergement';
+import ProjectsPage from './pages/Projects-Page';
 import Footer from "./components/Footer";
 import ScrollToTop from './components/ScrollToTop';
 function App() {
@@ -18,6 +19,7 @@ function App() {
     '/offres/site-une-page',
     '/offres/site-vitrine',
     '/offres/hebergement',
+    '/projects-page',
   ].includes(location.pathname);
 
   return (
@@ -31,6 +33,7 @@ function App() {
         <Route path="/offres/site-une-page" element={<OPOffre />} />
         <Route path="/offres/site-vitrine" element={<SiteVitrineOffre />} />
         <Route path="/offres/hebergement" element={<Hebergement />} />
+        <Route path="/projects-page" element={<ProjectsPage />} />
         <Route path="*" element={<Error />} />
       </Routes>
 

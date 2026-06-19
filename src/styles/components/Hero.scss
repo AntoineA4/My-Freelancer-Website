@@ -4,6 +4,10 @@
   );
   @include flex-between;
 
+  .hero-text-cointainer{
+    margin-left:13%;
+  }
+
   // ── Boutons ──
   .hero-btns {
     @include fade-up(0.35s);

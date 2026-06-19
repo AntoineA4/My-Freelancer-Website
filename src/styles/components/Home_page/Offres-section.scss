@@ -1,4 +1,4 @@
-.Offres-section {
+.offres-section {
     background-color: $color-bg-creme;
     padding-bottom: 2%;
 
@@ -6,12 +6,12 @@
         @include section-title; 
     }
 
-    .offre-card-container {
+    .offre-home-card-container {
         @include flex-center;
         align-items: stretch;
         gap:20px;
 
-        .Offre-card{
+        .offre-home-card{
             display: flex;           
             flex-direction: column;
             width: 22%;
@@ -111,14 +111,27 @@ h3 {
   border-radius: 20px;
   margin-top: auto; 
   display: inline-block;
-  align-self: flex-start; 
+  align-self: flex-end; 
+}
+
+@include tablet {
+    .offres-section{
+        .offre-home-card-container {
+            margin: 0 4%;
+            gap: 10px;
+
+            .offre-home-card {
+                width: 35%;
+            }
+        }
+    }
 }
 
 @include mobile {
-    .Offres-section {
+    .offres-section {
         margin: 1% 0% 2% 0%;
         
-        .offre-card-container {
+        .offre-home-card-container {
             margin: 0 4% 0 4%; 
             gap: 16px;
             justify-content: flex-start;
@@ -130,7 +143,7 @@ h3 {
             &::-webkit-scrollbar {
                 display: none;            // ← cache la scrollbar sur Chrome/Safari
             }
-            .Offre-card {
+            .offre-home-card {
             flex-shrink: 0;             // ← empêche les cartes de rétrécir
             scroll-snap-align: start;   // ← aligne au snap point
             width: 80vw;                // ← presque toute la largeur sur mobile
@@ -165,3 +178,4 @@ h3 {
     }
 
 }
+

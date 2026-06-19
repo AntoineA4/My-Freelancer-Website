@@ -1,0 +1,185 @@
+{
+"header": {
+    "nav": {
+        "offres": "Offres",
+        "projets": "Projets",
+        "compétences": "Compétences",
+        "contact": "Contact"
+    },
+    "btn": "Me contacter",
+    "modal": {
+        "navigation": "NAVIGATION",
+        "contact": "CONTACT",
+        "contact-link": "Demande de devis",
+        "offres": "OFFRES",
+        "retour-home": "Retour à l'acceuil"
+    }
+},
+"dispo-band": {
+    "text": "Disponible pour de nouvelles missions — réponse sous 24h",
+    "tag": "Freelance à distance"
+},
+"home": {
+    "hero": {
+        "tag": "Développeur web freelance",
+        "title": "Je crée des sites Web",
+        "highlight": "qui convertissent",
+        "subtitle": "Sites vitrine, landing pages et intégrations sur-mesure.",
+        "br": "Disponible à distance, partout dans le monde.",
+        "primary-btn": "Voir mes offres",
+        "secondary-btn": "Discutons ↗"
+    },
+    "reassurance": {
+        "title": "En quelques chiffres",
+        "items": [
+            { "val": "7j",   "label": "Délai livraison site une page" },
+            { "val": "24h",  "label": "Délai de réponse garanti" },
+            { "val": "100%", "label": "Des fichiers remis au client" },
+            { "val": "0€",   "label": "Pour un devis détaillé" }
+        ]
+    },
+    "forWho": {
+        "title": "Pour qui je travaille",
+        "items": [
+            {
+            "name": "Artisans & commerçants",
+            "desc": "Plombiers, électriciens, menuisiers qui veulent être trouvés sur Google",
+            "icon": "tool"
+            },
+            {
+            "name": "Restaurateurs",
+            "desc": "Carte en ligne, réservation, horaires — tout ce qu'un client cherche",
+            "icon": "send"
+            },
+            {
+            "name": "Coachs & consultants",
+            "desc": "Mettre en avant votre expertise et générer des prises de contact",
+            "icon": "briefcase"
+            },
+            {
+            "name": "Créatifs & photographes",
+            "desc": "Un portfolio qui met vraiment en valeur votre travail",
+            "icon": "camera"
+            },
+            {
+            "name": "Créateurs de contenu",
+            "desc": "Page de présentation, liens bio, monétisation — je connais cet univers",
+            "icon": "video"
+            },
+            {
+            "name": "TPE & indépendants",
+            "desc": "Toute activité qui a besoin d'une présence en ligne professionnelle",
+            "icon": "home"
+            }
+        ]
+    },
+    "whyMe": {
+        "title": "Pourquoi me choisir",
+        "items": [
+            {"name": "Livraison rapide", "desc": "Site livré en 7 à 14 jours selon la formule choisie", "icon": "clock"},
+            {"name": "Interlocuteur direct", "desc": "Vous parlez avec le dev, pas un commercial ou un chef de projet", "icon": "dialogue"},
+            {"name": "Vous restez propriétaire", "desc": "Tous les accès, fichiers sources et le domaine vous sont remis", "icon": "padlock"}
+        ]
+    },
+    "offres": {
+        "title": "Mes Offres",
+        "items": [
+            {
+            "id": "site-une-page",
+            "name": "Site une page",
+            "subtitle": "L'essentiel, bien fait",
+            "price": "300€",
+            "priceRange": "à 500€",
+            "priceSub": "Selon complexité & animations",
+            "badge": "Idéal pour débuter",
+            "colorClass": "corrail-card",
+            "link": "/offres/site-une-page",
+            "items": [
+                "Design sur-mesure",
+                "Responsive mobile",
+                "Formulaire de contact",
+                "SEO de base",
+                "Livraison en 7 jours",
+                "2 allers-retours inclus"
+            ]
+            },
+            {
+            "id": "site-vitrine",
+            "name": "Site vitrine",
+            "subtitle": "3 à 5 pages professionnelles",
+            "price": "800€",
+            "priceRange": "à 1 200€",
+            "priceSub": "Selon le nombre de pages & les fonctionnalités",
+            "badge": null,
+            "colorClass": "corrail-fonce-card",
+            "link": "/offres/site-vitrine",
+            "items": [
+                "Jusqu'à 5 pages",
+                "Design sur-mesure",
+                "Responsive mobile",
+                "SEO optimisé",
+                "Livraison en 14 jours",
+                "3 allers-retours inclus"
+            ]
+            },
+            {
+            "id": "hebergement",
+            "name": "Hébergement & maintenance",
+            "subtitle": "L'essentiel en toute sérénité",
+            "price": "À partir de",
+            "priceRange": "20€/mois",
+            "priceSub": "Sans engagement — 3 formules disponibles",
+            "badge": "Voir les 3 formules →",
+            "colorClass": "dark-card",
+            "link": "/offres/hebergement",
+            "items": [
+                "Hébergement inclus",
+                "Nom de domaine inclus",
+                "SSL/HTTPS",
+                "Email pro inclus"
+            ]
+            }
+        ]
+    },
+    "projets": {
+        "title": "Projets récents",
+        "link": "Tous les projets →"
+
+    },
+    "skills": {
+        "title": "Compétences",
+        "videoEdit": "Montage vidéo"
+    },
+    "contactHome": {
+        "title": "Un projet",
+        "em": "en tête ?",
+        "subtitle": "Votre devis gratuit, réponse sous 24h."
+    }
+},
+"offres": {
+    "onePage": {
+        "hero": {
+            "tag": "Offre — Développement web",
+            "title": "Site",
+            "highlight": " une page",
+            "subtitle": "L'essentiel, bien fait. Un site rapide, professionnel et responsive",
+            "br": "pour vous présenter ou lancer une idée sans vous ruiner."
+        },
+        "priceRange": {
+            "mainPrice":"300€",
+            "secondPrice":"à 500€",
+            "note":"Prix fixe selon le niveau de complexité demandé",
+            "tvaBadge":"TVA non applicable — art. 293B CGI",
+            "secondBadge":"Livraison en 7 jours" 
+        },
+        "whatsIncluded": {
+            "title": "Ce qui est inclus"
+        }
+    }
+    
+},
+"footer": {
+    "text": "Disponible — Devis gratuit sous 24h · TVA non applicable, art. 293B CGI"
+
+}
+}

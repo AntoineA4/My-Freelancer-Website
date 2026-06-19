@@ -1,11 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import '../../styles/components/Home_page/Skills.scss'
 
 function Skills () {
 
+    const{t} = useTranslation()
+
     return(
         <section className="skills-section" id='compétences'>
             <div className="skills-title">
-                <h2>Compétences</h2>
+                <h2>{t('home.skills.title')}</h2>
             </div>
             <div className="skills-flex">
                 <div className="skill-pill pill-corail">
@@ -75,7 +78,7 @@ function Skills () {
                 </div>
                 <div className="skill-pill pill-corail">
                     <svg viewBox="0 0 24 24" strokeWidth="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-                    Montage vidéo
+                    {t('home.skills.videoEdit')}
                 </div>
                 <div className="skill-pill pill-amber">
                     <svg viewBox="0 0 24 24" strokeWidth="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>

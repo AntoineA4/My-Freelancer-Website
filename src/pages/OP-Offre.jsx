@@ -9,9 +9,12 @@ import Extras from "../components/Offres/Extra";
 import Steps from "../components/Steps";
 import Faq from "../components/Faq";
 import CtaNavOffres from "../components/Offres/Cta-nav-Offre";
+import { useTranslation } from "react-i18next";
 import '../styles/components/Offre-Pages/NonInc-Moda.scss'
 
 function OPOffre () {
+
+    const {t} = useTranslation()
 
     return (
         <>
@@ -20,21 +23,21 @@ function OPOffre () {
                 page="Site une page"
             />
             <Hero
-            tag="Offre — Développement web"
-            title="Site"
-            highlight=" une page"
+            tag={t('offres.onePage.hero.tag')}
+            title={t('offres.onePage.hero.title')}
+            highlight={t('offres.onePage.hero.highlight')}
             subtitle={<>
-                L'essentiel, bien fait. Un site rapide, professionnel et responsive
+                {t('offres.onePage.hero.subtitle')}
                 <br />
-                pour vous présenter ou lancer une idée sans vous ruiner.
+                {t('offres.onePage.hero.br')}
             </>}
             />
             <PriceBand 
-                MainPrice ='300€'
-                SecondPrice ='à 500€'
-                Note = 'Prix fixe selon le niveau de complexité demandé'
-                TVABadge = 'TVA non applicable — art. 293B CGI'
-                SecondBadge = 'Livraison en 7 jours'
+                MainPrice ={t('offres.onePage.priceRange.mainPrice')}
+                SecondPrice ={t('offres.onePage.priceRange.secondPrice')}
+                Note = {t('offres.onePage.priceRange.note')}
+                TVABadge = {t('offres.onePage.priceRange.tvaBadge')}
+                SecondBadge = {t('offres.onePage.priceRange.secondBadge')}
             />
             <WhatsIncluded items={[
                 { main: 'Design sur-mesure', text: "pas de template générique, le site est pensé pour vous et votre activité" },

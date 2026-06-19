@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { HiMenu, HiHome, HiExternalLink, HiChevronRight, HiMail } from "react-icons/hi";
 import Modals from './Modals';
+import LanguageSwitcher from './ChangeLanguage';
 import '../styles/components/Header.scss'
 
 function Header() {
@@ -10,6 +11,15 @@ function Header() {
     const [scrolled, setScrolled] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
     const isActive = (path) => location.pathname === path
+    const navigate = useNavigate()
+    const handleAnchorClick = (e, anchor) => {
+        e.preventDefault()
+        navigate('/')
+        setTimeout(() => {
+            const target = document.querySelector(anchor)
+            if (target) target.scrollIntoView({ behavior: 'smooth' })
+        }, 100)
+    }
 
 
     useEffect(() => {
@@ -44,10 +54,15 @@ function Header() {
                         </ul>
                     </nav>
                 ) : (
-                    <Link to="/" className="nav-back">
-                        ← Retour à l'accueil
-                    </Link>
+                    <nav className="header-nav-bar">
+                        <ul>
+                        <li><a href='/#offres' onClick={(e) => handleAnchorClick(e, '#offres')}>Offres</a></li>
+                        <li><Link to="/projects-page">Projets</Link></li>
+                        <li><a href='/#Contact-Home-Section' onClick={(e) => handleAnchorClick(e, '#Contact-Home-Section')}>Contact</a></li>
+                        </ul>
+                    </nav>
                 )}
+                <LanguageSwitcher />
                 <Link to="/contact" className='contactBtn'>Me contacter</Link>
                 <div className='menuBurger' onClick={()=>setMenuOpen(true)}>
                     <HiMenu size={30}/>

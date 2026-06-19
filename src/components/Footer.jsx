@@ -1,12 +1,14 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa6' 
+import { useTranslation } from 'react-i18next';
 import '../styles/components/Footer.scss'
 
 function Footer() {
+    const {t} = useTranslation()
     return(
         <footer>
             <div className="footer-copy">
                 <span className="footer-dot"></span>
-                Disponible — Devis gratuit sous 24h · TVA non applicable, art. 293B CGI
+                {t('footer.text')}
             </div>
             <div className="footer-socials">
                 <div className='footer-text' >
