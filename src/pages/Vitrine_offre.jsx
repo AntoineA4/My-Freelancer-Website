@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Hero from "../components/Hero";
 import LocalisationBar from "../components/LocalisationBar";
 import PriceBand from "../components/Offres/Price-range";
@@ -15,6 +16,8 @@ import '../styles/components/Offre-Pages/NonInc-Moda.scss'
 
 function SiteVitrineOffre () {
 
+    const {t} = useTranslation()
+
     return (
         <>
             <LocalisationBar
@@ -22,115 +25,49 @@ function SiteVitrineOffre () {
                 page="Site vitrine"
             />
             <Hero
-            tag="Offre — Développement web"
-            title="Site"
-            highlight=" vitrine"
+            tag={t('offres.vitrine.hero.tag')}
+            title={t('offres.vitrine.hero.title')}
+            highlight={t('offres.vitrine.hero.hightlight')}
             heroClass="hero-corail-fonce"
             subtitle={<>
-                Un site complet, professionnel et sur-mesure pour présenter votre activité,
+                {t('offres.vitrine.hero.subtitle')}
                 <br />
-                inspirer confiance et transformer des visiteurs en clients.
+                {t('offres.vitrine.hero.br')}
             </>}
             />
             <PriceBand 
-                MainPrice ='800€'
-                SecondPrice ='à 1200€'
-                Note = 'Devis fixe selon le nombre de pages et les fonctionnalités'
-                TVABadge = 'TVA non applicable — art. 293B CGI'
-                SecondBadge = 'Livraison en 14 jours'
+                MainPrice ={t('offres.vitrine.priceRange.mainPrice')}
+                SecondPrice ={t('offres.vitrine.priceRange.secondPrice')}
+                Note = {t('offres.vitrine.priceRange.note')}
+                TVABadge = {t('offres.vitrine.priceRange.tvaBadge')}
+                SecondBadge = {t('offres.vitrine.priceRange.secondBadge')}
             />
             <PagesTypiques />
-            <WhatsIncluded items={[
-                { main: 'Design sur-mesure', text: "identité visuelle cohérente, palette de couleurs et typographie adaptées à votre activité" },
-                { main: "Jusqu'à 5 pages", text: "structure claire et logique pensée pour la conversion" },
-                { main: 'Responsive mobile', text: "site parfaitement adapté sur tous les appareils" },
-                { main: 'SEO optimisé', text: "balises, structure sémantique, vitesse de chargement, sitemap" },
-                { main: 'Formulaire de contact', text: "fonctionnel avec notifications email" }, 
-                { main: 'Animations et micro-interactions' , text: "apparitions au scroll, survols, transitions fluides"},
-                { main: '3 allers-retours de corrections', text: "inclus après la première livraison" },
-                { main: 'Livraison des fichiers sources', text: "vous êtes propriétaire à 100%" },
-            ]} />
+            <WhatsIncluded items={t('offres.vitrine.whatsIncluded.items', {returnObjects: true})} />
             <section className="nonInclude-and-moda">
-                <NonInclude items = {[
-                    {main: 'Plus de 5 pages'},
-                    {main: 'Hébergement & domaine'},
-                    {main: 'Rédaction des textes'},
-                    {main: 'Création de photos ou logo'},
-                    {main: 'Maintenance mensuelle'},
-                    {main: 'Boutique en ligne'},
-
-                ]}/>
-                <Modalites items = {[
-                    {main: 'Acompte', text: "50% à la commande"},
-                    {main: 'Solde', text: "50% à la livraison"},
-                    {main: 'Délai', text: "14 jours ouvrés"},
-                    {main: 'Corrections', text: "3 allers-retours"},
-                    {main: 'Livrable', text: "Fichiers sources"},
-                    {main: 'Paiement', text: "Virement bancaire"},
-                ]}/>
+                <NonInclude items = {t('offres.vitrine.nonIncluded.items', {returnObjects: true})}/>
+                <Modalites items = {t('offres.vitrine.modalites.items', {returnObjects: true})}/>
             </section>
             <section style={{margin: '0 4%', borderBottom: 'none'}}>
                 <Comparatif 
-                    title="Comparatif des offres"
+                    title={t('offres.vitrine.comparatif.title')}
                     headers={[
-                        { label: 'Site une page', key: 'unePage' },
-                        { label: 'Site vitrine',  key: 'vitrine', featured: true },
+                        { label: t('offres.vitrine.comparatif.headers.label1'), key: 'unePage' },
+                        { label: t('offres.vitrine.comparatif.headers.label2'),  key: 'vitrine', featured: true },
                     ]}
-                    rows={[
-                        { label: 'Nombre de pages',  unePage: '1 page',    vitrine: "Jusqu'à 5" },
-                        { label: 'Design sur-mesure',unePage: '✓',         vitrine: '✓' },
-                        { label: 'Responsive mobile',unePage: '✓',         vitrine: '✓' },
-                        { label: 'SEO optimisé',     unePage: 'Basique',   vitrine: 'Complet' },
-                        { label: 'Allers-retours',   unePage: '2',         vitrine: '3' },
-                        { label: 'Formation incluse',unePage: '—',         vitrine: '✓' },
-                        { label: 'Délai de livraison',unePage: '7 jours',  vitrine: '14 jours' },
-                        { label: 'Prix',             unePage: '300–500€',  vitrine: '800–1 200€', isPrice: true },
-                    ]}
+                    rows={t('offres.vitrine.comparatif.rows', {returnObjects: true})}
                 />
             </section>
             <section style={{margin: '0 4%', borderBottom: 'none'}}>
                 <Steps 
-                    title="Comment ça se passe"
+                    title={t('offres.onePage.steps.title')}
                     titleTag="div" 
                     icon="→"     
-                    steps={[
-                        {
-                            title: 'Brief & devis', 
-                            desc: "On échange par email ou visio pour comprendre votre projet, votre activité et vos goûts. Je vous prépare un devis fixe sous 24h.", 
-                            calendar: 'Jour 0'
-                        },
-                        {
-                            title: 'Acompte & démarrage', 
-                            desc: "Une fois le devis signé et l'acompte reçu (50%), je vous demande vos textes, photos et éléments de marque (logo, couleurs). Puis je commence le design du site",
-                            calendar: "Jour 1-2"
-                        },
-                        { 
-                            title: 'Design & développement', 
-                            desc: "Je conçois et développe le site. Je vous tiens informé de l'avancement si besoin.",
-                            calendar: "Jour 3 à 10"
-                        },
-                        { 
-                            title: 'Livraison & corrections',
-                            desc: "Vous reçevez le site en prévisualisation. On fait jusqu'à 3 allers-retours pour affiner.",
-                            calendar: "Jour 11 à 14"
-                        },
-                        { 
-                            title: 'Validation & remise des fichiers',
-                            desc: "Solde réglé, fichiers sources remis, formation rapide à la prise en main si besoin (notament pour les portfolios). Le site est à vous.",
-                            calendar: "Jour 14"
-                        },
-                    ]}
+                    steps={t('offres.vitrine.steps.items', {returnObjects: true})}
                 />
             </section>
             <InfoTips />
-            <Extras items ={[
-                {main: 'Page supplémentaire (6e+)', text: "à partir de 150€"},
-                {main: 'Animation sur-mesure', text: "à partir de 100€"},
-                {main: 'Site Multi-langue', text: "à partir de 50€"},
-                {main: 'Intégration calendrier/RDV', text: "à partir de 100€"},
-                {main: 'Hébergement + domaine', text: "20€/mois"},
-                {main: 'Maintenance mensuelle', text: "à partir de 45€/mois"},
-                ]}
+            <Extras items ={t('offres.vitrine.extras.items', {returnObjects: true})}
             />
             <section style={{margin: '0 4%', borderBottom: 'none'}}>
                 <Faq 

@@ -1,12 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import '../../styles/components/Offre-Pages/Extras.scss'
 
 function Extras ({items = [], extrasClass=''}) {
+
+    const {t} = useTranslation()
 
     return (
         <section className={`offre-infos-box ${extrasClass}`}>
             <div className="infos-block-head">
                 <span className="ih-icon">+</span>
-                <div className="infos-title">Options à la carte</div>
+                <div className="infos-title">{t('offres.onePage.extras.title')}</div>
             </div>
             <div className="infos-body extras-flex">
                         {items.map((item, index) =>(

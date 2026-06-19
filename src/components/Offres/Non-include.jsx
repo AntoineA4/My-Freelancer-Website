@@ -1,10 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 function NonInclude ({items = []}) {
+
+    const {t} = useTranslation()
 
     return (
         <div className="offre-infos-box nonInclude-box">
             <div className="infos-block-head">
                 <span className="ih-icon">✗</span>
-                <div className="infos-title">Non inclus</div>
+                <div className="infos-title">{t('offres.onePage.nonIncluded.title')}</div>
             </div>
             <div className="infos-body">
                 <ul className="offre-items">

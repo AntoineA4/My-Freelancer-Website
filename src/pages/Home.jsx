@@ -7,23 +7,27 @@ import Offres from "../components/Home-Page/Offres";
 import Projects from "../components/Home-Page/Projects";
 import Skills from "../components/Home-Page/Skills";
 import ContactHomePage from "../components/Home-Page/Contact-Home-Page";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+
+  const {t} = useTranslation()
+
   return (
     <>
       <Hero 
-      tag="Développeur web freelance"
-      title="Je crée des sites Web"
-      highlight="qui convertissent"
+      tag={t('home.hero.tag')}
+      title={t('home.hero.title')}
+      highlight={t('home.hero.hightlight')}
       showBreak = {true}
       subtitle={<>
-        Sites vitrine, landing pages et intégrations sur-mesure.
+        {t('home.hero.subtitle')}
         <br />
-        Disponible à distance, partout dans le monde.
+        {t('home.hero.br')}
         </>}
         showBtn={true}
-        primaryBtn="Voir mes offres"
-        secondaryBtn="Discutons ↗"/>
+        primaryBtn={t('home.hero.primary-btn')}
+        secondaryBtn={t('home.hero.secondary-btn')}/>
       <DispoBand />
       <Reassurance />
       <ForWho />

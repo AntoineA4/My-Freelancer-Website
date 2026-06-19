@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Hero from "../components/Hero";
 import LocalisationBar from "../components/LocalisationBar";
 import Comparatif from "../components/Offres/Comparatif";
@@ -11,6 +12,8 @@ import '../styles/pages/Hebergement.scss'
 
 function Hebergement () {
 
+    const {t} = useTranslation()
+
     return (
         <>
             <LocalisationBar
@@ -18,14 +21,14 @@ function Hebergement () {
                 page="Hébergement & maintenance"
             />
             <Hero
-                tag="Offre — Services récurrents"
-                title="Hébergement "
-                highlight=" & maintenance"
+                tag={t('offres.hebergement.hero.tag')}
+                title={t('offres.hebergement.hero.title')}
+                highlight={t('offres.hebergement.hero.highlight')}
                 heroClass="hero-bordeaux"
                 subtitle={<>
-                    Votre site en ligne, stable et suivi. Choisissez la formule adaptée à vos besoins 
+                    {t('offres.hebergement.hero.subtitle')}
                     <br />
-                    — sans engagement
+                    {t('offres.hebergement.hero.br')}
                 </>}
             />
             <PlansPicker />

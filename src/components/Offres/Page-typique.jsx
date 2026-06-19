@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import '../../styles/components/Offre-Pages/PagesTypiques.scss'
 
 const pages = [
@@ -10,11 +11,14 @@ const pages = [
 ]
 
 function PagesTypiques() {
+
+    const {t} =useTranslation()
+
     return (
         <section className="pages-typiques-section">
             <div className="infos-block-head">
                 <span className="ih-icon">📄</span>
-                <div className="infos-title">Pages typiques incluses</div>
+                <div className="infos-title">{t('offres.vitrine.pageTypique.title')}</div>
             </div>
             <div className="infos-body">
                 <div className="pages-grid">

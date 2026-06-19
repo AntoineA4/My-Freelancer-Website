@@ -1,5 +1,9 @@
 import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import '../../styles/components/Offre-Pages/CtaNavOffres.scss'
+
+
+const {t} = useTranslation()
 
 const offres = [
     {

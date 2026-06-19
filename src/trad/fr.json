@@ -173,8 +173,208 @@
             "secondBadge":"Livraison en 7 jours" 
         },
         "whatsIncluded": {
-            "title": "Ce qui est inclus"
+            "title": "Ce qui est inclus",
+            "items": [
+                { "main": "Design sur-mesure", "text": "pas de template générique, le site est pensé pour vous et votre activité" },
+                { "main": "Responsive mobile", "text": "le site s'adapte parfaitement à tous les écrans (mobile, tablette, desktop)" },
+                { "main": "Formulaire de contact", "text": "formulaire fonctionnel avec réception des messages par email" },
+                { "main": "SEO de base", "text": "balises title, meta description, structure HTML propre pour Google" },
+                { "main": "Animations subtiles", "text": "apparition des sections au scroll, effets de survol sur les boutons" }, 
+                { "main": "Livraison des fichiers sources" , "text": "vous reçevez tous les fichiers HTML/CSS/JS, vous êtes propriétaire à 100%"},
+                { "main": "2 allers-retours de corrections", "text": "inclus après la première livraison" }
+            ]
+        },
+        "nonIncluded": {
+            "title": "Non inclus",
+            "items": [
+                    {"main": "Pages supplémentaires"},
+                    {"main": "Hébergement & domaine"},
+                    {"main": "Rédaction des textes"},
+                    {"main": "Création de photos ou logo"},
+                    {"main": "Maintenance mensuelle"},
+                    {"main": "Boutique en ligne"}
+                ]
+        },
+        "modalites": {
+            "title": "Modalités",
+            "items": [
+                {"main": "Acompte", "text": "50% à la commande"},
+                {"main": "Solde", "text": "50% à la livraison"},
+                {"main": "Délai", "text": "7 jours ouvrés"},
+                {"main": "Corrections", "text": "2 allers-retours"},
+                {"main": "Livrable", "text": "Fichiers sources"},
+                {"main": "Paiement", "text": "Virement bancaire"}
+            ]
+        },
+        "steps": {
+            "title": "Comment ça se passe",
+            "items": [
+                {
+                "title": "Brief & devis", 
+                "desc": "On échange par email ou visio pour comprendre votre projet, votre activité et vos goûts. Je vous prépare un devis fixe sous 24h.", 
+                "calendar": "Jour 0"
+                },
+                {
+                "title": "Acompte & démarrage", 
+                "desc": "Une fois le devis signé et l'acompte reçu (50%), je commence le design et le développement.",
+                "calendar": "Jour 1"
+                },
+                { 
+                "title": "Première livraison", 
+                "desc": "Vous reçevez le site en ligne sur un lien de prévisualisation. Vous pouvez me faire tes retours directement.",
+                "calendar": "Jour 4 à 6"
+                },
+                { 
+                "title": "Corrections & validation",
+                "desc": "J'applique vos retours (2 allers-retours inclus). Une fois validé, vous règlez le solde et je vous remets tous les fichiers.",
+                "calendar": "Jour 6 à 7"
+                }
+            ]
+        },
+        "tips": {
+            "strong": "Pour que tout se passe bien : ",
+            "text": "pour démarrer j'ai besoin de vos textes (ou d'un brouillon), votre logo (ou une idée de nom), et quelques exemples de sites que vous aimez. Plus vous êtes précis dans le brief, plus le résultat sera fidèle à vos attentes."
+        },
+        "extras": {
+            "title": "Options à la carte",
+            "items": [
+                {"main": "Page supplémentaire", "text": "à partir de 150€"},
+                {"main": "Animations avancées", "text": "à partir de 100€"},
+                {"main": "Site Multi-langue", "text": "à partir de 50€"},
+                {"main": "Intégration Google Maps", "text": "à partir de 50€"},
+                {"main": "Hébergement + domaine", "text": "20€/mois"},
+                {"main": "Maintenance mensuelle", "text": "45€/mois"}
+            ]
+        },
+        "faq": {
+            "title": "Questions fréquentes",
+            "items": [
+                { "title": "Est-ce que je garde la propriété du site ?", "desc": "Oui, à 100%. Vous reçevez tous les fichiers sources à la livraison finale. Le site vous appartient complètement, indépendamment de tout abonnement." },
+                { "title": "Et si je veux ajouter une page plus tard ?", "desc": "Tout à fait possible. Chaque page supplémentaire est facturée à partir de 150€ selon la complexité. Vous pouvez aussi passer sur l'offre site vitrine dès le départ." },
+                { "title": "Je n'ai pas de textes ni de logo, c'est un problème ?", "desc": "Non, mais ça rallonge les délais. Je peux vous guider pour structurer vos textes. Pour le logo, je peux en créer un simple (typographique) pour 80€ supplémentaires." },
+                { "title": "Puis-je modifier le site moi-même après livraison ?", "desc": "Le site est en HTML/CSS pur. Sans connaissances techniques c'est difficile. Je recommande mon forfait maintenance pour les mises à jour (1h incluse par mois)." }
+            ]
+        },
+        "ctaSlug": "site-une-page"
+    
+    },
+    "vitrine": {
+        "hero": {
+            "tag": "Offre — Développement web",
+            "title": "Site",
+            "highlight": " vitrine",
+            "subtitle": "Un site complet, professionnel et sur-mesure pour présenter votre activité,",
+            "br": "inspirer confiance et transformer des visiteurs en clients."
+        },
+        "priceRange": {
+            "mainPrice":"800€",
+            "secondPrice":"à 1 200€",
+            "note":"Devis fixe selon le nombre de pages et les fonctionnalités",
+            "tvaBadge":"TVA non applicable — art. 293B CGI",
+            "secondBadge":"Livraison en 14 jours" 
+        },
+        "pageTypique": {
+            "title": "Pages typiques incluses"
+        },
+        "whatsIncluded": {
+            "items": [
+                { "main": "Design sur-mesure", "text": "identité visuelle cohérente, palette de couleurs et typographie adaptées à votre activité" },
+                { "main": "Jusqu'à 5 pages", "text": "structure claire et logique pensée pour la conversion" },
+                { "main": "Responsive mobile", "text": "site parfaitement adapté sur tous les appareils" },
+                { "main": "SEO optimisé", "text": "balises, structure sémantique, vitesse de chargement, sitemap" },
+                { "main": "Formulaire de contact", "text": "fonctionnel avec notifications email" }, 
+                { "main": "Animations et micro-interactions" , "text": "apparitions au scroll, survols, transitions fluides"},
+                { "main": "3 allers-retours de corrections", "text": "inclus après la première livraison" },
+                { "main": "Livraison des fichiers sources", "text": "vous êtes propriétaire à 100%" }
+            ]
+        },
+        "nonIncluded": {
+            "items": [
+                    {"main": "Plus de 5 pages"},
+                    {"main": "Hébergement & domaine"},
+                    {"main": "Rédaction des textes"},
+                    {"main": "Création de photos ou logo"},
+                    {"main": "Maintenance mensuelle"},
+                    {"main": "Boutique en ligne"}
+                ]
+        },
+        "modalites": {
+            "items": [
+                {"main": "Acompte", "text": "50% à la commande"},
+                {"main": "Solde", "text": "50% à la livraison"},
+                {"main": "Délai", "text": "14 jours ouvrés"},
+                {"main": "Corrections", "text": "3 allers-retours"},
+                {"main": "Livrable", "text": "Fichiers sources"},
+                {"main": "Paiement", "text": "Virement bancaire"}
+            ]
+        },
+        "comparatif": {
+            "title": "Comparatif des offres",
+            "headers": {
+                "label1": "Site une page",
+                "label2": "Site vitrine"
+            },
+            "rows": [
+                { "label": "Nombre de pages",  "unePage": "1 page", "vitrine": "Jusqu'à 5" },
+                { "label": "Design sur-mesure", "unePage": "✓", "vitrine": "✓" },
+                { "label": "Responsive mobile", "unePage": "✓", "vitrine": "✓" },
+                { "label": "SEO optimisé", "unePage": "Basique", "vitrine": "Complet" },
+                { "label": "Allers-retours", "unePage": "2", "vitrine": "3" },
+                { "label": "Formation incluse", "unePage": "—", "vitrine": "✓" },
+                { "label": "Délai de livraison", "unePage": "7 jours",  "vitrine": "14 jours" },
+                { "label": "Prix", "unePage": "300–500€",  "vitrine": "800–1 200€", "isPrice": true }
+            ]
+        },
+        "steps": {
+            "items": [
+                {
+                "title": "Brief & devis", 
+                "desc": "On échange par email ou visio pour comprendre votre projet, votre activité et vos goûts. Je vous prépare un devis fixe sous 24h.", 
+                "calendar": "Jour 0"
+                },
+                {
+                "title": "Acompte & démarrage", 
+                "desc": "Une fois le devis signé et l'acompte reçu (50%), je vous demande vos textes, photos et éléments de marque (logo, couleurs). Puis je commence le design du site",
+                "calendar": "Jour 1-2"
+                },
+                { 
+                "title": "Design & développement", 
+                "desc": "Je conçois et développe le site. Je vous tiens informé de l'avancement si besoin.",
+                "calendar": "Jour 3 à 10"
+                },
+                { 
+                "title": "Livraison & corrections",
+                "desc": "Vous reçevez le site en prévisualisation. On fait jusqu'à 3 allers-retours pour affiner.",
+                "calendar": "Jour 11 à 14"
+                },
+                { 
+                "title": "Validation & remise des fichiers",
+                "desc": "Solde réglé, fichiers sources remis, formation rapide à la prise en main si besoin (notament pour les portfolios). Le site est à vous.",
+                "calendar": "Jour 14"
+                }
+            ]
+        },
+        "extras": {
+            "items": [
+                {"main": "Page supplémentaire (6e+)", "text": "à partir de 150€"},
+                {"main": "Animation sur-mesure", "text": "à partir de 100€"},
+                {"main": "Site Multi-langue", "text": "à partir de 50€"},
+                {"main": "Intégration calendrier/RDV", "text": "à partir de 100€"},
+                {"main": "Hébergement + domaine", "text": "20€/mois"},
+                {"main": "Maintenance mensuelle", "text": "à partir de 45€/mois"}
+                ]
         }
+
+    },
+    "hebergement": {
+        "hero": {
+            "tag": "Offre — Services récurrents",
+            "title": "Hébergement",
+            "highlight": " & maintenance",
+            "subtitle": "Votre site en ligne, stable et suivi. Choisissez la formule adaptée à vos besoins",
+            "br": "— sans engagement."
+        }
+
     }
     
 },
