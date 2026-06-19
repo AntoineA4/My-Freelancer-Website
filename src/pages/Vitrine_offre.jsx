@@ -22,7 +22,7 @@ function SiteVitrineOffre () {
         <>
             <LocalisationBar
                 section={{ label: 'Offres', href: '/#offres' }}
-                page="Site vitrine"
+                page={t('offres.vitrine.nav-loc')}
             />
             <Hero
             tag={t('offres.vitrine.hero.tag')}
@@ -51,10 +51,7 @@ function SiteVitrineOffre () {
             <section style={{margin: '0 4%', borderBottom: 'none'}}>
                 <Comparatif 
                     title={t('offres.vitrine.comparatif.title')}
-                    headers={[
-                        { label: t('offres.vitrine.comparatif.headers.label1'), key: 'unePage' },
-                        { label: t('offres.vitrine.comparatif.headers.label2'),  key: 'vitrine', featured: true },
-                    ]}
+                    headers={t('offres.vitrine.comparatif.headers', { returnObjects: true })}
                     rows={t('offres.vitrine.comparatif.rows', {returnObjects: true})}
                 />
             </section>
@@ -71,15 +68,10 @@ function SiteVitrineOffre () {
             />
             <section style={{margin: '0 4%', borderBottom: 'none'}}>
                 <Faq 
-                    title="Questions fréquentes"
+                    title={t('offres.onePage.faq.title')}
                     titleTag="div"  
                     icon="?"     
-                    steps={[
-                        { title: "Quelle est la différence avec le site une page ?", desc: "Le site vitrine comprend plusieurs pages avec navigation (Accueil, Services, À propos, Contact…). Cela permet un meilleur référencement naturel, plus de contenu et une présentation plus complète de votre activité." },
-                        { title: "Puis-je modifier le contenu moi-même ?", desc: "Le site est développé en HTML/CSS pur ou Javascript avec React. Les modifications de textes ou images nécessitent des bases techniques. C'est pourquoi je propose des forfaits maintenance avec 30min à 1h30 de modifications incluses par mois." },
-                        { title: "Et si j'ai besoin de plus de 5 pages ?", desc: "Chaque page supplémentaire est facturée 150€. Je peux aussi vous faire un devis global si votre projet est plus ambitieux." },
-                        { title: "Le site sera-t-il bien référencé sur Google ?", desc: "J'optimise les bases techniques du SEO (structure, vitesse, balises). Le référencement naturel complet prend du temps et dépend aussi de votre contenu. Je recommande de publier régulièrement du contenu de qualité." },
-                    ]}
+                    steps={t('offres.vitrine.faq.items', {returnObjects: true})}
                 />
             </section>
             <CtaNavOffres 

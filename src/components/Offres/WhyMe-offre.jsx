@@ -1,30 +1,18 @@
-const raisons = [
-  {
-    icon: '🔒',
-    title: 'Vous restez propriétaire',
-    desc: "Le domaine et les fichiers sont à vous. Si vous résiliez, vous repartez avec tout — migration accompagnée gratuitement.",
-  },
-  {
-    icon: '👤',
-    title: 'Un seul interlocuteur',
-    desc: "Problème d'affichage, email qui bug, site lent ? Vous m'écrivez, je gère. Pas de hotline, pas de ticket.",
-  },
-  {
-    icon: '✉️',
-    title: 'Email pro inclus',
-    desc: "contact@votrenom.fr est bien plus professionnel qu'un @gmail.com. Inclus dans toutes les formules.",
-  },
-]
+import { useTranslation } from "react-i18next"
 
 function PourquoiMoi() {
+
+  const {t} = useTranslation()
+  const items = t('offres.hebergement.whyMe.items', {returnObjects: true})
+
   return (
     <section className="pourquoi-section">
       <div className="infos-block-head">
         <span className="ih-icon">💡</span>
-        <div className="infos-title">Pourquoi passer par moi ?</div>
+        <div className="infos-title">{t('offres.hebergement.whyMe.title')}</div>
       </div>
       <div className="infos-body">
-        {raisons.map((raison, index) => (
+        {items.map((raison, index) => (
           <div key={index} className="raison-item">
             <div className="raison-icon">{raison.icon}</div>
             <div>

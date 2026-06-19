@@ -1,6 +1,7 @@
 {
 "header": {
     "nav": {
+        "home": "Acceuil",
         "offres": "Offres",
         "projets": "Projets",
         "compétences": "Compétences",
@@ -255,7 +256,7 @@
                 { "title": "Puis-je modifier le site moi-même après livraison ?", "desc": "Le site est en HTML/CSS pur. Sans connaissances techniques c'est difficile. Je recommande mon forfait maintenance pour les mises à jour (1h incluse par mois)." }
             ]
         },
-        "ctaSlug": "site-une-page"
+        "nav-loc": "site une page"
     
     },
     "vitrine": {
@@ -274,7 +275,15 @@
             "secondBadge":"Livraison en 14 jours" 
         },
         "pageTypique": {
-            "title": "Pages typiques incluses"
+            "title": "Pages typiques incluses",
+            "items": [
+                { "icon": "🏠", "name": "Accueil", "desc": "Présentation, accroche et appel à l'action" },
+                { "icon": "👤", "name": "À propos", "desc": "Qui vous êtes, votre parcours, votre philosophie" },
+                { "icon": "🛠", "name": "Services", "desc": "Vos offres détaillées avec tarifs si souhaité" },
+                { "icon": "🖼", "name": "Portfolio", "desc": "Galerie de vos réalisations (optionnel)" },
+                { "icon": "⭐", "name": "Avis clients", "desc": "Témoignages pour rassurer (optionnel)" },
+                { "icon": "✉️", "name": "Contact", "desc": "Formulaire, carte Google Maps, coordonnées" }
+                ]
         },
         "whatsIncluded": {
             "items": [
@@ -310,10 +319,10 @@
         },
         "comparatif": {
             "title": "Comparatif des offres",
-            "headers": {
-                "label1": "Site une page",
-                "label2": "Site vitrine"
-            },
+            "headers": [
+                { "label": "Site une page", "key": "unePage", "featured": false },
+                { "label": "Site vitrine",  "key": "vitrine",  "featured": true }
+                ],
             "rows": [
                 { "label": "Nombre de pages",  "unePage": "1 page", "vitrine": "Jusqu'à 5" },
                 { "label": "Design sur-mesure", "unePage": "✓", "vitrine": "✓" },
@@ -363,8 +372,16 @@
                 {"main": "Hébergement + domaine", "text": "20€/mois"},
                 {"main": "Maintenance mensuelle", "text": "à partir de 45€/mois"}
                 ]
-        }
-
+        },
+        "faq": {
+            "items": [
+                { "title": "Quelle est la différence avec le site une page ?", "desc": "Le site vitrine comprend plusieurs pages avec navigation (Accueil, Services, À propos, Contact…). Cela permet un meilleur référencement naturel, plus de contenu et une présentation plus complète de votre activité." },
+                { "title": "Puis-je modifier le contenu moi-même ?", "desc": "Le site est développé en HTML/CSS pur ou Javascript avec React. Les modifications de textes ou images nécessitent des bases techniques. C'est pourquoi je propose des forfaits maintenance avec 30min à 1h30 de modifications incluses par mois." },
+                { "title": "Et si j'ai besoin de plus de 5 pages ?", "desc": "Chaque page supplémentaire est facturée 150€. Je peux aussi vous faire un devis global si votre projet est plus ambitieux." },
+                { "title": "Le site sera-t-il bien référencé sur Google ?", "desc": "J'optimise les bases techniques du SEO (structure, vitesse, balises). Le référencement naturel complet prend du temps et dépend aussi de votre contenu. Je recommande de publier régulièrement du contenu de qualité." }
+            ]
+        },
+        "nav-loc": "Site vitrine"
     },
     "hebergement": {
         "hero": {
@@ -373,8 +390,95 @@
             "highlight": " & maintenance",
             "subtitle": "Votre site en ligne, stable et suivi. Choisissez la formule adaptée à vos besoins",
             "br": "— sans engagement."
-        }
+        },
+        "comparatif": {
+            "title":"Comparatif des formules",
+            "headers": [
+                { "label": "Essentiel", "key": "essentiel" },
+                { "label": "Sérénité", "key": "serenite", "featured": true },
+                { "label": "Premium", "key": "premium" }
+            ],
+            "rows": [
+                { "label": "Nom de domaine", "essentiel": "✓", "serenite": "✓", "premium": "✓" },
+                { "label": "Hébergement & SSL", "essentiel": "✓", "serenite": "✓", "premium": "✓" },
+                { "label": "Email pro", "essentiel": "1 adresse", "serenite": "1 adresse", "premium": "2 adresses" },
+                { "label": "Surveillance 24h/24", "essentiel": "—", "serenite": "✓", "premium": "✓" },
+                { "label": "Sauvegardes", "essentiel": "—", "serenite": "✓", "premium": "✓" },
+                { "label": "Modifications/mois",  "essentiel": "—", "serenite": "30 min", "premium": "1h30" },
+                { "label": "Support", "essentiel": "—", "serenite": "—", "premium": "Prioritaire 24h" },
+                { "label": "Audit SEO", "essentiel": "—", "serenite": "—", "premium": "Trimestriel" },
+                { "label": "Prix mensuel", "essentiel": "20€", "serenite": "45€", "premium": "70€", "isPrice": true }
+            ]
+        },
+        "whyMe": {
+            "title": "Pourquoi passer par moi ?",
+            "items": [
+                {
+                "icon": "🔒",
+                "title": "Vous restez propriétaire",
+                "desc": "Le domaine et les fichiers sont à vous. Si vous résiliez, vous repartez avec tout — migration accompagnée gratuitement."
+                },
+                {
+                "icon": "👤",
+                "title": "Un seul interlocuteur",
+                "desc": "Problème d'affichage, email qui bug, site lent ? Vous m'écrivez, je gère. Pas de hotline, pas de ticket."
+                },
+                {
+                "icon": "✉️",
+                "title": "Email pro inclus",
+                "desc": "contact@votrenom.fr est bien plus professionnel qu'un @gmail.com. Inclus dans toutes les formules."
+                }
+            ]
 
+        },
+        "extras": [
+                {"main": "Heure de dev supplémentaire", "text": "50€/heure"},
+                {"main": "Nouvelle page", "text": "à partir de 150€"},
+                {"main": "Adresse email supplémentaire", "text": "2€/mois"},
+                {"main": "Refonte d'une section", "text": "à partir de 200€"},
+                {"main": "Intégration outil tiers", "text": "sur devis"},
+                {"main": "Optimisation SEO approfondie", "text": "à partir de 150€"}
+                ],
+        "modalites": {
+            "title": "Modalités communes",
+            "items": [
+                { "label": "Engagement", "value": "Aucun" },
+                { "label": "Préavis résiliation", "value": "30 jours" },
+                { "label": "Paiement", "value": "Mensuel ou annuel" },
+                { "label": "Heures non utilisées", "value": "Non reportées" },
+                { "label": "Contact", "value": "Email uniquement" },
+                { "label": "Migration si résiliation", "value": "Accompagnée, gratuite" },
+                { "label": "TVA", "value": "Non applicable, art. 293B" }
+            ]
+
+        },
+        "faq": [
+            { "title": "J'ai déjà un nom de domaine ?", "desc": "On peut le transférer ou le pointer vers mon serveur. Tarif ajusté dans ce cas." },
+            { "title": "Est-ce que je peux résilier quand je veux ?", "desc": "Oui, sans engagement. Il suffit de me prévenir 30 jours à l'avance. Je vous remets tous vos fichiers et vous accompagne dans la migration vers un autre hébergeur si besoin." },
+            { "title": "Donc je reste propriétaire de mon domaine et de mon site ?", "desc": "Absolument. Votre nom de domaine est enregistré à votre nom, et les fichiers du site vous sont remis dès la livraison initiale. Les Pack hébergement sont un service, pas une dépendance." },
+            { "title": "Puis-je changer de formule ?", "desc": "Oui, à tout moment. Le changement prend effet au mois suivant." },
+            { "title": "Ce service est-il compatible avec mon site ?", "desc": "Oui pour les sites HTML/CSS/JavaScript. Pour les autres technologies, contactez-moi pour vérifier." },
+            { "title": "Que se passe-t-il si mon site tombe en panne la nuit ?", "desc": "Un outil de surveillance (UptimeRobot) me notifie dès que le site est inaccessible. J'interviens dès le lendemain matin ouvré. Les pannes sont rares sur un hébergement professionnel." },
+            { "title": "Mon quota d'heure est-il utilisable en une seule fois ?", "desc": "Oui, vous pouvez l'utiliser en une seule demande ou le répartir sur plusieurs petites modifications dans le mois. Ce qui compte c'est le total qui reste sous 1h." }
+        ],
+        "nav-loc": "Hébergement & maintenance",
+        "nav-cta": {
+            "ctaTitle": "Pas sûr de votre",
+            "ctaHighlight": "formule ?",
+            "ctaSubtitle": "Contactez-moi, on en parle ensemble — devis gratuit sous 24h."
+        }
+    },
+    "ctaNav": {
+        "defaultTitle": "Ce site",
+        "defaultHighlight": "vous correspond ?",
+        "defaultSubtitle": "Devis gratuit · Réponse sous 24h · Sans engagement",
+        "compare": "Comparer les offres",
+        "cta": "Demander un devis →",
+        "offres": [
+            { "slug": "/offres/site-une-page", "name": "Site une page", "price": "300€ – 500€", "badge": null },
+            { "slug": "/offres/site-vitrine",  "name": "Site vitrine",  "price": "800€ – 1 200€", "badge": null },
+            { "slug": "/offres/hebergement",   "name": "Hébergement",   "price": "20€ – 70€/mois", "badge": "3 formules" }
+        ]
     }
     
 },

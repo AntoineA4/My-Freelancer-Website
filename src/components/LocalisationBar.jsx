@@ -1,8 +1,10 @@
 import { Link, useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import '../styles/components/LocalisationBar.scss'
 
 function LocalisationBar({ section, page }) {
   const navigate = useNavigate()
+  const {t} =useTranslation()
 
   const handleSectionClick = (e) => {
     e.preventDefault()
@@ -17,7 +19,7 @@ function LocalisationBar({ section, page }) {
     <div className="localisationBar">
       <div className="localisationBar-inner">
 
-        <Link to="/">Accueil</Link>
+        <Link to="/">{t('header.nav.home')}</Link>
 
         {section && (
           <>

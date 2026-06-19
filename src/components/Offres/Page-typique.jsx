@@ -1,18 +1,10 @@
 import { useTranslation } from 'react-i18next'
 import '../../styles/components/Offre-Pages/PagesTypiques.scss'
 
-const pages = [
-  { icon: '🏠', name: 'Accueil',      desc: "Présentation, accroche et appel à l'action" },
-  { icon: '👤', name: 'À propos',     desc: 'Qui vous êtes, votre parcours, votre philosophie' },
-  { icon: '🛠', name: 'Services',     desc: 'Vos offres détaillées avec tarifs si souhaité' },
-  { icon: '🖼', name: 'Portfolio',    desc: 'Galerie de vos réalisations (optionnel)' },
-  { icon: '⭐', name: 'Avis clients', desc: 'Témoignages pour rassurer (optionnel)' },
-  { icon: '✉️', name: 'Contact',      desc: 'Formulaire, carte Google Maps, coordonnées' },
-]
-
 function PagesTypiques() {
 
     const {t} =useTranslation()
+    const items = t('offres.vitrine.pageTypique.items', {returnObjects: true})
 
     return (
         <section className="pages-typiques-section">
@@ -22,7 +14,7 @@ function PagesTypiques() {
             </div>
             <div className="infos-body">
                 <div className="pages-grid">
-                {pages.map((page, index) => (
+                {items.map((page, index) => (
                     <div key={index} className="page-card">
                     <div className="page-card-icon">{page.icon}</div>
                     <div className="page-card-name">{page.name}</div>

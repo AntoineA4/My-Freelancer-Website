@@ -20,7 +20,7 @@ function OPOffre () {
         <>
             <LocalisationBar
                 section={{ label: 'Offres', href: '/#offres' }}
-                page="Site une page"
+                page={t('offres.onePage.nav-loc')}
             />
             <Hero
             tag={t('offres.onePage.hero.tag')}
@@ -64,7 +64,7 @@ function OPOffre () {
                 />
             </section>
             <CtaNavOffres 
-                ctaSlug={t('offres.onePage.ctaSlug')}
+                ctaSlug="site-une-page"
             />
         </>
     );
