@@ -1,1 +1,661 @@
-{}
+{
+"header": {
+    "nav": {
+        "home": "Home",
+        "offres": "Services",
+        "projets": "Projects",
+        "compétences": "Skills",
+        "contact": "Contact"
+    },
+    "btn": "Contact me",
+    "modal": {
+        "navigation": "NAVIGATION",
+        "contact": "CONTACT",
+        "contact-link": "Request a quote",
+        "offres": "SERVICES",
+        "retour-home": "Back to home"
+    }
+},
+"dispo-band": {
+    "text": "Available for new projects — reply within 24h",
+    "tag": "Remote freelancer"
+},
+"home": {
+    "hero": {
+        "tag": "Freelance web developer",
+        "title": "I build websites",
+        "highlight": "that convert",
+        "subtitle": "Custom websites, landing pages and integrations.",
+        "br": "Available remotely, anywhere in the world.",
+        "primary-btn": "See my services",
+        "secondary-btn": "Let's talk ↗"
+    },
+    "reassurance": {
+        "title": "By the numbers",
+        "items": [
+            { "val": "7d",   "label": "Delivery time for a one-page site" },
+            { "val": "24h",  "label": "Guaranteed response time" },
+            { "val": "100%", "label": "Of files delivered to the client" },
+            { "val": "0€",   "label": "For a detailed quote" }
+        ]
+    },
+    "forWho": {
+        "title": "Who I work with",
+        "items": [
+            {
+            "name": "Tradespeople & retailers",
+            "desc": "Plumbers, electricians, carpenters who want to be found on Google",
+            "icon": "tool"
+            },
+            {
+            "name": "Restaurant owners",
+            "desc": "Online menu, reservations, opening hours — everything a customer looks for",
+            "icon": "send"
+            },
+            {
+            "name": "Coaches & consultants",
+            "desc": "Showcase your expertise and generate new leads",
+            "icon": "briefcase"
+            },
+            {
+            "name": "Creatives & photographers",
+            "desc": "A portfolio that truly highlights your work",
+            "icon": "camera"
+            },
+            {
+            "name": "Content creators",
+            "desc": "Presentation page, bio links, monetization — I know this world",
+            "icon": "video"
+            },
+            {
+            "name": "Small businesses & freelancers",
+            "desc": "Any activity that needs a professional online presence",
+            "icon": "home"
+            }
+        ]
+    },
+    "whyMe": {
+        "title": "Why choose me",
+        "items": [
+            {"name": "Fast delivery", "desc": "Site delivered in 7 to 14 days depending on the package", "icon": "clock"},
+            {"name": "Direct contact", "desc": "You talk to the developer, not a salesperson or project manager", "icon": "dialogue"},
+            {"name": "You keep ownership", "desc": "All access, source files and the domain are handed over to you", "icon": "padlock"}
+        ]
+    },
+    "offres": {
+        "title": "My Services",
+        "items": [
+            {
+            "id": "site-une-page",
+            "name": "One-page website",
+            "subtitle": "The essentials, done right",
+            "price": "300€",
+            "priceRange": "to 500€",
+            "priceSub": "Depending on complexity & animations",
+            "badge": "Perfect to get started",
+            "colorClass": "corrail-card",
+            "link": "/offres/site-une-page",
+            "items": [
+                "Custom design",
+                "Mobile responsive",
+                "Contact form",
+                "Basic SEO",
+                "Delivered in 7 days",
+                "2 revision rounds included"
+            ]
+            },
+            {
+            "id": "site-vitrine",
+            "name": "Multi-page website",
+            "subtitle": "3 to 5 professional pages",
+            "price": "800€",
+            "priceRange": "to 1,200€",
+            "priceSub": "Depending on number of pages & features",
+            "badge": null,
+            "colorClass": "corrail-fonce-card",
+            "link": "/offres/site-vitrine",
+            "items": [
+                "Up to 5 pages",
+                "Custom design",
+                "Mobile responsive",
+                "Optimised SEO",
+                "Delivered in 14 days",
+                "3 revision rounds included"
+            ]
+            },
+            {
+            "id": "hebergement",
+            "name": "Hosting & maintenance",
+            "subtitle": "The essentials, worry-free",
+            "price": "From",
+            "priceRange": "€20/month",
+            "priceSub": "No commitment — 3 plans available",
+            "badge": "See the 3 plans →",
+            "colorClass": "dark-card",
+            "link": "/offres/hebergement",
+            "items": [
+                "Hosting included",
+                "Domain name included",
+                "SSL/HTTPS",
+                "Professional email included"
+            ]
+            }
+        ]
+    },
+    "projets": {
+        "title": "Recent projects",
+        "link": "All projects →"
+    },
+    "skills": {
+        "title": "Skills",
+        "videoEdit": "Video editing"
+    },
+    "contactHome": {
+        "title": "A project",
+        "em": "in mind?",
+        "subtitle": "Your free quote, reply within 24h."
+    }
+},
+"offres": {
+    "onePage": {
+        "hero": {
+            "tag": "Service — Web development",
+            "title": "One-page",
+            "highlight": "website",
+            "subtitle": "The essentials, done right. A fast, professional and responsive site",
+            "br": "to introduce yourself or launch an idea without breaking the bank."
+        },
+        "priceRange": {
+            "mainPrice":"300€",
+            "secondPrice":"to 500€",
+            "note":"Fixed price depending on the level of complexity",
+            "tvaBadge":"VAT not applicable — art. 293B CGI",
+            "secondBadge":"Delivered in 7 days"
+        },
+        "whatsIncluded": {
+            "title": "What's included",
+            "items": [
+                { "main": "Custom design", "text": "no generic template — the site is built for you and your business" },
+                { "main": "Mobile responsive", "text": "perfectly adapted to all screen sizes (mobile, tablet, desktop)" },
+                { "main": "Contact form", "text": "functional form with email notifications" },
+                { "main": "Basic SEO", "text": "title tags, meta descriptions, clean HTML structure for Google" },
+                { "main": "Subtle animations", "text": "scroll-triggered appearances, hover effects on buttons" },
+                { "main": "Source files delivered", "text": "you receive all HTML/CSS/JS files — 100% yours" },
+                { "main": "2 revision rounds", "text": "included after the first delivery" }
+            ]
+        },
+        "nonIncluded": {
+            "title": "Not included",
+            "items": [
+                {"main": "Additional pages"},
+                {"main": "Hosting & domain"},
+                {"main": "Copywriting"},
+                {"main": "Photo or logo creation"},
+                {"main": "Monthly maintenance"},
+                {"main": "Online store"}
+            ]
+        },
+        "modalites": {
+            "title": "Terms",
+            "items": [
+                {"main": "Deposit", "text": "50% on order"},
+                {"main": "Balance", "text": "50% on delivery"},
+                {"main": "Timeline", "text": "7 working days"},
+                {"main": "Revisions", "text": "2 rounds"},
+                {"main": "Deliverable", "text": "Source files"},
+                {"main": "Payment", "text": "Bank transfer"}
+            ]
+        },
+        "steps": {
+            "title": "How it works",
+            "items": [
+                {
+                "title": "Brief & quote",
+                "desc": "We chat by email or video call to understand your project, your business and your preferences. I send you a fixed quote within 24h.",
+                "calendar": "Day 0"
+                },
+                {
+                "title": "Deposit & kickoff",
+                "desc": "Once the quote is signed and the deposit received (50%), I start the design and development.",
+                "calendar": "Day 1"
+                },
+                {
+                "title": "First delivery",
+                "desc": "You receive the site on a preview link and can send me your feedback.",
+                "calendar": "Day 4 to 6"
+                },
+                {
+                "title": "Revisions & sign-off",
+                "desc": "I apply your feedback (2 rounds included). Once approved, you pay the balance and I hand over all the files.",
+                "calendar": "Day 6 to 7"
+                }
+            ]
+        },
+        "tips": {
+            "strong": "To make things run smoothly: ",
+            "text": "to get started I need your copy (or a draft), your logo (or a name idea), and a few examples of sites you like. The more precise your brief, the closer the result will be to your vision."
+        },
+        "extras": {
+            "title": "Add-on options",
+            "items": [
+                {"main": "Additional page", "text": "from 150€"},
+                {"main": "Advanced animations", "text": "from 100€"},
+                {"main": "Multi-language site", "text": "from 50€"},
+                {"main": "Google Maps integration", "text": "from 50€"},
+                {"main": "Hosting + domain", "text": "20€/month"},
+                {"main": "Monthly maintenance", "text": "45€/month"}
+            ]
+        },
+        "faq": {
+            "title": "Frequently asked questions",
+            "items": [
+                { "title": "Do I keep ownership of the site?", "desc": "Yes, 100%. You receive all source files at final delivery. The site is entirely yours, with no strings attached." },
+                { "title": "What if I want to add a page later?", "desc": "Absolutely possible. Each additional page is charged from 150€ depending on complexity. You can also go with the multi-page website package from the start." },
+                { "title": "I don't have copy or a logo — is that a problem?", "desc": "Not at all, but it may extend the timeline. I can help you structure your copy. For the logo, I can create a simple typographic one for an extra 80€." },
+                { "title": "Can I edit the site myself after delivery?", "desc": "The site is built in plain HTML/CSS. Without technical knowledge it can be tricky. I recommend my maintenance package for updates (1h included per month)." }
+            ]
+        },
+        "nav-loc": "One-page website"
+    },
+    "vitrine": {
+        "hero": {
+            "tag": "Service — Web development",
+            "title": "Multi-page",
+            "highlight": "website",
+            "subtitle": "A complete, professional and custom site to present your business,",
+            "br": "build trust and turn visitors into clients."
+        },
+        "priceRange": {
+            "mainPrice":"800€",
+            "secondPrice":"to 1,200€",
+            "note":"Fixed quote depending on number of pages and features",
+            "tvaBadge":"VAT not applicable — art. 293B CGI",
+            "secondBadge":"Delivered in 14 days"
+        },
+        "pageTypique": {
+            "title": "Typical pages included",
+            "items": [
+                { "icon": "🏠", "name": "Home", "desc": "Introduction, hook and call to action" },
+                { "icon": "👤", "name": "About", "desc": "Who you are, your background, your philosophy" },
+                { "icon": "🛠", "name": "Services", "desc": "Your offerings with pricing if desired" },
+                { "icon": "🖼", "name": "Portfolio", "desc": "Gallery of your work (optional)" },
+                { "icon": "⭐", "name": "Testimonials", "desc": "Reviews to build trust (optional)" },
+                { "icon": "✉️", "name": "Contact", "desc": "Form, Google Maps, contact details" }
+            ]
+        },
+        "whatsIncluded": {
+            "items": [
+                { "main": "Custom design", "text": "consistent visual identity, colours and typography tailored to your business" },
+                { "main": "Up to 5 pages", "text": "clear, logical structure built for conversion" },
+                { "main": "Mobile responsive", "text": "perfectly adapted on all devices" },
+                { "main": "Optimised SEO", "text": "tags, semantic structure, loading speed, sitemap" },
+                { "main": "Contact form", "text": "functional with email notifications" },
+                { "main": "Animations & micro-interactions", "text": "scroll reveals, hovers, smooth transitions" },
+                { "main": "3 revision rounds", "text": "included after first delivery" },
+                { "main": "Source files delivered", "text": "100% yours" }
+            ]
+        },
+        "nonIncluded": {
+            "items": [
+                {"main": "More than 5 pages"},
+                {"main": "Hosting & domain"},
+                {"main": "Copywriting"},
+                {"main": "Photo or logo creation"},
+                {"main": "Monthly maintenance"},
+                {"main": "Online store"}
+            ]
+        },
+        "modalites": {
+            "items": [
+                {"main": "Deposit", "text": "50% on order"},
+                {"main": "Balance", "text": "50% on delivery"},
+                {"main": "Timeline", "text": "14 working days"},
+                {"main": "Revisions", "text": "3 rounds"},
+                {"main": "Deliverable", "text": "Source files"},
+                {"main": "Payment", "text": "Bank transfer"}
+            ]
+        },
+        "comparatif": {
+            "title": "Package comparison",
+            "firstRowName": "Feature",
+            "headers": [
+                { "label": "One-page site", "key": "unePage", "featured": false },
+                { "label": "Multi-page site", "key": "vitrine", "featured": true }
+            ],
+            "rows": [
+                { "label": "Number of pages", "unePage": "1 page", "vitrine": "Up to 5" },
+                { "label": "Custom design", "unePage": "✓", "vitrine": "✓" },
+                { "label": "Mobile responsive", "unePage": "✓", "vitrine": "✓" },
+                { "label": "SEO", "unePage": "Basic", "vitrine": "Optimised" },
+                { "label": "Revision rounds", "unePage": "2", "vitrine": "3" },
+                { "label": "Handover training", "unePage": "—", "vitrine": "✓" },
+                { "label": "Delivery time", "unePage": "7 days", "vitrine": "14 days" },
+                { "label": "Price", "unePage": "300–500€", "vitrine": "800–1,200€", "isPrice": true }
+            ]
+        },
+        "steps": {
+            "items": [
+                {
+                "title": "Brief & quote",
+                "desc": "We chat by email or video call to understand your project, your business and your preferences. I send you a fixed quote within 24h.",
+                "calendar": "Day 0"
+                },
+                {
+                "title": "Deposit & kickoff",
+                "desc": "Once the quote is signed and the deposit received (50%), I ask for your copy, photos and brand assets (logo, colours). Then I start designing.",
+                "calendar": "Day 1–2"
+                },
+                {
+                "title": "Design & development",
+                "desc": "I design and build the site, keeping you updated as needed.",
+                "calendar": "Day 3 to 10"
+                },
+                {
+                "title": "Delivery & revisions",
+                "desc": "You receive the site on a preview link. We go through up to 3 rounds of revisions to get it just right.",
+                "calendar": "Day 11 to 14"
+                },
+                {
+                "title": "Sign-off & file handover",
+                "desc": "Balance paid, source files handed over, quick walkthrough if needed. The site is yours.",
+                "calendar": "Day 14"
+                }
+            ]
+        },
+        "extras": {
+            "items": [
+                {"main": "Extra page (6th+)", "text": "from 150€"},
+                {"main": "Custom animation", "text": "from 100€"},
+                {"main": "Multi-language site", "text": "from 50€"},
+                {"main": "Calendar/booking integration", "text": "from 100€"},
+                {"main": "Hosting + domain", "text": "20€/month"},
+                {"main": "Monthly maintenance", "text": "from 45€/month"}
+            ]
+        },
+        "faq": {
+            "items": [
+                { "title": "What's the difference with the one-page site?", "desc": "The multi-page site includes several pages with navigation (Home, Services, About, Contact…). This allows better SEO, more content and a more complete presentation of your business." },
+                { "title": "Can I edit the content myself?", "desc": "The site is built in HTML/CSS or JavaScript with React. Text or image changes require some technical knowledge. That's why I offer maintenance packages with 30min to 1h30 of included edits per month." },
+                { "title": "What if I need more than 5 pages?", "desc": "Each additional page is charged from 150€. I can also provide a custom quote if your project is more ambitious." },
+                { "title": "Will the site rank well on Google?", "desc": "I optimise the technical SEO basics (structure, speed, tags). Full organic ranking takes time and also depends on your content. I recommend publishing quality content regularly." }
+            ]
+        },
+        "nav-loc": "Multi-page website"
+    },
+    "hebergement": {
+        "hero": {
+            "tag": "Service — Recurring services",
+            "title": "Hosting",
+            "highlight": "& maintenance",
+            "subtitle": "Your site online, stable and looked after. Choose the plan that fits your needs",
+            "br": "— no commitment."
+        },
+        "plansPick": {
+            "title": "Choose your plan",
+            "btn": "Choose",
+            "plans": [
+                {
+                "id": "essentiel",
+                "name": "Essential",
+                "desc": "Hosting only",
+                "price": "20€",
+                "period": "/month",
+                "priceSub": "billed annually — 240€/year",
+                "headClass": "plan-head-essentiel",
+                "btnClass": "plan-btn-outline",
+                "items": [
+                    { "included": true,  "text": "Domain name included" },
+                    { "included": true,  "text": "Fast server hosting" },
+                    { "included": true,  "text": "SSL/HTTPS certificate" },
+                    { "included": true,  "text": "Professional email (1 address)" },
+                    { "included": true,  "text": "Full deployment" },
+                    { "included": false, "text": "Monitoring & backups" },
+                    { "included": false, "text": "Monthly edits" }
+                ]
+                },
+                {
+                "id": "serenite",
+                "name": "Peace of mind",
+                "desc": "Hosting + maintenance",
+                "price": "45€",
+                "period": "/month",
+                "priceSub": "no commitment — 30-day notice",
+                "headClass": "plan-head-serenite",
+                "btnClass": "plan-btn-fill",
+                "featured": true,
+                "badge": "Most popular",
+                "items": [
+                    { "included": true,  "text": "Everything in Essential" },
+                    { "included": true,  "text": "24/7 uptime monitoring" },
+                    { "included": true,  "text": "Monthly backup" },
+                    { "included": true,  "text": "Monthly SSL check" },
+                    { "included": true,  "text": "30 min of edits/month" },
+                    { "included": true,  "text": "Monthly report" },
+                    { "included": false, "text": "Priority support" }
+                ]
+                },
+                {
+                "id": "premium",
+                "name": "Premium",
+                "desc": "Full service & priority support",
+                "price": "70€",
+                "period": "/month",
+                "priceSub": "no commitment — 30-day notice",
+                "headClass": "plan-head-premium",
+                "btnClass": "plan-btn-dark",
+                "items": [
+                    { "included": true, "text": "Everything in Peace of mind" },
+                    { "included": true, "text": "1h30 of edits/month" },
+                    { "included": true, "text": "Priority support (24h)" },
+                    { "included": true, "text": "Detailed monthly report" },
+                    { "included": true, "text": "Performance optimisation" },
+                    { "included": true, "text": "Quarterly SEO audit" },
+                    { "included": true, "text": "2 professional email addresses" }
+                ]
+                }
+            ]
+        },
+        "comparatif": {
+            "title": "Plan comparison",
+            "headers": [
+                { "label": "Essential", "key": "essentiel" },
+                { "label": "Peace of mind", "key": "serenite", "featured": true },
+                { "label": "Premium", "key": "premium" }
+            ],
+            "rows": [
+                { "label": "Domain name", "essentiel": "✓", "serenite": "✓", "premium": "✓" },
+                { "label": "Hosting & SSL", "essentiel": "✓", "serenite": "✓", "premium": "✓" },
+                { "label": "Professional email", "essentiel": "1 address", "serenite": "1 address", "premium": "2 addresses" },
+                { "label": "24/7 monitoring", "essentiel": "—", "serenite": "✓", "premium": "✓" },
+                { "label": "Backups", "essentiel": "—", "serenite": "✓", "premium": "✓" },
+                { "label": "Monthly edits", "essentiel": "—", "serenite": "30 min", "premium": "1h30" },
+                { "label": "Support", "essentiel": "—", "serenite": "—", "premium": "Priority 24h" },
+                { "label": "SEO audit", "essentiel": "—", "serenite": "—", "premium": "Quarterly" },
+                { "label": "Monthly price", "essentiel": "20€", "serenite": "45€", "premium": "70€", "isPrice": true }
+            ]
+        },
+        "whyMe": {
+            "title": "Why go through me?",
+            "items": [
+                {
+                "icon": "🔒",
+                "title": "You keep ownership",
+                "desc": "The domain and files are yours. If you cancel, you leave with everything — free migration assistance included."
+                },
+                {
+                "icon": "👤",
+                "title": "One point of contact",
+                "desc": "Display issue, email bug, slow site? Just write to me, I handle it. No hotline, no ticket system."
+                },
+                {
+                "icon": "✉️",
+                "title": "Professional email included",
+                "desc": "contact@yourname.com looks far more professional than a @gmail.com. Included in all plans."
+                }
+            ]
+        },
+        "extras": [
+            {"main": "Extra development hour", "text": "50€/hour"},
+            {"main": "New page", "text": "from 150€"},
+            {"main": "Additional email address", "text": "2€/month"},
+            {"main": "Section redesign", "text": "from 200€"},
+            {"main": "Third-party tool integration", "text": "on quote"},
+            {"main": "In-depth SEO optimisation", "text": "from 150€"}
+        ],
+        "modalites": {
+            "title": "Common terms",
+            "items": [
+                { "label": "Commitment", "value": "None" },
+                { "label": "Cancellation notice", "value": "30 days" },
+                { "label": "Payment", "value": "Monthly or annual" },
+                { "label": "Unused hours", "value": "Not carried over" },
+                { "label": "Contact", "value": "Email only" },
+                { "label": "Migration on cancellation", "value": "Assisted, free" },
+                { "label": "VAT", "value": "Not applicable, art. 293B" }
+            ]
+        },
+        "faq": [
+            { "title": "I already have a domain name?", "desc": "We can transfer it or point it to my server. Price adjusted accordingly." },
+            { "title": "Can I cancel whenever I want?", "desc": "Yes, no commitment. Just let me know 30 days in advance. I'll hand over all your files and assist with migration to another host if needed." },
+            { "title": "So I keep ownership of my domain and site?", "desc": "Absolutely. Your domain is registered in your name, and the site files are handed over at the initial delivery. The hosting plans are a service, not a dependency." },
+            { "title": "Can I switch plans?", "desc": "Yes, at any time. The change takes effect the following month." },
+            { "title": "Is this service compatible with my site?", "desc": "Yes for HTML/CSS/JavaScript sites. For other technologies, contact me to check." },
+            { "title": "What happens if my site goes down at night?", "desc": "A monitoring tool (UptimeRobot) notifies me as soon as the site is unreachable. I step in the next working morning. Outages are rare on professional hosting." },
+            { "title": "Can I use my hour allowance all at once?", "desc": "Yes, you can use it in one go or spread it across several small edits during the month. What matters is that the total stays under the included hours." }
+        ],
+        "nav-loc": "Hosting & maintenance",
+        "nav-cta": {
+            "ctaTitle": "Not sure which",
+            "ctaHighlight": "plan suits you?",
+            "ctaSubtitle": "Get in touch — free quote within 24h."
+        }
+    },
+    "ctaNav": {
+        "defaultTitle": "Does this",
+        "defaultHighlight": "suit you?",
+        "defaultSubtitle": "Free quote · Reply within 24h · No commitment",
+        "compare": "Compare services",
+        "cta": "Request a quote →",
+        "offres": [
+            { "slug": "/offres/site-une-page", "name": "One-page site", "price": "300€ – 500€", "badge": null },
+            { "slug": "/offres/site-vitrine",  "name": "Multi-page site", "price": "800€ – 1,200€", "badge": null },
+            { "slug": "/offres/hebergement",   "name": "Hosting", "price": "20€ – 70€/month", "badge": "3 plans" }
+        ]
+    }
+},
+"contact": {
+    "hero": {
+        "tag": "Let's talk about your project",
+        "title": "A project",
+        "highlight": "in mind?",
+        "subtitle": "Fill in the form below — I'll get back to you within 24h",
+        "br": "with a free, no-commitment quote."
+    },
+    "directContact": {
+        "title": "Get in touch directly"
+    },
+    "infoSection": {
+        "dispoSpan": "Available for new projects"
+    },
+    "steps": {
+        "title": "How it works",
+        "items": [
+            { "title": "You send your request", "desc": "Via this form or directly by email" },
+            { "title": "I reply within 24h", "desc": "With a detailed, free quote" },
+            { "title": "We fine-tune together", "desc": "A quick exchange to nail down the details" },
+            { "title": "We kick off!", "desc": "50% deposit and we're underway" }
+        ]
+    },
+    "faq": {
+        "title": "Frequently asked questions",
+        "items": [
+            { "title": "Is the quote really free?", "desc": "Yes, no strings attached. I take the time to assess your project before proposing a fixed price." },
+            { "title": "I haven't figured everything out yet — is that a problem?", "desc": "Not at all. Just describe your idea, we'll refine it together during our exchange." },
+            { "title": "How long until I hear back?", "desc": "I commit to replying within 24 working hours, often much sooner." },
+            { "title": "Can I call you directly?", "desc": "I prefer an initial email contact to prepare the exchange, but a call can be arranged afterwards." }
+        ]
+    },
+    "form": {
+        "title": "Your request",
+        "prenom": {
+            "label": "First name",
+            "placeholder": "John"
+        },
+        "nom": {
+            "label": "Last name",
+            "placeholder": "Smith"
+        },
+        "email": {
+            "label": "Email",
+            "placeholder": "john@example.com"
+        },
+        "activite": {
+            "label": "Your business",
+            "placeholder": "E.g. Restaurant, Coach, Photographer..."
+        },
+        "projet": {
+            "label": "Project type",
+            "options": [
+                { "value": "", "label": "Choose an option", "disabled": true },
+                { "value": "site-une-page", "label": "One-page site (300€ – 500€)" },
+                { "value": "site-vitrine", "label": "Multi-page site 3–5 pages (800€ – 1,200€)" },
+                { "value": "pack-essentiel", "label": "Hosting only (20€/month)" },
+                { "value": "pack-serenite", "label": "Hosting + maintenance (45€/month)" },
+                { "value": "pack-premium", "label": "Full service & priority support (70€/month)" },
+                { "value": "autre", "label": "Other / Not sure yet" }
+            ]
+        },
+        "budget": {
+            "label": "Estimated budget",
+            "options": ["Under 500€", "500€ – 900€", "900€ – 1,200€", "Not sure"]
+        },
+        "description": {
+            "label": "Describe your project",
+            "placeholder": "Tell me about your business, what you want to achieve with your site..."
+        },
+        "references": {
+            "label": "Sites you like as references",
+            "placeholder": "https://example.com, https://another.com..."
+        },
+        "errors": {
+            "required": "Required",
+            "email": "Invalid email",
+            "description": "Please describe your project",
+            "cooldown": "Please wait before sending another message."
+        },
+        "submit": "Send my request",
+        "sending": "Sending...",
+        "success": "✓ Message sent! I'll get back to you within 24h.",
+        "successBtn": "✓ Message sent!",
+        "note": "Free quote · Reply within 24h · No commitment"
+    }
+},
+"projectPage": {
+    "hero": {
+        "tag": "Portfolio",
+        "title": "My ",
+        "highlight": "work",
+        "subtitle": "Custom websites, landing pages and integrations — all built from scratch."
+    },
+    "filter": {
+        "tag": {
+            "all": "All",
+            "vitrine": "Multi-page site",
+            "onePage": "One-page site"
+        },
+        "show": {
+            "more": "More filters",
+            "less": "Hide filters"
+        },
+        "techFilter": "Technology used",
+        "statRow": {
+            "number": "projects",
+            "mostRecent": "Most recent",
+            "lessRecent": "Oldest first"
+        }
+    }
+},
+"footer": {
+    "text": "Available — Free quote within 24h · VAT not applicable, art. 293B CGI"
+}
+}

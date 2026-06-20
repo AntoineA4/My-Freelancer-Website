@@ -47,7 +47,7 @@ function PlansPicker() {
                 to="/contact?formule=hebergement"
                 className={`plan-btn ${plan.btnClass}`}
               >
-                Choisir {plan.name}
+                {t('offres.hebergement.plansPick.btn')} {plan.name}
               </Link>
             </div>
           </div>

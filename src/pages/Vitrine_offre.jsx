@@ -27,7 +27,7 @@ function SiteVitrineOffre () {
             <Hero
             tag={t('offres.vitrine.hero.tag')}
             title={t('offres.vitrine.hero.title')}
-            highlight={t('offres.vitrine.hero.hightlight')}
+            highlight={t('offres.vitrine.hero.highlight')}
             heroClass="hero-corail-fonce"
             subtitle={<>
                 {t('offres.vitrine.hero.subtitle')}

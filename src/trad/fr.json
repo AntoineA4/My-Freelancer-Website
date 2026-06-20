@@ -394,6 +394,7 @@
         },
         "plansPick": {
             "title": "Choisissez votre formule",
+            "btn": "Choisir",
             "plans": [
                 {
                 "id": "essentiel",
