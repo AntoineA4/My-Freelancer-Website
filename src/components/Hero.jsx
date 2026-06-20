@@ -28,8 +28,8 @@ function Hero({
                 </p>
                {showBtn && (
                  <div className="hero-btns anim-fade">
-                    <a href="#offres" class="btn-primary">{primaryBtn}</a>
-                    <Link to='/contact' class="btn-secondary">{secondaryBtn}</Link>
+                    <a href="#offres" className="btn-primary">{primaryBtn}</a>
+                    <Link to='/contact' className="btn-secondary">{secondaryBtn}</Link>
                 </div>
                )}
             </div>

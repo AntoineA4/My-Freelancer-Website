@@ -10,9 +10,9 @@ function InfosSection () {
 
     return (
         <section className="infos-section" aria-label="Informations de contact">
-            <div class="dispo-band-infos">
-                <span class="dispo-dot"></span>
-                <span class="dispo-text">{t('contact.infoSection.dispoSpan')}</span>
+            <div className="dispo-band-infos">
+                <span className="dispo-dot"></span>
+                <span className="dispo-text">{t('contact.infoSection.dispoSpan')}</span>
             </div>
             <DirectContact />
             <Steps 

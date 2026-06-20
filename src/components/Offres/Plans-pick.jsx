@@ -1,72 +1,15 @@
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
-const plans = [
-  {
-    id: 'essentiel',
-    name: 'Essentiel',
-    desc: 'Hébergement uniquement',
-    price: '20€',
-    period: '/mois',
-    priceSub: 'facturé annuellement — 240€/an',
-    headClass: 'plan-head-essentiel',
-    btnClass: 'plan-btn-outline',
-    items: [
-      { included: true,  text: 'Nom de domaine inclus' },
-      { included: true,  text: 'Hébergement serveur rapide' },
-      { included: true,  text: 'Certificat SSL/HTTPS' },
-      { included: true,  text: 'Email pro (1 adresse)' },
-      { included: true,  text: 'Mise en ligne complète' },
-      { included: false, text: 'Surveillance & sauvegardes' },
-      { included: false, text: 'Modifications mensuelles' },
-    ],
-  },
-  {
-    id: 'serenite',
-    name: 'Sérénité',
-    desc: 'Hébergement + maintenance',
-    price: '45€',
-    period: '/mois',
-    priceSub: 'sans engagement — préavis 30 jours',
-    headClass: 'plan-head-serenite',
-    btnClass: 'plan-btn-fill',
-    featured: true,
-    badge: 'Le plus demandé',
-    items: [
-      { included: true,  text: "Tout l'Essentiel inclus" },
-      { included: true,  text: 'Surveillance 24h/24' },
-      { included: true,  text: 'Sauvegarde mensuelle' },
-      { included: true,  text: 'Vérification SSL mensuelle' },
-      { included: true,  text: '30 min de modifications/mois' },
-      { included: true,  text: 'Rapport mensuel' },
-      { included: false, text: 'Support prioritaire' },
-    ],
-  },
-  {
-    id: 'premium',
-    name: 'Premium',
-    desc: 'Service complet & prioritaire',
-    price: '70€',
-    period: '/mois',
-    priceSub: 'sans engagement — préavis 30 jours',
-    headClass: 'plan-head-premium',
-    btnClass: 'plan-btn-dark',
-    items: [
-      { included: true, text: 'Tout Sérénité inclus' },
-      { included: true, text: '1h30 de modifications/mois' },
-      { included: true, text: 'Support prioritaire (24h)' },
-      { included: true, text: 'Rapport détaillé mensuel' },
-      { included: true, text: 'Optimisation performance' },
-      { included: true, text: 'Audit SEO trimestriel' },
-      { included: true, text: '2 adresses email pro' },
-    ],
-  },
-]
-
 function PlansPicker() {
+
+  const {t} = useTranslation()
+  const plans = t('offres.hebergement.plansPick.plans', {returnObjects: true})
+
   return (
     <section className="plans-section">
       <div className="plans-header">
-        <div className="infos-title">Choisissez votre formule</div>
+        <div className="infos-title">{t('offres.hebergement.plansPick.title')}</div>
       </div>
       <div className="plans-grid">
         {plans.map((plan) => (

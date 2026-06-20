@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next'
 import '../../styles/components/Offre-Pages/Comparatifs.scss'
 
 function Comparatif({ title = "Comparatif", icon = "↔", tableClass='', headers = [], rows = [] }) {
+
+  const {t}= useTranslation()
+
   return (
     <section className={`comparatif-section ${tableClass}`}>
       <div className="infos-block-head">
@@ -11,7 +15,7 @@ function Comparatif({ title = "Comparatif", icon = "↔", tableClass='', headers
         <table className="comparatif-table">
           <thead>
             <tr>
-              <th>Fonctionnalité</th>
+              <th>{t('offres.vitrine.comparatif.firstRowName')}</th>
               {headers.map((header, index) => (
                 <th
                   key={index}

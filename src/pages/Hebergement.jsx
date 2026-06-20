@@ -13,7 +13,7 @@ import '../styles/pages/Hebergement.scss'
 function Hebergement () {
 
     const {t} = useTranslation()
-
+    
     return (
         <>
             <LocalisationBar
