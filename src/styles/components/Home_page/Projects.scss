@@ -179,32 +179,23 @@
 }
 
 // ── Responsive ──
-@include mobile {
-    .modal-content.modal-center {
-        width: 95%;
-        max-height: 90vh;
-        border-radius: 10px;
+
+/*------Tablet------*/
+
+@include tablet {
+    .projects-flex {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .project-card {
+        flex:none;
+        width:48%;
     }
 
-    .project-modal-header {
-        padding: 1rem;
-
-        h2 { font-size: $font-size-lg; }
-    }
-
-    .project-modal-img {
-        height: 160px;
-    }
-
-    .project-modal-body {
-        padding: 1rem;
-        gap: 1rem;
-    }
-
-    .project-modal-section p {
-        font-size: $font-size-sm;
-    }
 }
+
+
+
 /*------Mobile------*/
 
 @include mobile {
@@ -216,6 +207,7 @@
             margin: 0 4% 3% 4%; 
             gap: 16px;
             justify-content: flex-start;
+            flex-wrap: nowrap;
             overflow-x: auto;           // ← scroll horizontal
             scroll-snap-type: x mandatory; // ← snap sur chaque carte
             -webkit-overflow-scrolling: touch; // ← scroll fluide sur iOS
@@ -230,6 +222,13 @@
                 scroll-snap-align: start;   // ← aligne au snap point
                 width: 80vw;                // ← presque toute la largeur sur mobile
             }
+            .project-tags {
+                gap: 6px;
+                .tag {
+                    font-size: $font-size-xs;
+                }
+            }
+            
         }
     }
     .modal-content.modal-center {
@@ -257,4 +256,29 @@
         font-size: $font-size-sm;
     }
 }
+@include mobile {
+    .modal-content.modal-center {
+        width: 95%;
+        max-height: 90vh;
+        border-radius: 10px;
+    }
 
+    .project-modal-header {
+        padding: 1rem;
+
+        h2 { font-size: $font-size-lg; }
+    }
+
+    .project-modal-img {
+        height: 160px;
+    }
+
+    .project-modal-body {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .project-modal-section p {
+        font-size: $font-size-sm;
+    }
+}

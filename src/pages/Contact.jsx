@@ -1,9 +1,13 @@
+import { useTranslation } from "react-i18next";
 import Hero from "../components/Hero"
 import LocalisationBar from "../components/LocalisationBar";
 import ContactForm from "../components/Contact-Page/Form";
 import InfosSection from "../components/Contact-Page/Infos-section";
 import '../styles/pages/Contact.scss'
 function Contact() {
+
+    const{t}= useTranslation()
+
     return (
         <>
             <LocalisationBar
@@ -11,14 +15,14 @@ function Contact() {
             />
 
             <Hero
-                tag="Parlons de votre projet"
-                title="Un projet en tête ?"
-                highlight="Contactez moi"
+                tag={t('contact.hero.tag')}
+                title={t('contact.hero.title')}
+                highlight={t('contact.hero.highlight')}
                 showBreak={true}
                 subtitle={<>
-                    Remplissez le formulaire ci-dessous — je vous réponds sous 24h
+                    {t('contact.hero.subtitle')}
                     <br />
-                    avec un devis gratuit et sans engagement.
+                    {t('contact.hero.br')}
                 </>}>
             </Hero>
             <>

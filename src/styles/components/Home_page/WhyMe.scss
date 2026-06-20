@@ -38,6 +38,16 @@
     }
     
 }
+@include tablet {
+    .WhyMe-section {
+        .whyMe-flex {
+            gap:10px;
+            align-items: stretch;
+        }
+    }
+
+}
+
 @include mobile {
     .WhyMe-section {
         .whyMe-flex {
@@ -54,7 +64,8 @@
             }
             .whyMe-title {
                 font-size: $font-size-sm;
-                margin-bottom: 0;
+                line-height: 1.3;
+                margin-bottom: 8px;
             }
             .whyMe-desc {
                 font-size: $font-size-xs;

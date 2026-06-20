@@ -33,8 +33,16 @@
 .contact-link-arrow { margin-left: auto; }
 .contact-link-arrow svg { width: 14px; height: 14px; stroke: $color-border-mid; fill: none; }
 
-
-
+@include tablet {
+    .infos-inner {
+        width: 100%;
+    }
+}
+@include mobile {
+    .infos-inner {
+        width: 92%;
+    }
+}
 
 
 

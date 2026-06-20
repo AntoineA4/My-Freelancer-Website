@@ -1,10 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import '../../styles/components/Contact_page/DirectContact.scss'
 
 function DirectContact () {
+
+    const {t}= useTranslation()
+
     return (
         <div className="infos-inner">
             <div className="infos-head">
-                <h3>Me contacter directement</h3>
+                <h3>{t('contact.directContact.title')}</h3>
             </div>
             <div className="infos-body">
                 <a href="mailto:contact@tonnom.fr" className="contact-link">

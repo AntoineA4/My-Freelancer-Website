@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import projects from '../Data/projets.json'
 import Hero from "../components/Hero"
 import LocalisationBar from "../components/LocalisationBar"
@@ -11,6 +12,7 @@ function ProjectsPage () {
     const [sortBy, setSortBy] = useState('recent')
     const [selectedProject, setSelectedProject] = useState(null)
     const [showMoreFilters, setShowMoreFilters] = useState(false);
+    const {t} = useTranslation()
 
     // Tous les tags uniques depuis le JSON
     const allTags = useMemo(() => {
@@ -52,13 +54,11 @@ function ProjectsPage () {
                 page="projects-page"
             />
             <Hero 
-                tag="Portfolio"
-                title="Mes "
-                highlight=" réalisations"
+                tag={t('projectPage.hero.tag')}
+                title={t('projectPage.hero.title')}
+                highlight={t('projectPage.hero.highlight')}
                 heroClass="hero-corail"
-                subtitle={<>
-                    Sites vitrine, landing pages et intégrations — tous réalisés sur-mesure.
-                </>}
+                subtitle={t('projectPage.hero.subtitle')}
             />
             <section>
                 <div className='filters-bar'>
@@ -68,39 +68,39 @@ function ProjectsPage () {
                             key={type} 
                             className={`filter-btn ${activeType === type ? 'active' : ''}`} 
                             onClick={() => setActiveType(type)}
-                            >{type === 'all' ? 'Tous' : 
-                            type === 'vitrine' ? 'Site vitrine' : 
-                            type === 'une-page' ? 'Site une page' : 
+                            >{type === 'all' ? t('projectPage.filter.tag.all') : 
+                            type === 'vitrine' ? t('projectPage.filter.tag.vitrine') : 
+                            type === 'une-page' ? t('projectPage.filter.tag.onePage') : 
                             type === 'SEO' ? 'SEO' : 'BackEnd'}
                         </button>
                     ))}
                     <button onClick={()=>setShowMoreFilters(!showMoreFilters)} className='filter-show-more'>
-                        {showMoreFilters ? 'Masquer les filtres' : 'Plus de filtres'}
+                        {showMoreFilters ? t('projectPage.filter.show.less') : t('projectPage.filter.show.more')}
                     </button>
                 </div>
                 <div className='filter-show-more'>
                     {showMoreFilters && (
                         <div className='filters-bar'>
-                            <span className="filter-label">Techno utilisé</span>
+                            <span className="filter-label">{t('projectPage.filter.techFilter')}</span>
                             {allTags.map(tag =>(
                                 <button
                                     key={tag}
                                     className={`filter-btn ${activeTag === tag ? 'active' : ''}`}
                                     onClick={()=> setActiveTag(tag)}
-                                    > {tag === 'all' ? 'Toutes' : tag}
+                                    > {tag === 'all' ? t('projectPage.filter.tag.all') : tag}
                                 </button>
                             ))}
                         </div>
                     )}
                 </div>
                 <div className="stats-row">
-                    <span>{filtered.length} projets</span>
+                    <span>{filtered.length} {t('projectPage.filter.statRow.number')}</span>
                     <select 
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value)}
                         className="sort-select">
-                            <option value="recent">Plus récents</option>
-                            <option value="oldest">Plus anciens</option>
+                            <option value="recent">{t('projectPage.filter.statRow.mostRecent')}</option>
+                            <option value="oldest">{t('projectPage.filter.statRow.lessRecent')}</option>
                         </select>
                 </div>
                 <div className='projects-page-flex'>

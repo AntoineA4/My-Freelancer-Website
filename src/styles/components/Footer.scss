@@ -66,6 +66,9 @@ footer {
 }
 
  @include mobile {
+    footer {
+        gap:0;
+    }
     .footer-copy {
         font-size: 10px;
         .footer-dot {
@@ -80,10 +83,10 @@ footer {
     }
     .footer-socials {
         width: 100%;
-        justify-content: space-between;
-        align-items: end;
+        justify-content: space-around;
+        align-items: center;
     }
-    .footer-socials a {
+    .footer-socials a svg {
         height: 25px;
         width: 25px;
     }

@@ -197,6 +197,17 @@
   color: $color-text-muted;
 }
 
+@include tablet {
+   
+    .project-page-card{
+        width:32%;
+        height:auto;
+    }
+    .project-page-thumb {
+        height: 150px;
+    }
+}
+
 // ── Responsive ──
 @include mobile {
     .filters-bar {
@@ -211,6 +222,13 @@
 
     .stats-row {
         padding: .625rem 4%;
+        span {
+            font-size: $font-size-xs;
+        }
+        .sort-select {
+            font-size: $font-size-xs;
+            padding: 5px 5px; 
+        }
     }
 
     .projects-page-flex {
@@ -239,8 +257,5 @@
     }
 }
 
-@include tablet {
-    .projects-page-flex {
-        grid-template-columns: repeat(2, minmax(0, 1fr)); 
-    }
-}
+
+

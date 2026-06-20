@@ -38,28 +38,33 @@ header{
         };
 
     }
-    
-    .contactBtn{
-        font-family: $font-sans;;
-        font-size: $font-size-lg;
-        padding: 7px 16px;
-        border: 1.5px solid $color-corail;
-        border-radius: 8px;
-        background: transparent;
-        color: $color-corail;
-        cursor: pointer;
-        text-decoration: none;
-        transition: background .2s, color .2s;
-        &:hover {
-            background-color: $color-corail;
-            color: $color-bg-creme;
+    .header-rightpart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+
+        .contactBtn{
+            font-family: $font-sans;;
+            font-size: $font-size-lg;
+            padding: 7px 16px;
+            border: 1.5px solid $color-corail;
+            border-radius: 8px;
+            background: transparent;
+            color: $color-corail;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background .2s, color .2s;
+            &:hover {
+                background-color: $color-corail;
+                color: $color-bg-creme;
+            };
         };
-    };
-    .menuBurger {
+        .menuBurger {
             display: none;
             color: $color-corail;
         }
-    
+    }
 }
 p {
     font-size: $font-size-2xl;
@@ -175,20 +180,23 @@ p {
 
 @include mobile {
      header {
-
+        height: auto;
         .header-nav-bar {
             ul {
                 display: none;
             }
 
         }
-         .contactBtn {
-            display: none;
-         }
+         .header-rightpart {
+            .contactBtn {
+                display: none;
+            }
 
-        .menuBurger {
-            display: block;
-        }
+            .menuBurger {
+                display: block;
+                margin-top: 8%;
+            }
+         }
 
     }
     p {

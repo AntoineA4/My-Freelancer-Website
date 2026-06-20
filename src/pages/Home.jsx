@@ -18,7 +18,7 @@ function Home() {
       <Hero 
       tag={t('home.hero.tag')}
       title={t('home.hero.title')}
-      highlight={t('home.hero.hightlight')}
+      highlight={t('home.hero.highlight')}
       showBreak = {true}
       subtitle={<>
         {t('home.hero.subtitle')}

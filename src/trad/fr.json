@@ -482,6 +482,119 @@
     }
     
 },
+"contact": {
+    "hero": {
+        "tag": "Parlons de votre projet",
+        "title": "Un projet en tête ?",
+        "highlight": "Contactez moi",
+        "subtitle": "Remplissez le formulaire ci-dessous — je vous réponds sous 24h",
+        "br": "avec un devis gratuit et sans engagement."
+    },
+    "directContact": {
+        "title":"Me contacter directement"
+    },
+    "infoSection": {
+        "dispoSpan": "Disponible pour de nouvelles missions"
+    },
+    "steps": {
+        "title":"Comment ça se passe",
+        "items": [
+            { "title": "Vous envoyez votre demande", "desc": "Via ce formulaire ou par email directement" },
+            { "title": "Je vous réponds sous 24h",   "desc": "Avec un devis détaillé et gratuit" },
+            { "title": "On affine ensemble",         "desc": "Échange rapide pour caler les détails" },
+            { "title": "On démarre !",               "desc": "Acompte de 50% et la création commence" }
+        ]
+    },
+    "faq": {
+        "title":"Questions fréquentes",
+        "items": [
+            { "title": "Le devis est vraiment gratuit ?", "desc": "Oui, sans conditions. Je prends le temps d'analyser votre projet avant de vous proposer un tarif fixe." },
+            { "title": "Je n'ai pas encore tout défini, c'est un problème ?", "desc": "Pas du tout. Décrivez simplement votre idée, on affine ensemble lors de l'échange." },
+            { "title": "Combien de temps pour avoir une réponse ?", "desc": "Je m'engage à répondre sous 24h ouvrées, souvent bien avant." },
+            { "title": "Puis-je vous appeler directement ?", "desc": "Je préfère un premier contact par email pour préparer l'échange, mais un appel peut être organisé ensuite." }
+        ]
+    },
+    "form": {
+        "title": "Votre demande",
+        "prenom": {
+            "label": "Prénom",
+            "placeholder": "Jean"
+        },
+        "nom": {
+            "label": "Nom",
+            "placeholder": "Dupont"
+        },
+        "email": {
+            "label": "Email",
+            "placeholder": "jean@exemple.fr"
+        },
+        "activite": {
+            "label": "Votre activité",
+            "placeholder": "Ex : Restaurant, Coach, Photographe..."
+        },
+        "projet": {
+            "label": "Type de projet",
+            "options": [
+                { "value": "", "label": "Choisissez une option", "disabled": true },
+                { "value": "site-une-page", "label": "Site une page (300€ – 500€)" },
+                { "value": "site-vitrine", "label": "Site vitrine 3–5 pages (800€ – 1 200€)" },
+                { "value": "pack-essentiel", "label": "Hébergement uniquement (20€/mois)" },
+                { "value": "pack-serenite", "label": "Pack hébergement + maintenance (45€/mois)" },
+                { "value": "pack-premium", "label": "Service complet & prioritaire (70€/mois)" },
+                { "value": "autre", "label": "Autre / Je ne sais pas encore" }
+            ]
+        },
+        "budget": {
+            "label": "Budget envisagé",
+            "options": ["Moins de 500€", "500€ – 900€", "900€ – 1 200€", "Je ne sais pas"]
+        },
+        "description": {
+            "label": "Décrivez votre projet",
+            "placeholder": "Parlez-moi de votre activité, de ce que vous souhaitez accomplir avec votre site..."
+        },
+        "references": {
+            "label": "Références de sites que vous aimez",
+            "placeholder": "https://exemple.com, https://autre.com..."
+        },
+        "errors": {
+            "required": "Requis",
+            "email": "Email invalide",
+            "description": "Décrivez votre projet",
+            "cooldown": "Veuillez attendre avant de renvoyer un message."
+        },
+        "submit": "Envoyer ma demande",
+        "sending": "Envoi en cours...",
+        "success": "✓ Message envoyé ! Je vous réponds sous 24h.",
+        "successBtn": "✓ Message envoyé !",
+        "note": "Devis gratuit · Réponse sous 24h · Sans engagement"
+    } 
+},
+"projectPage":{
+        "hero": {
+            "tag": "Portfolio",
+            "title": "Mes ", 
+            "highlight": " réalisations",
+            "subtitle": "Sites vitrine, landing pages et intégrations — tous réalisés sur-mesure."
+        },
+        "filter": {
+            "tag": {
+                "all": "Tous",
+                "vitrine": "Site vitrine",
+                "onePage": "Site une page"
+            },
+            "show": {
+                "more":"Plus de filtres",
+                "less": "Masquer les filtres"
+            },
+            "techFilter": "Techno utilisé",
+            "statRow": {
+                "number": "projets",
+                "mostRecent": "Plus récents",
+                "lessRecent": "Moins récents"
+            }
+        }
+
+    },
 "footer": {
     "text": "Disponible — Devis gratuit sous 24h · TVA non applicable, art. 293B CGI"
 

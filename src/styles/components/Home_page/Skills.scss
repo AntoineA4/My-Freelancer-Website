@@ -33,10 +33,15 @@
 @include mobile {
     .skills-flex {
         gap: 12px;
-        margin: 4% 4% 2% 4%
+        margin: 4%;
     }
     .skill-pill{
-        font-size: $font-size-sm;
+        font-size: $font-size-xs;
         padding: 5px 10px;
+        svg {
+        height:16px;
+        width:16px;
     }
+    }
+    
 }

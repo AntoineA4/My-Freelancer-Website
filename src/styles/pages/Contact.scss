@@ -11,3 +11,9 @@
         flex: 1;
     }
 }
+
+@include mobile {
+    .contact-main {
+        flex-direction: column;
+    }
+}

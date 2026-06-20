@@ -25,3 +25,13 @@
   flex-shrink: 0;
 }
 .dispo-text { font-size: 12px; color: $color-text-secondary; }
+@include tablet{
+  .dispo-band-infos {
+    width: 100%;
+  }
+}
+@include mobile {
+  .dispo-band-infos {
+    display: none;
+  }
+}

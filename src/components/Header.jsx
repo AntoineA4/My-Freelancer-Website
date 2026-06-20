@@ -62,10 +62,12 @@ function Header() {
                         </ul>
                     </nav>
                 )}
-                <LanguageSwitcher />
-                <Link to="/contact" className='contactBtn'>Me contacter</Link>
-                <div className='menuBurger' onClick={()=>setMenuOpen(true)}>
-                    <HiMenu size={30}/>
+                <div className='header-rightpart'>
+                    <LanguageSwitcher />
+                    <Link to="/contact" className='contactBtn'>Me contacter</Link>
+                    <div className='menuBurger' onClick={()=>setMenuOpen(true)}>
+                        <HiMenu size={30}/>
+                    </div>
                 </div>
             </header>
             <Modals isOpen={menuOpen} onClose={()=>setMenuOpen(false)} position="right">

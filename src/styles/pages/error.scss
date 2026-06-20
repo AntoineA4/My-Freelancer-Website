@@ -1,0 +1,20 @@
+.flexError {
+    @include flex-center;
+    flex-direction: column;
+}
+.errorTitle {
+    color: $color-corail;
+    font-size: $font-size-3xl;
+    margin-top: 10%;
+}
+.errorText {
+    color:$amber-text;
+    font-size: $font-size-base;
+}
+
+@include mobile {
+    .penguinGif {
+        height: 300px;
+        width: 80%;
+    }
+}
