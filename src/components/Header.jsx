@@ -4,8 +4,11 @@ import { HiMenu, HiHome, HiExternalLink, HiChevronRight, HiMail } from "react-ic
 import Modals from './Modals';
 import LanguageSwitcher from './ChangeLanguage';
 import '../styles/components/Header.scss'
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+
+    const {t} = useTranslation()
     const location = useLocation()
     const isHome = location.pathname === '/'
     const [scrolled, setScrolled] = useState(false)
@@ -40,31 +43,31 @@ function Header() {
                     <nav className="header-nav-bar">
                         <ul>
                             <li className="nav-header-text">
-                                <a href="#offres">Offres</a>
+                                <a href="#offres">{t('header.nav.home')}</a>
                             </li>
                             <li className="nav-header-text">
-                                <a href="#projets">Projets</a>
+                                <a href="#projets">{t('header.nav.projects')}</a>
                             </li>
                             <li className="nav-header-text">
-                                <a href="#compétences">Compétences</a>
+                                <a href="#compétences">{t('header.nav.skills')}</a>
                             </li>
                             <li className="nav-header-text"> 
-                                <a href="#Contact-Home-Section">Contact</a>
+                                <a href="#Contact-Home-Section">{t('header.nav.contact')}</a>
                             </li>
                         </ul>
                     </nav>
                 ) : (
                     <nav className="header-nav-bar">
                         <ul>
-                        <li><a href='/#offres' onClick={(e) => handleAnchorClick(e, '#offres')}>Offres</a></li>
-                        <li><Link to="/projects-page">Projets</Link></li>
+                        <li><a href='/#offres' onClick={(e) => handleAnchorClick(e, '#offres')}>{t('header.nav.offres')}</a></li>
+                        <li><Link to="/projects-page">{t('header.nav.projects')}</Link></li>
                         <li><a href='/#Contact-Home-Section' onClick={(e) => handleAnchorClick(e, '#Contact-Home-Section')}>Contact</a></li>
                         </ul>
                     </nav>
                 )}
                 <div className='header-rightpart'>
                     <LanguageSwitcher />
-                    <Link to="/contact" className='contactBtn'>Me contacter</Link>
+                    <Link to="/contact" className='contactBtn'>{t('header.btn')}</Link>
                     <div className='menuBurger' onClick={()=>setMenuOpen(true)}>
                         <HiMenu size={30}/>
                     </div>
@@ -85,19 +88,19 @@ function Header() {
                             <ul>
                                 <li>
                                     <a href="#offres" className='drawer-link'onClick={()=>setMenuOpen(false)}>
-                                        <span>Offres</span>
+                                        <span>{t('header.modal.offres')}</span>
                                         <HiChevronRight />
                                     </a>
                                 </li>
                                 <li>
                                     <Link to="/projects-page" className='drawer-link' onClick={()=>setMenuOpen(false)}>
-                                        <span>Mes projets</span>
+                                        <span>{t('header.modal.projects')}</span>
                                     <HiChevronRight />
                                     </Link>
                                 </li>
                                 <li>
                                     <a href="#compétences" className='drawer-link' onClick={()=>setMenuOpen(false)}>
-                                        <span>Compétences</span>
+                                        <span>{t('header.nav.skills')}</span>
                                         <HiChevronRight />
                                     </a>
                                 </li>
@@ -112,7 +115,7 @@ function Header() {
                         <div className='drawer-section'>
                             <p className='drawer-section-title'>Contact</p>
                             <Link to='/contact' className='drawer-link'onClick={()=>setMenuOpen(false)}>
-                                <span>Demande de devis</span>
+                                <span>{t('header.modal.contact-link')}</span>
                                 <HiMail />
                             </Link>
                         </div>
@@ -122,28 +125,28 @@ function Header() {
                         <div className='drawer-section'>
                             <p className='drawer-section-title'>Navigation</p>
                             <Link to='/' className='drawer-link'onClick={()=>setMenuOpen(false)}>
-                                <span>← Retour à l'accueil</span>
+                                <span>{t('header.modal.retour-home')}</span>
                                 <HiHome />
                             </Link>
                         </div>
                         <div className='drawer-section'>
-                            <p className='drawer-section-title'>Offres</p>
+                            <p className='drawer-section-title'>{t('header.modal.offers')}</p>
                             <ul>
                                 <li>
                                     <Link to='/offres/site-une-page' className={`drawer-link ${isActive('/offres/site-une-page') ? 'active' : ''}`} onClick={()=>setMenuOpen(false)}>
-                                        <span>Site une page</span>
+                                        <span>{t('header.modal.onePage')}</span>
                                         <HiExternalLink />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to='/offres/site-vitrine' className={`drawer-link ${isActive('/offres/site-vitrine') ? 'active' : ''}`} onClick={()=>setMenuOpen(false)}>
-                                        <span>Site vitrine</span>
+                                        <span>{t('header.modal.vitrine')}</span>
                                         <HiExternalLink />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to='/offres/hebergement' className={`drawer-link ${isActive('/offres/hebergement') ? 'active' : ''}`} onClick={()=>setMenuOpen(false)}>
-                                        <span>Offres hébergement</span>
+                                        <span>{t('header.modal.host')}</span>
                                         <HiExternalLink />
                                     </Link>
                                 </li>
@@ -152,7 +155,7 @@ function Header() {
                         <div className='drawer-section'>
                             <p className='drawer-section-title'>Contact</p>
                             <Link to='/contact' className='drawer-link'onClick={()=>setMenuOpen(false)}>
-                                <span>Demande de devis</span>
+                                <span>{t('header.modal.contact-link')}</span>
                                 <HiMail />
                             </Link>
                         </div>

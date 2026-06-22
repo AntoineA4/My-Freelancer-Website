@@ -3,8 +3,8 @@
     "nav": {
         "home": "Acceuil",
         "offres": "Offres",
-        "projets": "Projets",
-        "compétences": "Compétences",
+        "projetcs": "Projets",
+        "skills": "Compétences",
         "contact": "Contact"
     },
     "btn": "Me contacter",
@@ -13,7 +13,11 @@
         "contact": "CONTACT",
         "contact-link": "Demande de devis",
         "offres": "OFFRES",
-        "retour-home": "Retour à l'acceuil"
+        "retour-home": "← Retour à l'acceuil",
+        "projects": "Mes projets",
+        "onePage": "Site une page",
+        "vitrine": "Site vitrine",
+        "host": "Offres hébergement"
     }
 },
 "dispo-band": {

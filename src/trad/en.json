@@ -3,8 +3,8 @@
     "nav": {
         "home": "Home",
         "offres": "Services",
-        "projets": "Projects",
-        "compétences": "Skills",
+        "projects": "Projects",
+        "skills": "Skills",
         "contact": "Contact"
     },
     "btn": "Contact me",
@@ -13,7 +13,11 @@
         "contact": "CONTACT",
         "contact-link": "Request a quote",
         "offres": "SERVICES",
-        "retour-home": "Back to home"
+        "retour-home": "← Back to home",
+        "projects": "My projects",
+        "onePage": "One-page Website",
+        "vitrine": "Multi-page Website",
+        "host": "Hosting & maintenance"
     }
 },
 "dispo-band": {
