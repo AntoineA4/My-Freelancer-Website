@@ -90,10 +90,10 @@ function Header() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#projets" className='drawer-link' onClick={()=>setMenuOpen(false)}>
-                                        <span>Projets</span>
+                                    <Link to="/projects-page" className='drawer-link' onClick={()=>setMenuOpen(false)}>
+                                        <span>Mes projets</span>
                                     <HiChevronRight />
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <a href="#compétences" className='drawer-link' onClick={()=>setMenuOpen(false)}>

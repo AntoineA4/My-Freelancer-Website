@@ -1,0 +1,27 @@
+.lang-switcher {
+    display: flex;
+    gap:6px;
+    button {
+        padding: 5px 8px;
+        background-color: $color-bg-creme;
+        border-radius: 8px;
+        border: 1px solid $color-border;
+        font-size: $font-size-md;
+        &:hover {
+            background-color: $color-border-mid;
+            color: $color-bg-white;
+        }
+    }
+    .active {
+        background-color: $color-corail;
+        color: $color-bg-white;
+    }
+}
+
+@include mobile {
+    .lang-switcher {
+        button {
+            font-size: $font-size-xs;
+        }
+    }
+}

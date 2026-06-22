@@ -178,25 +178,51 @@ p {
     }
 }
 
-@include mobile {
-     header {
+@include tablet {
+    header {
+        .header-nav-bar {
+            ul {
+                gap:0.5rem;
+                li a{
+                    font-size: $font-size-base;
+                }
+            } 
+        }
+        .header-rightpart{
+            .contactBtn {
+                font-size: $font-size-base;
+                padding: 2px 10px;
+            }
+        }
+    }
+
+}
+
+ @media (max-width: 820px) {
+    header {
         height: auto;
+        margin:1% 0 1% 0;
         .header-nav-bar {
             ul {
                 display: none;
             }
-
         }
-         .header-rightpart {
+        .header-rightpart {
             .contactBtn {
                 display: none;
             }
 
             .menuBurger {
                 display: block;
-                margin-top: 8%;
+                margin-top: 4%;
             }
-         }
+        }
+    }
+ }
+@include mobile {
+     header {
+        height: auto;
+        margin: 0;
 
     }
     p {
