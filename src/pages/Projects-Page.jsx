@@ -3,10 +3,11 @@ import { useTranslation } from 'react-i18next'
 import projects from '../Data/projets.json'
 import Hero from "../components/Hero"
 import LocalisationBar from "../components/LocalisationBar"
-import Modals from '../components/Modals'
+import ProjectModal from '../components/ProjectModal'
 import '../styles/pages/Projects-page.scss'
 
 function ProjectsPage () {
+
     const [activeType, setActiveType] = useState('all')
     const [activeTag, setActiveTag] = useState('all')
     const [sortBy, setSortBy] = useState('recent')
@@ -136,44 +137,10 @@ function ProjectsPage () {
                         </div>
                     ))}
                 </div>
-                <Modals isOpen={selectedProject !== null} onClose={() => setSelectedProject(null)} position="center">
-                    {selectedProject && (
-                        <div className="project-modal">
-                            <div className="project-modal-header">
-                                <h2>{selectedProject.title}</h2>
-                                <button className="close-modal-btn" onClick={() => setSelectedProject(null)}>✕</button>
-                            </div>
-                            <div className="project-modal-img">
-                                <img
-                                    src={selectedProject.image}
-                                    alt={`Aperçu du projet ${selectedProject.title}`}
-                                />
-                            </div>
-                            <div className="project-modal-body">
-                                <div className="project-modal-tags">
-                                    {selectedProject.tags.map((tag, index) => (
-                                    <span key={index} className={`tag ${selectedProject.tagColor}`}>{tag}</span>
-                                    ))}
-                                </div>
-                                <div className="project-modal-section">
-                                    <h3>Description</h3>
-                                    <p>{selectedProject.description.fr}</p>
-                                </div>
-
-                                <div className="project-modal-section">
-                                    <h3>Difficultés</h3>
-                                    <p>{selectedProject.difficulties.fr}</p>
-                                </div>
-                                <a href={selectedProject.link}
-                                    target="_blank" // ouvre sur un nouvel onglet
-                                    rel="noopener noreferrer" // sécurité 
-                                    className="project-modal-link"
-                                    >Voir sur GitHub →
-                                    </a>
-                            </div>
-                        </div>
-                        )}
-                </Modals>
+                <ProjectModal
+                    selectedProject={selectedProject}
+                    onClose={() => setSelectedProject(null)}
+                />
             </section>
        </> 
     );

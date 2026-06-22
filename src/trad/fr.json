@@ -661,6 +661,11 @@
         }
 
     },
+    "projectModal": {
+        "description": "Description",
+        "difficulties": "Difficultés",
+        "link": "Voir sur GitHub"
+        },
 "footer": {
     "text": "Disponible — Devis gratuit sous 24h · TVA non applicable, art. 293B CGI"
 

@@ -655,6 +655,11 @@
         }
     }
 },
+"projectModal": {
+    "description": "Description",
+    "difficulties": "Challenges",
+    "link": "View on GitHub"
+    },
 "footer": {
     "text": "Available — Free quote within 24h · VAT not applicable, art. 293B CGI"
 }

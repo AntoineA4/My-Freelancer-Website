@@ -3,10 +3,13 @@
     gap:6px;
     button {
         padding: 5px 8px;
-        background-color: $color-bg-creme;
+        background: transparent;
         border-radius: 8px;
         border: 1px solid $color-border;
         font-size: $font-size-md;
+        transition: background .2s, color .2s;
+        cursor: pointer;
+        color:$color-corail;
         &:hover {
             background-color: $color-border-mid;
             color: $color-bg-white;
