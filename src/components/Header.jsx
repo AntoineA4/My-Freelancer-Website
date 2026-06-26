@@ -46,7 +46,7 @@ function Header() {
                                 <a href="#offres">{t('header.nav.home')}</a>
                             </li>
                             <li className="nav-header-text">
-                                <a href="#projets">{t('header.nav.projects')}</a>
+                                <Link to='/projects-page'>{t('header.nav.projects')}</Link>
                             </li>
                             <li className="nav-header-text">
                                 <a href="#compétences">{t('header.nav.skills')}</a>

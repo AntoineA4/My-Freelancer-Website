@@ -586,6 +586,7 @@
     },
     "form": {
         "title": "Votre demande",
+        "pickMessage": "✓ Formule pré-sélectionnée — vous pouvez la modifier ci-dessous",
         "prenom": {
             "label": "Prénom",
             "placeholder": "Jean"

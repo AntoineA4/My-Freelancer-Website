@@ -581,6 +581,7 @@
     },
     "form": {
         "title": "Your request",
+        "pickMessage": "✓ Pre-selected plan — you can change it below",
         "prenom": {
             "label": "First name",
             "placeholder": "John"

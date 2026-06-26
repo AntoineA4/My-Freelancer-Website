@@ -14,9 +14,9 @@ function ContactHomePage () {
             <div className="Contact-Home-btn-flex">
                 <a href="mailto:contact@tonnom.fr" className="Contact-Home-btn">
                     <FaEnvelope size={20} className='fa'/>
-                    contact@tonnom.fr
+                    antoinegadrat@hotmail.fr
                 </a>
-                <a href="https://linkedin.com/in/tonnom" target="_blank" rel="noopener" className="Contact-Home-btn">
+                <a href="https://www.linkedin.com/in/antoine-gadrat-9b749a32a/" target="_blank" rel="noopener" className="Contact-Home-btn">
                    <FaLinkedin size={20} className='fa'/>
                     LinkedIn
                 </a>

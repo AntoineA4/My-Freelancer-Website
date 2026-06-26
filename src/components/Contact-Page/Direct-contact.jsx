@@ -17,19 +17,19 @@ function DirectContact () {
                     </div>
                     <div>
                         <div className="contact-link-label">Email</div>
-                        <div className="contact-link-val">contact@tonnom.fr</div>
+                        <div className="contact-link-val">antoinegadrat@hotmail.fr</div>
                     </div>
                     <div className="contact-link-arrow">
                         <svg viewBox="0 0 24 24" strokeWidth="1.5"><polyline points="9 18 15 12 9 6"/></svg>
                     </div>
                 </a>
-                <a href="https://linkedin.com/in/tonnom" target="_blank" rel="noopener" className="contact-link">
+                <a href="https://www.linkedin.com/in/antoine-gadrat-9b749a32a/" target="_blank" rel="noopener" className="contact-link">
                     <div className="contact-link-icon">
                         <svg viewBox="0 0 24 24" strokeWidth="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                     </div>
                     <div>
                         <div className="contact-link-label">LinkedIn</div>
-                        <div className="contact-link-val">linkedin.com/in/tonnom</div>
+                        <div className="contact-link-val">linkedin.com/in/Antoine-Gadrat</div>
                     </div>
                     <div className="contact-link-arrow">
                         <svg viewBox="0 0 24 24" strokeWidth="1.5"><polyline points="9 18 15 12 9 6"/></svg>
@@ -41,7 +41,7 @@ function DirectContact () {
                     </div>
                     <div>
                         <div className="contact-link-label">Malt</div>
-                        <div className="contact-link-val">malt.fr/profile/tonnom</div>
+                        <div className="contact-link-val">malt.fr/profile/Antoine-Gadrat</div>
                     </div>
                     <div className="contact-link-arrow">
                         <svg viewBox="0 0 24 24" strokeWidth="1.5"><polyline points="9 18 15 12 9 6"/></svg>

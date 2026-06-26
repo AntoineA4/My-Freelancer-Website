@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useSearchParams } from 'react-router-dom'
 import emailjs from '@emailjs/browser'
 import '../../styles/components/Contact_page/contactForm.scss'
 
@@ -8,18 +9,33 @@ const sanitize = (str) =>
 
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
-const initialForm = {
-    prenom: '', nom: '', email: '', activite: '',
-    rojet: '', budget: '', description: '', references: '',
+const formuleMapping = {
+    'site-une-page': 'site-une-page',
+    'site-vitrine': 'site-vitrine',
+    'essentiel': 'pack-essentiel',
+    'serenite': 'pack-serenite',
+    'premium': 'pack-premium',
+    'hebergement': 'pack-serenite', 
 }
 
 function ContactForm() {
     const { t } = useTranslation()
-    const [formData, setFormData] = useState(initialForm)
+
+    const [searchParams] = useSearchParams()
+    const formuleFromUrl = searchParams.get('formule')
+    const initialProjet = formuleMapping[formuleFromUrl] || ''
+
+    const [formData, setFormData] = useState({
+        prenom: '', nom: '', email: '', activite: '',
+        projet: initialProjet, // ← pré-rempli depuis l'URL
+        budget: '', description: '', references: '',
+    })
     const [errors,   setErrors]   = useState({})
     const [status,   setStatus]   = useState('idle')
     const [honeypot, setHoneypot] = useState('')
     const [lastSent, setLastSent] = useState(null)
+
+    
 
     // Récupère les options depuis le JSON
     const projetOptions = t('contact.form.projet.options', { returnObjects: true })
@@ -84,7 +100,10 @@ function ContactForm() {
             )
             setStatus('success')
             setLastSent(Date.now())
-            setFormData(initialForm)
+            setFormData({
+            prenom: '', nom: '', email: '', activite: '',
+            projet: '', budget: '', description: '', references: '',
+        })
         } catch (err) {
             console.error(err)
             setStatus('error')
@@ -96,6 +115,12 @@ function ContactForm() {
             <div className="form-title">
                 <h2>{t('contact.form.title')}</h2>
             </div>
+
+            {initialProjet && (
+                <div className="form-prefill-banner">
+                    {t('contact.form.pickMessage')}
+                </div>
+            )}
 
             <form onSubmit={handleSubmit} noValidate>
 
