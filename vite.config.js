@@ -9,6 +9,7 @@ const toSassPath = (p) => p.replace(/\\/g, '/')
 
 export default defineConfig({
   plugins: [react()],
+  base: "/My-Freelancer-Website/",
   css: {
     preprocessorOptions: {
       scss: {
