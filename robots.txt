@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://antoinea4.github.io/My-Freelancer-Website/sitemap.xml
