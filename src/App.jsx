@@ -1,4 +1,5 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -38,6 +39,7 @@ function App() {
       </Routes>
 
       {!isErrorPage && <Footer />}
+      <SpeedInsights />
     </>
   );
 }
