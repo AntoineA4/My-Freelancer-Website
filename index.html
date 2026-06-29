@@ -1,16 +1,73 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Antoine Gadrat Développeur Web</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <!-- ── Favicon ── -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+
+    <!-- ── SEO de base ── -->
+    <title>Antoine Gadrat — Développeur Web Freelance</title>
+    <meta name="description" content="Développeur web freelance spécialisé en sites vitrine, landing pages et intégrations sur-mesure. Devis gratuit sous 24h, sans engagement." />
+    <meta name="keywords" content="développeur web freelance, site vitrine, landing page, React, HTML CSS, création site web" />
+    <meta name="author" content="Antoine Gadrat" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://antoinea4.github.io/My-Freelancer-Website/" />
+
+    <!-- ── Open Graph (réseaux sociaux : LinkedIn, Facebook...) ── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://antoinea4.github.io/My-Freelancer-Website/" />
+    <meta property="og:title" content="Antoine Gadrat — Développeur Web Freelance" />
+    <meta property="og:description" content="Sites vitrine, landing pages et intégrations sur-mesure. Devis gratuit sous 24h." />
+    <meta property="og:image" content="https://antoinea4.github.io/My-Freelancer-Website/og-image.png" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_GB" />
+
+    <!-- ── Twitter Card ── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Antoine Gadrat — Développeur Web Freelance" />
+    <meta name="twitter:description" content="Sites vitrine, landing pages et intégrations sur-mesure. Devis gratuit sous 24h." />
+    <meta name="twitter:image" content="https://antoinea4.github.io/My-Freelancer-Website/og-image.png" />
+
+    <!-- ── Données structurées JSON-LD (Google) ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Antoine Gadrat",
+      "jobTitle": "Développeur Web Freelance",
+      "url": "https://antoinea4.github.io/My-Freelancer-Website/",
+      "sameAs": [
+        "https://www.linkedin.com/in/antoine-gadrat",
+        "https://github.com/AntoineA4",
+        "https://www.malt.fr/profile/antoinegadrat"
+      ],
+      "knowsAbout": ["React", "JavaScript", "HTML", "CSS", "Sass", "Node.js"],
+      "offers": {
+        "@type": "Offer",
+        "description": "Création de sites vitrine, landing pages et intégrations web sur-mesure"
+      }
+    }
+    </script>
+
+    <!-- ── Performance : préconnexion aux fonts ── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
