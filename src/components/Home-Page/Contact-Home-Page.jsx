@@ -20,7 +20,7 @@ function ContactHomePage () {
                    <FaLinkedin size={20} className='fa'/>
                     LinkedIn
                 </a>
-                <a href="https://www.malt.fr/profile/tonnom" target="_blank" rel="noopener" className="Contact-Home-btn">
+                <a href="https://www.malt.fr/profile/antoinegadrat" target="_blank" rel="noopener" className="Contact-Home-btn">
                     <SiMalt size={55} className='si' />
                      ↗
                 </a>

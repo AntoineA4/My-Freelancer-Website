@@ -15,27 +15,28 @@ function Offres() {
             {offres.map((offre) => (
             <Link to={offre.link} key={offre.id} className="offre-home-card">
                 <div className={`card-top-part ${offre.colorClass}`}>
-                <h3>{offre.name}</h3>
-                <p className="title-sub">{offre.subtitle}</p>
+                    <h3>{offre.name}</h3>
+                    <p className="title-sub">{offre.subtitle}</p>
                 </div>
                 <div className="card-bot-part">
-                <div className="offre-price">
-                    {offre.price} <span>{offre.priceRange}</span>
-                </div>
-                <p className="offre-price-sub">{offre.priceSub}</p>
-                <ul className="offre-items">
-                    {offre.items.map((item, index) => (
-                    <li key={index}>
-                        <svg viewBox="0 0 24 24" strokeWidth="2">
-                        <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        {item}
-                    </li>
-                    ))}
-                </ul>
-                {offre.badge && (
-                    <div className="offre-badge">{offre.badge}</div>
-                )}
+                    <div className="offre-price">
+                        {offre.priceRange}
+                         <span>{offre.price}</span>
+                    </div>
+                    <p className="offre-price-sub">{offre.priceSub}</p>
+                    <ul className="offre-items">
+                        {offre.items.map((item, index) => (
+                        <li key={index}>
+                            <svg viewBox="0 0 24 24" strokeWidth="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            {item}
+                        </li>
+                        ))}
+                    </ul>
+                    {offre.badge && (
+                        <div className="offre-badge">{offre.badge}</div>
+                    )}
                 </div>
             </Link>
             ))}

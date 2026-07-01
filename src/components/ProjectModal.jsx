@@ -34,7 +34,6 @@ function ProjectModal({ selectedProject, onClose }) {
                             <h3>{t('projectModal.description')}</h3>
                             <p>{selectedProject.description[lang]}</p>
                         </div>
-                        
                         <a href={selectedProject.link}
                             target="_blank"
                             rel="noopener noreferrer"

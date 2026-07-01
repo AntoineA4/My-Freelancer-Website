@@ -60,17 +60,16 @@ h3 {
     background-color: $color-bordeaux-dark;
 }
 .offre-price {
-    font-family: $font-serif;
-    font-size: $font-size-2xl;
-    color: $color-bordeaux;
+    font-family: $font-sans;
+    font-size: $font-size-sm;
+    color: $color-corail;
+    font-weight: 400;
     margin-bottom: 2px;
 
     span {
-        font-family: $font-sans;
-        font-size: $font-size-sm;
-        color: $color-corail;
-        font-weight: 400;
-
+        font-family: $font-serif;
+        font-size: $font-size-2xl;
+        color: $color-bordeaux;
     }
 }
 
@@ -157,9 +156,9 @@ h3 {
         font-size: $font-size-lg;
     }
     .offre-price {
-        font-size: $font-size-xl;
+        font-size: $font-size-xs;
         span{
-            font-size: $font-size-xs;
+            font-size: $font-size-xl;
         }
     }
     .offre-price-sub {
