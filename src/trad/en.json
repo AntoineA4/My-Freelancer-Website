@@ -334,7 +334,7 @@
                 { "label": "Revision rounds", "unePage": "2", "vitrine": "3" },
                 { "label": "Handover training", "unePage": "—", "vitrine": "✓" },
                 { "label": "Delivery time", "unePage": "7 days", "vitrine": "14 days" },
-                { "label": "Price", "unePage": "300–500€", "vitrine": "800–1,200€", "isPrice": true }
+                { "label": "Price", "unePage": "from 300€", "vitrine": "from 800€", "isPrice": true }
             ]
         },
         "steps": {
@@ -541,8 +541,8 @@
         "compare": "Compare services",
         "cta": "Request a quote →",
         "offres": [
-            { "slug": "/offres/site-une-page", "name": "One-page site", "price": "300€ – 500€", "badge": null },
-            { "slug": "/offres/site-vitrine",  "name": "Multi-page site", "price": "800€ – 1,200€", "badge": null },
+            { "slug": "/offres/site-une-page", "name": "One-page site", "price": "from 300€", "badge": null },
+            { "slug": "/offres/site-vitrine",  "name": "Multi-page site", "price": "from 800€", "badge": null },
             { "slug": "/offres/hebergement",   "name": "Hosting", "price": "20€ – 70€/month", "badge": "3 plans" }
         ]
     }

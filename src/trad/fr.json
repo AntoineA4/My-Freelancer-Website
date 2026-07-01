@@ -336,7 +336,7 @@
                 { "label": "Allers-retours", "unePage": "2", "vitrine": "3" },
                 { "label": "Formation incluse", "unePage": "—", "vitrine": "✓" },
                 { "label": "Délai de livraison", "unePage": "7 jours",  "vitrine": "14 jours" },
-                { "label": "Prix", "unePage": "300–500€",  "vitrine": "800–1 200€", "isPrice": true }
+                { "label": "Prix", "unePage": "à partir de 300€",  "vitrine": "à partir de 800€", "isPrice": true }
             ]
         },
         "steps": {
@@ -545,8 +545,8 @@
         "compare": "Comparer les offres",
         "cta": "Demander un devis →",
         "offres": [
-            { "slug": "/offres/site-une-page", "name": "Site une page", "price": "300€ – 500€", "badge": null },
-            { "slug": "/offres/site-vitrine",  "name": "Site vitrine",  "price": "800€ – 1 200€", "badge": null },
+            { "slug": "/offres/site-une-page", "name": "Site une page", "price": "à partir de 300€", "badge": null },
+            { "slug": "/offres/site-vitrine",  "name": "Site vitrine",  "price": "à partir de 800€ ", "badge": null },
             { "slug": "/offres/hebergement",   "name": "Hébergement",   "price": "20€ – 70€/mois", "badge": "3 formules" }
         ]
     }
