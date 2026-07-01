@@ -13,8 +13,8 @@ function PriceBand ({
         <section className={`price-band ${PbClass}`}>
             <div className='price-right-part'>
                 <div className="price-main"> 
-                    <div className="price-amount">{MainPrice}</div>
                     <div className="price-range">{SecondPrice}</div>
+                    <div className="price-amount">{MainPrice}</div>
                 </div>
                 <div className="price-note">{Note}</div>
             </div>

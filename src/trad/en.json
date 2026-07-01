@@ -171,7 +171,7 @@
         },
         "priceRange": {
             "mainPrice":"300€",
-            "secondPrice":"to 500€",
+            "secondPrice":"from",
             "note":"Fixed price depending on the level of complexity",
             "tvaBadge":"VAT not applicable — art. 293B CGI",
             "secondBadge":"Delivered in 7 days"
@@ -271,7 +271,7 @@
         },
         "priceRange": {
             "mainPrice":"800€",
-            "secondPrice":"to 1,200€",
+            "secondPrice":"from",
             "note":"Fixed quote depending on number of pages and features",
             "tvaBadge":"VAT not applicable — art. 293B CGI",
             "secondBadge":"Delivered in 14 days"

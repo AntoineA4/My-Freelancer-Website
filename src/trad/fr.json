@@ -172,7 +172,7 @@
         },
         "priceRange": {
             "mainPrice":"300€",
-            "secondPrice":"à 500€",
+            "secondPrice":"à partir de",
             "note":"Prix fixe selon le niveau de complexité demandé",
             "tvaBadge":"TVA non applicable — art. 293B CGI",
             "secondBadge":"Livraison en 7 jours" 
@@ -273,7 +273,7 @@
         },
         "priceRange": {
             "mainPrice":"800€",
-            "secondPrice":"à 1 200€",
+            "secondPrice":"à partir de",
             "note":"Devis fixe selon le nombre de pages et les fonctionnalités",
             "tvaBadge":"TVA non applicable — art. 293B CGI",
             "secondBadge":"Livraison en 14 jours" 
