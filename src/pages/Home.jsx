@@ -30,11 +30,9 @@ function Home() {
         secondaryBtn={t('home.hero.secondary-btn')}/>
       <DispoBand />
       <Reassurance />
-      <ForWho />
-      <WhyMe />
       <Offres />
       <Projects />
-      <Skills />
+      <WhyMe />
       <ContactHomePage />
     </>
   );

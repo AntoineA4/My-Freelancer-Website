@@ -19,7 +19,7 @@ function OPOffre () {
     return (
         <>
             <LocalisationBar
-                section={{ label: 'Offres', href: '/#offres' }}
+                section={{ label:'header.nav.offres', href: '/#offres' }}
                 page={t('offres.onePage.nav-loc')}
             />
             <Hero

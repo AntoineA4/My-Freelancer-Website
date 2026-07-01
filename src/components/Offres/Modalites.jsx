@@ -8,7 +8,7 @@ function Modalites ({items = []}) {
         <div className="offre-infos-box modalites-box">
             <div className="infos-block-head">
                 <span className="ih-icon">ℹ</span>
-                <div className="infos-title">{t('offres.onePage.nonIncluded.title')}</div>
+                <div className="infos-title">{t('offres.onePage.modalites.title')}</div>
             </div>
             <div className="infos-body">
                 <ul className="offre-items">

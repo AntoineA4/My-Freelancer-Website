@@ -21,7 +21,7 @@ function SiteVitrineOffre () {
     return (
         <>
             <LocalisationBar
-                section={{ label: 'Offres', href: '/#offres' }}
+                section={{ label:'header.nav.offres', href: '/#offres' }}
                 page={t('offres.vitrine.nav-loc')}
             />
             <Hero

@@ -34,6 +34,9 @@
 }
 
 @include mobile {
+    .dispo-band {
+      display:none
+    }
     .dispo-inner {
         margin: 0;
         gap:10px;

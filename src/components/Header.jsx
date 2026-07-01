@@ -43,13 +43,13 @@ function Header() {
                     <nav className="header-nav-bar">
                         <ul>
                             <li className="nav-header-text">
-                                <a href="#offres">{t('header.nav.home')}</a>
+                                <a href="/">{t('header.nav.home')}</a>
+                            </li>
+                            <li className="nav-header-text">
+                                <a href="#offres">{t('header.nav.offres')}</a>
                             </li>
                             <li className="nav-header-text">
                                 <Link to='/projects-page'>{t('header.nav.projects')}</Link>
-                            </li>
-                            <li className="nav-header-text">
-                                <a href="#compétences">{t('header.nav.skills')}</a>
                             </li>
                             <li className="nav-header-text"> 
                                 <a href="#Contact-Home-Section">{t('header.nav.contact')}</a>
@@ -59,6 +59,9 @@ function Header() {
                 ) : (
                     <nav className="header-nav-bar">
                         <ul>
+                        <li className="nav-header-text">
+                            <a href="/">{t('header.nav.home')}</a>
+                        </li>
                         <li><a href='/#offres' onClick={(e) => handleAnchorClick(e, '#offres')}>{t('header.nav.offres')}</a></li>
                         <li><Link to="/projects-page">{t('header.nav.projects')}</Link></li>
                         <li><a href='/#Contact-Home-Section' onClick={(e) => handleAnchorClick(e, '#Contact-Home-Section')}>Contact</a></li>
@@ -99,12 +102,6 @@ function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <a href="#compétences" className='drawer-link' onClick={()=>setMenuOpen(false)}>
-                                        <span>{t('header.nav.skills')}</span>
-                                        <HiChevronRight />
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="#Contact-Home-Section" className='drawer-link' onClick={()=>setMenuOpen(false)}>
                                         <span>Contact</span>
                                         <HiChevronRight />
@@ -130,7 +127,7 @@ function Header() {
                             </Link>
                         </div>
                         <div className='drawer-section'>
-                            <p className='drawer-section-title'>{t('header.modal.offers')}</p>
+                            <p className='drawer-section-title'>{t('header.modal.offres')}</p>
                             <ul>
                                 <li>
                                     <Link to='/offres/site-une-page' className={`drawer-link ${isActive('/offres/site-une-page') ? 'active' : ''}`} onClick={()=>setMenuOpen(false)}>

@@ -26,10 +26,10 @@ function LocalisationBar({ section, page }) {
             <span className="bc-sep">›</span>
             {page ? (
               <a href="/#offres" onClick={handleSectionClick} className="bc-link">
-                {section.label}
+                {t(section.label)}
               </a>
             ) : (
-              <span className="localBar-text">{section.label}</span>
+              <span className="localBar-text">{t(section.label)}</span>
             )}
           </>
         )}

@@ -17,7 +17,7 @@ function Hebergement () {
     return (
         <>
             <LocalisationBar
-                section={{ label: 'Offres', href: '/#offres' }}
+                section={{ label:'header.nav.offres', href: '/#offres' }}
                 page={t('offres.hebergement.nav-loc')}
             />
             <Hero

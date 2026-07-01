@@ -40,3 +40,13 @@
   font-weight: $font-medium;
   color: $color-corail;
 }
+
+@include mobile {
+  .offre-infos-box {
+    margin: 3% 4% 3%;
+  }
+  .extra {
+    padding: .9rem 0.1rem;
+    gap:7px;
+  }
+}

@@ -34,10 +34,6 @@ function ProjectModal({ selectedProject, onClose }) {
                             <h3>{t('projectModal.description')}</h3>
                             <p>{selectedProject.description[lang]}</p>
                         </div>
-                        <div className="project-modal-section">
-                            <h3>{t('projectModal.difficulties')}</h3>
-                            <p>{selectedProject.difficulties[lang]}</p>
-                        </div>
                         
                         <a href={selectedProject.link}
                             target="_blank"

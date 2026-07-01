@@ -52,7 +52,7 @@ function ProjectsPage () {
     return (
         <>
             <LocalisationBar 
-                page="projects-page"
+                page={t('header.nav.projects')}
             />
             <Hero 
                 tag={t('projectPage.hero.tag')}
